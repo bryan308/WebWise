@@ -8,14 +8,14 @@
                     "itemTitle": "Introduction to Web Development",
                     "itemSubtitle": "Item subtitle",
                     "dataLocation": "c1_l1_p1",
-                    "status": false
+                    "status": true
                 },
                 {
                     "id": 2,
                     "itemTitle": "Internet",
                     "itemSubtitle": "Item Subtitle",
                     "dataLocation": "c1_l1_p2",
-                    "status": false
+                    "status": true
                 },
                 {
                     "id": 3,
@@ -170,81 +170,6 @@
                     "itemTitle": "Block and Inline",
                     "itemSubtitle": "Introduction of display positioning",
                     "dataLocation": "c1_l4_p7",
-                    "status": false
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "lessonListsItems": [
-                {
-                    "id": 1,
-                    "itemTitle": "Variables and Operators",
-                    "itemSubtitle": "Item subtitle",
-                    "dataLocation": "c1_l5_p1",
-                    "status": false
-                },
-                {
-                    "id": 2,
-                    "itemTitle": "Data Types and Conditionals",
-                    "itemSubtitle": "Item Subtitle",
-                    "dataLocation": "c1_l5_p2",
-                    "status": false
-                },
-                {
-                    "id": 3,
-                    "itemTitle": "Javascript Developer Tools",
-                    "itemSubtitle": "Item Subtitle",
-                    "dataLocation": "c1_l5_p3",
-                    "status": false
-                },
-                {
-                    "id": 4,
-                    "itemTitle": "Function Basics",
-                    "itemSubtitle": "Item Subtitle",
-                    "dataLocation": "c1_l5_p4",
-                    "status": false
-                },
-                {
-                    "id": 5,
-                    "itemTitle": "Problem Solving",
-                    "itemSubtitle": "Item Subtitle",
-                    "dataLocation": "c1_l5_p5",
-                    "status": false
-                },
-                {
-                    "id": 6,
-                    "itemTitle": "Understanding Errors",
-                    "itemSubtitle": "Item Subtitle",
-                    "dataLocation": "c1_l5_p6",
-                    "status": false
-                },
-                {
-                    "id": 7,
-                    "itemTitle": "Clean Code",
-                    "itemSubtitle": "Item Subtitle",
-                    "dataLocation": "c1_l5_p7",
-                    "status": false
-                },
-                {
-                    "id": 8,
-                    "itemTitle": "Arrays and Loops",
-                    "itemSubtitle": "Item Subtitle",
-                    "dataLocation": "c1_l5_p8",
-                    "status": false
-                },
-                {
-                    "id": 9,
-                    "itemTitle": "DOM Manipulation and Events",
-                    "itemSubtitle": "Item Subtitle",
-                    "dataLocation": "c1_l5_p9",
-                    "status": false
-                },
-                {
-                    "id": 10,
-                    "itemTitle": "Object Basics",
-                    "itemSubtitle": "Item Subtitle",
-                    "dataLocation": "c1_l5_p10",
                     "status": false
                 }
             ]

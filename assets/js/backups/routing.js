@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(routes => {
             const links = document.querySelectorAll('.hyperlink');
-            const linksWithSpace = ["c1_l1", "c1_l2", "c1_l3", "c1_l4"]; 
 
             links.forEach((link) => {
                 const route = link.getAttribute("data-location");
@@ -22,19 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         if (path) {
                             window.open(path, target);
-
-                            if (linksWithSpace.includes(route)) {
-                                window.scroll({
-                                    top: "1000",
-                                    behavior: 'smooth'
-                                });
-                            }
                         } else {
                             throw new Error('Route not found');
                         }
                     } catch (error) {
-                        window.open(routes[404], '_self');
                         console.error('Error navigating:', error.message);
+                        window.open(routes[404], '_blank');
                     }
                 });
             });
@@ -44,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     setTimeout(() => {
                         const path = routes[route] || null;
                         resolve(path);
-                    }, 750);
+                    }, 500);
                 });
             }
         })

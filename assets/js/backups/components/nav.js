@@ -62,36 +62,8 @@ const md_nav = `
         </svg>
     </button>
     <div class="md-logo-container">
-        <a class="hyperlink" href="" data-location="home" title="Home of WebWise">
-            <!-- <img src="/assets/images/lugu.png" onerror="" alt="WebWise Logo" /> -->
-            <svg id="svg-logo" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" shape-rendering="geometricPrecision"
-                text-rendering="geometricPrecision">
-                <g id="left" transform="translate(.000001 0.000001)">
-                    <rect width="17" height="115" rx="8" ry="8"
-                        transform="matrix(1.066595 0.803676-.890585 1.181937 102.417258 15.2588)" stroke-width="0" />
-                    <rect width="17" height="115" rx="8" ry="8"
-                        transform="matrix(1.066566-.803715 0.890628 1.181904 0 148.822253)" stroke-width="0" />
-                    <rect width="17" height="132.808061" rx="8" ry="8"
-                        transform="matrix(-.510551 0.653475-.500665-.391162 123.802249 148.903328)" stroke-width="0" />
-                    <rect width="17" height="115" rx="8" ry="8"
-                        transform="matrix(-.510551-.653475 0.578228-.451761 57.307959 203.495336)" stroke-width="0" />
-                </g>
-                <g id="right" transform="translate(0 0.000001)">
-                    <rect width="17" height="115" rx="8" ry="8"
-                        transform="matrix(1.066595 0.803676-.890585 1.181937 281.863367 135.15599)" stroke-width="0" />
-                    <rect width="17" height="115" rx="8" ry="8"
-                        transform="matrix(1.066566-.803715 0.890628 1.181904 179.446109 28.925063)" stroke-width="0" />
-                    <g transform="matrix(-.919935 0 0 1 291.529863 0)">
-                        <rect width="17" height="132.808061" rx="8" ry="8"
-                            transform="matrix(-.510551 0.653475-.500665-.391162 123.802249 148.903328)" stroke-width="0" />
-                        <rect width="17" height="115" rx="8" ry="8"
-                            transform="matrix(-.510551-.653475 0.578228-.451761 57.307959 203.495336)" stroke-width="0" />
-                    </g>
-                </g>
-                <rect id="middle" width="17" height="115" rx="8" ry="8"
-                    transform="matrix(1.279117 0.383901-.550976 1.835793 170.759581 41.342227)" stroke-width="0" />
-            </svg>
+        <a class="hyperlink" href="" data-location="home">
+            <img src="/assets/images/NEUST.png" onerror="" alt="Logo" />
             <span class="md-logo-name">WebWise</span>
         </a>
     </div>
@@ -113,9 +85,9 @@ const md_nav = `
             </svg> About </a>
         <a class="md-nav-link hyperlink" href="" data-location="">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-            </svg>
-            Contact Us </a>
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg> Support Us </a>
         <hr />
         <a class="md-nav-link hyperlink" href="" data-location="sign_up">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -144,46 +116,24 @@ const md_nav = `
 
 const navbar_component = `
 <div class="nav-container">
-    <a class="logo-container hyperlink" href="" data-location="home" title="Home of WebWise">
-        <!-- <img src="/assets/images/lugu.png" alt="Logo" /> -->
-        <svg id="svg-logo" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" shape-rendering="geometricPrecision"
-            text-rendering="geometricPrecision">
-            <g id="left" transform="translate(.000001 0.000001)">
-                <rect width="17" height="115" rx="8" ry="8"
-                    transform="matrix(1.066595 0.803676-.890585 1.181937 102.417258 15.2588)" stroke-width="0" />
-                <rect width="17" height="115" rx="8" ry="8"
-                    transform="matrix(1.066566-.803715 0.890628 1.181904 0 148.822253)" stroke-width="0" />
-                <rect width="17" height="132.808061" rx="8" ry="8"
-                    transform="matrix(-.510551 0.653475-.500665-.391162 123.802249 148.903328)" stroke-width="0" />
-                <rect width="17" height="115" rx="8" ry="8"
-                    transform="matrix(-.510551-.653475 0.578228-.451761 57.307959 203.495336)" stroke-width="0" />
-            </g>
-            <g id="right" transform="translate(0 0.000001)">
-                <rect width="17" height="115" rx="8" ry="8"
-                    transform="matrix(1.066595 0.803676-.890585 1.181937 281.863367 135.15599)" stroke-width="0" />
-                <rect width="17" height="115" rx="8" ry="8"
-                    transform="matrix(1.066566-.803715 0.890628 1.181904 179.446109 28.925063)" stroke-width="0" />
-                <g transform="matrix(-.919935 0 0 1 291.529863 0)">
-                    <rect width="17" height="132.808061" rx="8" ry="8"
-                        transform="matrix(-.510551 0.653475-.500665-.391162 123.802249 148.903328)" stroke-width="0" />
-                    <rect width="17" height="115" rx="8" ry="8"
-                        transform="matrix(-.510551-.653475 0.578228-.451761 57.307959 203.495336)" stroke-width="0" />
-                </g>
-            </g>
-            <rect id="middle" width="17" height="115" rx="8" ry="8"
-                transform="matrix(1.279117 0.383901-.550976 1.835793 170.759581 41.342227)" stroke-width="0" />
-        </svg>
+    <a class="logo-container hyperlink" href="" data-location="home">
+        <img src="/assets/images/NEUST.png" alt="Logo" />
         <span class="logo-name">WebWise</span>
     </a>
     <div class="nav-menu">
         <div class="nav-links">
-            <a class="nav-link hyperlink" href=""               data-location="home"        > Home </a>
+            <a class="nav-link hyperlink" href=""               data-location="home"> Home </a>
             <a class="nav-link hyperlink" href=""               data-location="courses_page"> Courses </a>
-            <a class="nav-link hyperlink" href=""               data-location="about"       > About </a>
-            <a class="nav-link hyperlink" href=""               data-location=""            > Contact Us </a>
-            <a class="nav-link hyperlink" href=""               data-location="sign_in"     > Sign in </a>
-            <a class="primary-btn hyperlink" href="" data-location="sign_up"     > Get Started </a>
+            <a class="nav-link hyperlink" href=""               data-location="about"> About </a>
+            <a class="nav-link hyperlink" href=""               data-location=""> Support Us </a>
+            <a class="nav-link hyperlink" href=""               data-location="sign_in"> Sign in </a>
+            <a class="nav-link primary-btn hyperlink" href=""   data-location="sign_up"> 
+                Get Started 
+                <svg style="width: 1rem; vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+            </a>
         </div>
     </div>
     <button type="button" class="burger" id="burger" title="button">

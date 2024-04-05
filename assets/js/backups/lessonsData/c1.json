@@ -1,0 +1,109 @@
+{
+    "lessonListContainer": [
+        {
+            "id": 1,
+            "lessonListsItems": [
+                {
+                    "id": 1,
+                    "dataLocation": "c1_l1_p1",
+                    "itemTitle": "Introduction to Web Development",
+                    "itemSubtitle": "Item subtitle"
+                },
+                {
+                    "id": 2,
+                    "dataLocation": "c1_l1_p2",
+                    "itemTitle": "World Wide Web",
+                    "itemSubtitle": "Item subtitle"
+                },
+                {
+                    "id": 3,
+                    "dataLocation": "c1_l1_p3",
+                    "itemTitle": "Webpage vs. Website",
+                    "itemSubtitle": "Item subtitle"
+                },
+                {
+                    "id": 4,
+                    "dataLocation": "c1_l1_p4",
+                    "itemTitle": "Types of Websites",
+                    "itemSubtitle": "Item subtitle"
+                },
+                {
+                    "id": 5,
+                    "dataLocation": "c1_l1_p4",
+                    "itemTitle": "Core Areas",
+                    "itemSubtitle": "Item subtitle"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "lessonListsItems": [
+                {
+                    "id": 1,
+                    "dataLocation": "c1_l2_p1",
+                    "itemTitle": "Computer Basics",
+                    "itemSubtitle": "Item subtitle"
+                },
+                {
+                    "id": 2,
+                    "dataLocation": "c1_l2_p2",
+                    "itemTitle": "Internet",
+                    "itemSubtitle": "Item subtitle"
+                },
+                {
+                    "id": 3,
+                    "dataLocation": "c1_l2_p3",
+                    "itemTitle": "Version Control",
+                    "itemSubtitle": "Item subtitle"
+                },
+                {
+                    "id": 4,
+                    "dataLocation": "c1_l2_p4",
+                    "itemTitle": "Basic Command Line",
+                    "itemSubtitle": "Item subtitle"
+                },
+                {
+                    "id": 5,
+                    "dataLocation": "c1_l2_p5",
+                    "itemTitle": "Understanding Networking",
+                    "itemSubtitle": "Item subtitle"
+                },
+                {
+                    "id": 6,
+                    "dataLocation": "c1_l2_p6",
+                    "itemTitle": "Basic Problem Solving",
+                    "itemSubtitle": "Item subtitle"
+                },
+                {
+                    "id": 7,
+                    "dataLocation": "c1_l2_p7",
+                    "itemTitle": "Text Editors",
+                    "itemSubtitle": "Item subtitle"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "lessonListsItems": [
+                {
+                    "id": 1,
+                    "dataLocation": "c1_l3_p1",
+                    "itemTitle": "History of Web",
+                    "itemSubtitle": "Item subtitle"
+                },
+                {
+                    "id": 2,
+                    "dataLocation": "c1_l3_p2",
+                    "itemTitle": "Core Areas",
+                    "itemSubtitle": "Different roles in Web Development"
+                },
+                {
+                    "id": 3,
+                    "dataLocation": "c1_l3_p3",
+                    "itemTitle": "Development lifecycle",
+                    "itemSubtitle": "Item subtitle"
+                }
+            ]
+        }
+    ]
+}
