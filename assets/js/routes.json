@@ -2,6 +2,7 @@
     "home": "/",
     "about": "/pages/about/",
     "team": "/pages/about/team.html",
+    "contact": "/pages/contact/",
     "sign_up": "/pages/auth/sign_up.html",
     "sign_in": "/pages/auth/sign_in.html",
     "courses_page": "/pages/courses/courses.html",

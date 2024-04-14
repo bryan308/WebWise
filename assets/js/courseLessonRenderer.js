@@ -23,19 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             listItem.setAttribute('href', '');
                             listItem.setAttribute('data-location', item.dataLocation);
 
-                            // /*
-                            // if item.itemSubtitle = empty
-                            // */ 
-                            // let subtitle = '';
-                            // if (item.itemSubtitle !== null) {
-                            //     subtitle = item.itemSubtitle;
-                            // } else {
-                            //     subtitle = 'Item Subtitle';
-                            // }
-
-                            let lessonStatus = (item.status === true || item.status === "true") ? 'display: block; color: lightgreen;' 
-                                            : (item.status === null && item.status === false || item.status === "false") ? 'display: none;' 
-                                            : 'display: none;';
+                            let lessonStatus = (item.status === true || item.status === "true") ? 'display: block; color: lightgreen;'
+                                : (item.status === null && item.status === false || item.status === "false") ? 'display: none;'
+                                    : 'display: none;';
 
                             listItem.innerHTML = `
                                 <div class="item-content">
@@ -55,6 +45,24 @@ document.addEventListener('DOMContentLoaded', () => {
                             `;
                             lessonListItemsContainer.appendChild(listItem);
                         });
+                    } else {
+                        const lessonListItemsContainer = lessonList.querySelector('.lesson-list-items');
+                        const listItem = document.createElement('div');
+                        listItem.classList.add('topic-item');
+
+                        listItem.innerHTML = `
+                                <div class="item-content">
+                                    <div class="item-text">
+                                        <h4>Comming Soon!</h4>
+                                    </div>
+                                </div>
+                                <div class="item-status-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </div>
+                            `;
+                        lessonListItemsContainer.appendChild(listItem);
                     }
                 });
             })

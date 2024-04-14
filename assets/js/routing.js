@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(routes => {
             const links = document.querySelectorAll('.hyperlink');
-            const linksWithSpace = ["c1_l1", "c1_l2", "c1_l3", "c1_l4"]; 
+            const linksWithSpace = ["c1_l1", "c1_l2", "c1_l3", "c1_l4"];
 
             links.forEach((link) => {
                 const route = link.getAttribute("data-location");
@@ -23,12 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (path) {
                             window.open(path, target);
 
-                            if (linksWithSpace.includes(route)) {
-                                window.scroll({
-                                    top: "1000",
-                                    behavior: 'smooth'
-                                });
-                            }
+                            // if (linksWithSpace.includes(route)) {
+                            //     alert(linksWithSpace.includes(route));
+                            //     window.scroll({
+                            //         top: "1000",
+                            //         behavior: 'smooth'
+                            //     });
+                            // }
                         } else {
                             throw new Error('Route not found');
                         }
