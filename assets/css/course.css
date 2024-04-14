@@ -1,0 +1,108 @@
+/* ------------------------------------ :Courses styles ------------------------------------ */
+/* Lesson title */
+.lesson-list-container h3 {
+    font-size: var(--text-xl);
+}
+
+.lesson-list-items {
+    border-radius: 8px;
+    margin: .5rem 0 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #101028;
+    border: 1px solid var(--violet-950);
+
+    .topic-item {
+        cursor: pointer;
+        background-color: var(--indigo-950);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: .5rem;
+        text-decoration: none;
+        border: 1px solid var(--violet-900);
+
+        min-height: 50px;
+        border-radius: 6px;
+        padding: 12px;
+
+        transition: all 200ms cubic-bezier(0, 0, .2, 1);
+
+        &:hover {
+            box-shadow: 0 0 1.5rem 0.1rem var(--violet-800) inset;
+            /* background-color: var(--violet-900); */
+            background-color: #420779;
+            transform: scale(1.01);
+        }
+
+        &:active,
+        &:focus {
+            box-shadow: 0 0 1.5rem 0.1rem var(--violet-600) inset;
+            /* background-color: var(--violet-800); */
+            transform: scale(.99);
+        }
+
+        .item-content {
+            display: flex;
+            text-wrap: nowrap;
+            overflow: hidden;
+
+            .item-number {
+                opacity: 0;
+                text-align: center;
+                width: 0;
+                max-height: 24px;
+                margin: auto 0;
+                transition: all .2s cubic-bezier(0, 0, .2, 1);
+
+                span {
+                    font-size: var(--text-xl);
+                    font-weight: 700;
+                    line-height: 1;
+                    color: var(--violet-200);
+                }
+            }
+
+            .item-text {
+                line-height: 1;
+
+                h4 {
+                    font-family: var(--accent-font);
+                    font-weight: 500;
+                    color: var(--violet-50);
+                }
+
+                span {
+                    text-overflow: ellipsis;
+                    color: var(--violet-200);
+                    font-size: var(--text-xs);
+                }
+            }
+        }
+
+        &:focus .item-number,
+        &:hover .item-number {
+            width: 24px;
+            opacity: 1;
+            margin-right: .5rem;
+        }
+
+        .item-status-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .lesson-list-items {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

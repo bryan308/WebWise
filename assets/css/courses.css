@@ -1,0 +1,153 @@
+/* ------------------------------ :Courses Page ------------------------------ */
+
+.course-card {
+    position: relative;
+    background-color: #101028;
+    /* background-color: var(--slate-950); */
+    border: 1px solid var(--violet-950);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    overflow: hidden;
+
+    /* background-color: var(--violet-950); */
+    /* box-shadow: 0px 0px 60px 0.25rem var(--violet-700) inset; */
+    /* box-shadow: 0 0 20px #303048 inset; */
+    /* border: 2px solid var(--violet-100); */
+    /* backdrop-filter: blur(8px); */
+
+    /* .grad {
+        opacity: .6;
+        position: absolute;
+        top: -30%;
+        right: 0;
+        width: 100%;
+        height: 30rem;
+        background: linear-gradient(to top,
+                var(--violet-200),
+                var(--violet-300),
+                var(--violet-400),
+                var(--violet-500));
+        filter: blur(20px);
+        transform: rotate(50deg);
+        z-index: -1;
+    } */
+
+    div {
+        z-index: 1;
+
+        .cc-content {
+            display: flex;
+            gap: 1rem;
+            /* margin-bottom: 1rem; */
+            width: 100%;
+
+            .cc-img {
+                width: 35%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        .cc-text {
+            width: 65%;
+
+            h3 {
+                /* text-align: center; */
+                font-family: var(--accent-font);
+                font-size: var(--text-2xl);
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                color: var(--neutral-300);
+                font-size: var(--text-base);
+                font-weight: 400;
+                letter-spacing: .5px;
+                margin-bottom: 0.5rem;
+            }
+
+            .cc-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: .5rem;
+                padding: .5rem;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    user-select: none;
+                    padding: .15rem .3rem;
+                    font-weight: 400;
+                    font-size: var(--text-xs);
+                    color: var(--neutral-200);
+                    width: max-content;
+                    cursor: pointer;
+                    text-decoration: none;
+                    border-radius: 8px;
+                    border: 1px solid var(--violet-900);
+                    transition: all .2s ease;
+                    gap: .15rem;
+                    /* box-shadow: 0px 0px 4px 0.01rem var(--violet-700) inset; */
+
+                    &:hover {
+                        border: 1px solid var(--violet-700);
+                        /* transform: scale(1.015); */
+                        /* box-shadow: 0px 0px 10px 0.01rem var(--violet-700) inset; */
+                        background-color: #250c3e;
+                    }
+
+                    img {
+                        padding: 2px;
+                        border-radius: 4px;
+                        background-color: #4e4e4ebf;
+                        width: var(--text-sm);
+                    }
+                }
+            }
+
+            .cc-action {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: .5rem;
+
+                a {
+                    width: fit-content;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .course-card {
+        padding: 1rem;
+        div {
+            .cc-content {
+                flex-direction: column;
+    
+                .cc-img {
+                    width: 100%;
+                    height: 200px;
+    
+                    img {
+                        height: 100%;
+                    }
+                }
+    
+                .cc-text {
+                    width: 100%;
+    
+                    .cc-action {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
