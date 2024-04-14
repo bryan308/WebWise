@@ -111,11 +111,11 @@ const md_nav = `
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg> About </a>
-        <a class="md-nav-link hyperlink" href="" data-location="">
+        <a class="md-nav-link hyperlink" href="contact" data-location="">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
             </svg>
-            Contact Us </a>
+            Contact </a>
         <hr />
         <a class="md-nav-link hyperlink" href="" data-location="sign_up">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -181,14 +181,14 @@ const navbar_component = `
             <a class="nav-link hyperlink" href=""               data-location="home"        > Home </a>
             <a class="nav-link hyperlink" href=""               data-location="courses_page"> Courses </a>
             <a class="nav-link hyperlink" href=""               data-location="about"       > About </a>
-            <a class="nav-link hyperlink" href=""               data-location=""            > Contact Us </a>
+            <a class="nav-link hyperlink" href=""               data-location="contact"            > Contact</a>
             <a class="nav-link hyperlink" href=""               data-location="sign_in"     > Sign in </a>
-            <a class="primary-btn hyperlink" href="" data-location="sign_up"     > Get Started </a>
         </div>
     </div>
+    <a class="nav-btn hyperlink" href="" data-location="sign_up"> Get Started </a>
     <button type="button" class="burger" id="burger" title="button">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7" />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
         </svg>
     </button>
 </div>

@@ -54,7 +54,7 @@ const footer_component = `
                         <a href="">FAQ</a>
                     </li>
                     <li>
-                        <a href="">Contact Us</a>
+                        <a class="hyperlink" data-location="contact" href="">Contact</a>
                     </li>
                     <li>
                         <a href="">Donate</a>
