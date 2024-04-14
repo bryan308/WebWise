@@ -6,28 +6,28 @@
                 {
                     "id": 1,
                     "itemTitle": "Introduction to Web Development",
-                    "itemSubtitle": "Item subtitle",
+                    "itemSubtitle": "Web Development Essentials",
                     "dataLocation": "c1_l1_p1",
                     "status": false
                 },
                 {
                     "id": 2,
                     "itemTitle": "Internet",
-                    "itemSubtitle": "Item Subtitle",
+                    "itemSubtitle": "Understanding the Internet landscape",
                     "dataLocation": "c1_l1_p2",
                     "status": false
                 },
                 {
                     "id": 3,
                     "itemTitle": "Webpage vs. Website",
-                    "itemSubtitle": "Item subtitle",
+                    "itemSubtitle": "Key differences explained",
                     "dataLocation": "c1_l1_p3",
                     "status": false
                 },
                 {
                     "id": 4,
                     "itemTitle": "Development Lifecycle",
-                    "itemSubtitle": "Item subtitle",
+                    "itemSubtitle": "Navigating the development lifecycle journey",
                     "dataLocation": "c1_l1_p4",
                     "status": false
                 },
@@ -46,28 +46,28 @@
                 {
                     "id": 1,
                     "itemTitle": "Computer Basics",
-                    "itemSubtitle": "Item subtitle",
+                    "itemSubtitle": "Understanding Computers",
                     "dataLocation": "c1_l2_p1",
                     "status": false
                 },
                 {
                     "id": 2,
                     "itemTitle": "Basic Command Line",
-                    "itemSubtitle": "Item subtitle",
+                    "itemSubtitle": "Command line essentials",
                     "dataLocation": "c1_l2_p2",
                     "status": false
                 },
                 {
                     "id": 3,
                     "itemTitle": "Version Control",
-                    "itemSubtitle": "Git",
+                    "itemSubtitle": "Managing your code",
                     "dataLocation": "c1_l2_p3",
                     "status": false
                 },
                 {
                     "id": 4,
                     "itemTitle": "Text Editors",
-                    "itemSubtitle": "Item subtitle",
+                    "itemSubtitle": "Choosing your text tools",
                     "dataLocation": "c1_l2_p4",
                     "status": false
                 }
@@ -79,16 +79,16 @@
                 {
                     "id": 1,
                     "itemTitle": "Intro to HTML",
-                    "itemSubtitle": "A brief explanation about HTML",
+                    "itemSubtitle": "Getting started with HTML",
                     "dataLocation": "c1_l3_p1",
-                    "status": false
+                    "status": true
                 },
                 {
                     "id": 2,
-                    "itemTitle": "Basic elements",
-                    "itemSubtitle": "Item Subtitle",
+                    "itemTitle": "HTML Skeleton",
+                    "itemSubtitle": "Structuring web content",
                     "dataLocation": "c1_l3_p2",
-                    "status": false
+                    "status": true
                 },
                 {
                     "id": 3,
@@ -100,21 +100,21 @@
                 {
                     "id": 4,
                     "itemTitle": "Lists",
-                    "itemSubtitle": "Item Subtitle",
+                    "itemSubtitle": "Organizing information with lists",
                     "dataLocation": "c1_l3_p4",
                     "status": false
                 },
                 {
                     "id": 5,
                     "itemTitle": "Image",
-                    "itemSubtitle": "Item Subtitle",
+                    "itemSubtitle": "Incorporating images",
                     "dataLocation": "c1_l3_p5",
                     "status": false
                 },
                 {
                     "id": 6,
                     "itemTitle": "Hyperlink",
-                    "itemSubtitle": "Item Subtitle",
+                    "itemSubtitle": "Linking your webpages and contents",
                     "dataLocation": "c1_l3_p6",
                     "status": false
                 }
@@ -126,42 +126,42 @@
                 {
                     "id": 1,
                     "itemTitle": "Intro to CSS",
-                    "itemSubtitle": "A brief explanation about CSS",
+                    "itemSubtitle": "Getting started with CSS",
                     "dataLocation": "c1_l4_p1",
                     "status": false
                 },
                 {
                     "id": 2,
                     "itemTitle": "Designing Texts",
-                    "itemSubtitle": "Item Subtitle",
+                    "itemSubtitle": "Enhancing text design",
                     "dataLocation": "c1_l4_p2",
                     "status": false
                 },
                 {
                     "id": 3,
                     "itemTitle": "Fonts",
-                    "itemSubtitle": "Item Subtitle",
+                    "itemSubtitle": "Exploring about fonts",
                     "dataLocation": "c1_l4_p3",
                     "status": false
                 },
                 {
                     "id": 4,
                     "itemTitle": "Backgrounds",
-                    "itemSubtitle": "Item Subtitle",
+                    "itemSubtitle": "creating backgrounds",
                     "dataLocation": "c1_l4_p4",
                     "status": false
                 },
                 {
                     "id": 5,
                     "itemTitle": "List Properties",
-                    "itemSubtitle": "Item Subtitle",
+                    "itemSubtitle": "mastering list styling",
                     "dataLocation": "c1_l4_p5",
                     "status": false
                 },
                 {
                     "id": 6,
                     "itemTitle": "Box Model",
-                    "itemSubtitle": "Item Subtitle",
+                    "itemSubtitle": "Understanding the box model",
                     "dataLocation": "c1_l4_p6",
                     "status": false
                 },
@@ -175,7 +175,7 @@
             ]
         },
         {
-            "id": 5,
+            "id": " ",
             "lessonListsItems": [
                 {
                     "id": 1,
