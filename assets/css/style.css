@@ -152,10 +152,19 @@ article {
     text-transform: capitalize;
 }
 
+.breadcrumbs-content a:hover {
+    /* color: var(--blue-500); */
+    text-decoration: underline;
+}
+
 .breadcrumbs-content svg {
     width: 1rem;
     min-width: 1rem;
 }
+
+/* .breadcrumbs-content a:visited {
+    color: var(--neutral-200);
+} */
 
 .breadcrumbs-content span {
     min-width: 40px;
@@ -164,9 +173,6 @@ article {
     overflow: hidden;
 }
 
-.breadcrumbs-content a:visited {
-    color: var(--neutral-200);
-}
 
 .page-nav-container {
     display: flex;
@@ -685,7 +691,6 @@ article {
 }
 
 .primary-highlight {
-    font-family: monospace;
     padding: .2rem;
     border-radius: .5rem;
     color: var(--rose-400);
