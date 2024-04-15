@@ -52,23 +52,9 @@
                 },
                 {
                     "id": 2,
-                    "itemTitle": "Basic Command Line",
-                    "itemSubtitle": "Command line essentials",
-                    "dataLocation": "c1_l2_p2",
-                    "status": false
-                },
-                {
-                    "id": 3,
-                    "itemTitle": "Version Control",
-                    "itemSubtitle": "Managing your code",
-                    "dataLocation": "c1_l2_p3",
-                    "status": false
-                },
-                {
-                    "id": 4,
                     "itemTitle": "Text Editors",
                     "itemSubtitle": "Choosing your text tools",
-                    "dataLocation": "c1_l2_p4",
+                    "dataLocation": "c1_l2_p2",
                     "status": false
                 }
             ]
@@ -81,14 +67,14 @@
                     "itemTitle": "Intro to HTML",
                     "itemSubtitle": "Getting started with HTML",
                     "dataLocation": "c1_l3_p1",
-                    "status": true
+                    "status": false
                 },
                 {
                     "id": 2,
                     "itemTitle": "HTML Skeleton",
                     "itemSubtitle": "Structuring web content",
                     "dataLocation": "c1_l3_p2",
-                    "status": true
+                    "status": false
                 },
                 {
                     "id": 3,
