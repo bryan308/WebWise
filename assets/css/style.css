@@ -816,7 +816,7 @@ details .ordered-list {
 .footer-grid-headers {
     color: var(--neutral-100);
     font-family: var(--accent-font);
-    font-size: var(--text-base);
+    font-size: var(--text-sm);
     text-transform: uppercase;
     margin-bottom: .5rem;
     line-height: 1.25rem;
