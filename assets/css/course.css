@@ -68,12 +68,12 @@
                 h4 {
                     font-family: var(--accent-font);
                     font-weight: 500;
-                    color: var(--violet-50);
+                    color: var(--header-color);
                 }
 
                 span {
                     text-overflow: ellipsis;
-                    color: var(--violet-200);
+                    color: var(--para-color);
                     font-size: var(--text-xs);
                 }
             }
