@@ -7,7 +7,6 @@
 @import url("/assets/css/courses.css");
 @import url("/assets/css/about.css");
 
-/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -702,6 +701,7 @@ article {
 }
 
 .primary-highlight {
+    font-family: monospace;
     padding: .2rem;
     border-radius: .5rem;
     color: var(--rose-400);
@@ -711,7 +711,7 @@ article {
 
 .secondary-highlight {
     font-weight: 500;
-    /* color: var(--neutral-300); */
+    color: hsl(215, 17%, 70%);
 }
 
 details {
