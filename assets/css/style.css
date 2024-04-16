@@ -799,7 +799,7 @@ details .ordered-list {
 
 .footer-logo-link span {
     color: var(--neutral-50);
-    font-size: var(--text-3xl);
+    font-size: var(--text-2xl);
     font-family: var(--logo-font);
     font-weight: 600;
     text-align: center;
