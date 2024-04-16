@@ -44,6 +44,7 @@
 
             .cc-img {
                 width: 35%;
+                aspect-ratio: 1/1;
 
                 img {
                     width: 100%;
@@ -105,7 +106,7 @@
                     img {
                         padding: 2px;
                         border-radius: 4px;
-                        background-color: #4e4e4ebf;
+                        /* background-color: #4e4e4ebf; */
                         width: var(--text-sm);
                     }
                 }

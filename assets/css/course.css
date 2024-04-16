@@ -32,15 +32,12 @@
 
         &:hover {
             box-shadow: 0 0 1.5rem 0.1rem var(--violet-800) inset;
-            /* background-color: var(--violet-900); */
-            background-color: #420779;
-            transform: scale(1.01);
+            background-color: #350661;
+            transform: scale(1.015);
         }
 
-        &:active,
-        &:focus {
+        &:active {
             box-shadow: 0 0 1.5rem 0.1rem var(--violet-600) inset;
-            /* background-color: var(--violet-800); */
             transform: scale(.99);
         }
 
@@ -82,8 +79,8 @@
             }
         }
 
-        &:focus .item-number,
-        &:hover .item-number {
+        &:hover .item-number,
+        &:focus .item-number {
             width: 24px;
             opacity: 1;
             margin-right: .5rem;

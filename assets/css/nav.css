@@ -9,14 +9,14 @@
 
 nav {
     display: flex;
-    background-color: #201f2480;
-    border: 1px solid #27262a;
-    backdrop-filter: blur(4px);
-    border-radius: .5rem;
     align-items: center;
+    background-color: #201f2480;
+    border: 1px solid #2e3c51;
+    width: 100%;
     min-height: 4rem;
     margin: 1rem;
-    width: 100%;
+    border-radius: .5rem;
+    backdrop-filter: blur(4px);
 }
 
 .nav-container {
@@ -270,7 +270,7 @@ nav {
     }
 
     .md-nav-link:hover svg {
-        color: var(--violet-500);
+        color: var(--violet-400);
     }
 
     .md-nav-link:focus {
