@@ -415,13 +415,13 @@ article {
 
 .gallery-grid .grid-item7 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--violet-800)),
-        url(/assets/images/svgs/thumbnail8.jpg);
+        url(/assets/images/thumbnail8.jpg);
     grid-area: 5 / 1 / 9 / 2;
 }
 
 .gallery-grid .grid-item8 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--violet-800)),
-        url(/assets/images/thumbnail8.svg);
+        url(/assets/images/svgs/thumbnail8.svg);
     grid-area: 5 / 2 / 7 / 4;
 }
 
