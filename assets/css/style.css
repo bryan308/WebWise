@@ -379,7 +379,7 @@ article {
 
 .gallery-grid .grid-item1 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--violet-800)),
-        url(/assets/images/thumbnail4.jpg);
+        url(/assets/images/thumbnail7.jpg);
     grid-area: 1 / 1 / 3 / 2;
 }
 
@@ -397,7 +397,7 @@ article {
 
 .gallery-grid .grid-item4 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--violet-800)),
-        url(/assets/images/29872559.png);
+        url(/assets/images/thumbnail6.jpg);
     grid-area: 3 / 1 / 5 / 3;
 }
 
