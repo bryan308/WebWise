@@ -4,30 +4,29 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    <link rel="shortcut icon" href="/assets/images/svgs/logo.svg" type="image/x-icon" />
     <title>Page not Found</title>
 </head>
 
-<body>
-    <!-- <body oncontextmenu="return false"> -->
-    <!-- <div class="sidebar-wrapper"></div>
-    <nav class="navbar"></nav> -->
-    <main>
+<body style="background-color: var(--violet-950);">
+    <main animate="fadeIn">
         <div class="main-wrapper">
-            <article animate="fadeIn">
+            <article>
                 <div class="article-container">
-                    <h1 style="font-size: var(--text-7xl); text-align: center;">404</h1>
-                    <h3 style="color: var(--text-gray-400); text-align: center;">Page not found</h3>
-                    <button class="primary-btn" style="display: block; margin: 1rem auto;" onclick="history.back()">Go Back</button>
-                    <!-- <button class="primary-btn" style="display: block; margin: 1rem auto;" onclick="window.close()">Go Back</button> -->
+                    <img style="display: block; margin: auto; max-width: 350px;" src="/assets/images/404.svg" alt="404 image">
+                    <h3 style="color: var(--violet-400); text-align: center;">404 not found</h3>
+                    <h2 style="color: var(--violet-50); text-align: center; margin-bottom: 1rem;">Whoops! That page doesn't exist.</h2>
+                    <p style="text-align: center; color: var(--violet-200);">Here are some helpful links instead:</p>
+                    <p style="text-align: center; font-size: var(--text-sm);">
+                        <a style="margin: 0 1rem;" class="primary-link" href="/">Home</a>
+                        <a style="margin: 0 1rem;" class="primary-link hyperlink" href="" data-location="contact">Contact</a>
+                    </p>
+                    <!-- <button class="primary-btn" style="display: block; margin: 1rem auto; border: none;" onclick="history.back()">Go Back</button> -->
                 </div>
             </article>
         </div>
     </main>
-    <!-- <footer class="footer"></footer>
-    <script src="/assets/js/components/nav.js"></script>
-    <script src="/assets/js/components/footer.js"></script> -->
     <script src="/assets/js/routing.js"></script>
 </body>
 
