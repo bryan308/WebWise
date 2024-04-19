@@ -28,6 +28,7 @@
 }
 
 .lesson-list-items .topic-item:hover {
+    border: 1px solid var(--violet-900);
     background-color: #0b1438;
     transform: scale(1.015)
 }

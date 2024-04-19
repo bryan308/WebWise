@@ -42,7 +42,13 @@ body {
     font-family: var(--base-font);
     color: var(--neutral-50);
     background-color: var(--bg);
+    /* filter: saturate(130%); */
     scrollbar-width: thin
+}
+
+button {
+    font-family: var(--base-font);
+    cursor: pointer;
 }
 
 hr {
@@ -115,6 +121,12 @@ article {
     color: var(--violet-600)
 }
 
+@media (max-width: 768px) {
+    .article-image img {
+        max-width: 80%
+    }
+}
+
 .breadcrumbs-container {
     display: flex;
     align-items: center;
@@ -167,7 +179,9 @@ article {
 .page-nav-container {
     display: flex;
     justify-content: space-between;
-    padding: 2.5rem 0
+    padding: 2.5rem 0;
+    max-width: 80rem;
+    margin: auto;
 }
 
 @media (max-width:768px) {
@@ -348,10 +362,10 @@ article {
 .banner-container {
     width: 100%;
     padding: 2rem 0;
+}
 
-    img {
-        width: 100%
-    }
+.banner-container img {
+    width: 100%
 }
 
 
@@ -453,6 +467,7 @@ article {
 
 .grid-item-text span {
     color: var(--violet-200);
+    line-height: 1;
     font-size: var(--text-sm)
 }
 
@@ -1007,15 +1022,17 @@ details .ordered-list {
     border: 1px solid var(--gray-600);
     border-radius: 4px;
     background-color: var(--gray-800);
+    cursor: pointer;
     transition: all .2s ease
 }
 
 .form-container form .form-buttons button svg {
     position: absolute;
     transform: translateX(-50%);
-    left: 1rem;
-    width: 1rem;
-    fill: var(--neutral-200)
+    left: 1.5rem;
+    top: .75rem;
+    width: 1.5rem;
+    fill: var(--neutral-500)
 }
 
 .form-container form .form-buttons button:hover {

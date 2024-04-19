@@ -20,18 +20,18 @@ nav {
 }
 
 nav {
-    background-color: #201f2480;
+    background-color: #20202080;
     border: 1px solid #2e3c51;
     min-height: 4rem;
     margin: 1rem;
     border-radius: .5rem;
+    max-width: 80rem;
     backdrop-filter: blur(4px)
 }
 
 .nav-container {
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 80rem;
     margin: 0 auto;
     padding: .75rem
 }
@@ -41,7 +41,7 @@ nav {
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 8px
+    /* padding: 8px */
 }
 
 .logo-container img {
@@ -100,30 +100,34 @@ nav {
     border: 1px solid var(--gray-600)
 }
 
+.nav-btn-wrapper {
+    min-width: 135px;
+}
+
 .nav-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--violet-50);
     font-weight: 400;
-    background: var(--violet-500);
+    background: var(--violet-600);
     border-radius: 8px;
-    transition: .2s ease
+    transition: all .2s ease
 }
 
 .nav-btn:hover {
     transform: scale(1.015);
-    background: var(--violet-600)
+    background: var(--violet-700)
 }
 
 .nav-btn:focus {
     outline-offset: 2px;
-    outline: var(--violet-600) solid 1px;
-    background: var(--violet-700)
+    outline: var(--violet-700) solid 1px;
+    background: var(--violet-800)
 }
 
 .nav-btn:active {
-    background: var(--violet-700);
+    background: var(--violet-900);
     outline: none;
     transform: scale(.99)
 }
