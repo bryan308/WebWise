@@ -36,11 +36,12 @@
 }
 
 .about-grid .about-grid-item .grid-item-text h3 {
+    color: var(--neutral-200);
     margin-bottom: .5rem;
 }
 
 .about-grid .about-grid-item .grid-item-text p {
-    color: var(--neutral-300);
+    color: var(--neutral-400);
     font-size: var(--text-sm);
 }
 
@@ -75,10 +76,12 @@
 }
 
 .overview-grid .overview-grid-item h3 {
+    color: var(--neutral-200);
     margin-bottom: .5rem;
 }
 
 .overview-grid .overview-grid-item p {
+    color: var(--neutral-400);
     font-size: var(--text-sm);
 }
 
