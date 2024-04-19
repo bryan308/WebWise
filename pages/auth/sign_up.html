@@ -19,13 +19,32 @@
             <h1 class="header-title">Sign Up</h1>
             <div class="form-container">
                 <form action="">
+                    <div class="form-action">
+                        <span>Already have an account?</span><a class="primary-link hyperlink" href="" data-location="sign_in">Sign in</a>
+                    </div>
+                    <div class="form-buttons">
+                        <button class="secondary-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                            </svg> Continue with GitHub </button>
+                        <button class="secondary-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+                            </svg> Continue with Google </button>
+                    </div>
+                    <div class="form-group-divider">
+                        <hr />
+                        <span>or</span>
+                    </div>
                     <div class="form-group">
                         <label for="">Username</label>
-                        <input type="text">
+                        <input type="text" maxlength="12">
                     </div>
                     <div class="form-group">
                         <label for="">Email address</label>
-                        <input type="text">
+                        <input type="email" autocomplete="off">
                     </div>
                     <div class="form-group">
                         <label for="">Password</label>
@@ -34,34 +53,13 @@
                     <div class="form-group">
                         <label for="">Password confirmation</label>
                         <input type="password">
-                        <a href="">forgot your password?</a>
                     </div>
-                    <button class="primary-btn">Sign in</button>
                     <div class="form-group-actions">
-                        <div>
+                        <div class="center">
                             <a href="">By signing up, you agree to our term of use.</a>
                         </div>
                     </div>
-                    <div class="form-group-divider">
-                        <hr />
-                        <span>or continue with</span>
-                    </div>
-                    <div class="form-buttons">
-                        <button class="secondary-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                            </svg>
-                        </button>
-                        <button class="secondary-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-google"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
-                            </svg>
-                        </button>
-                    </div>
+                    <button class="primary-btn">Sign up</button>
                 </form>
             </div>
         </div>
@@ -70,15 +68,13 @@
         <div class="support-container">
             <div class="text-content">
                 <h1> Support Us </h1>
-                <p class="paragraph">
-                    Help us keep WebWise free for all. Every donation fuels our mission to provide accessible web
-                    development education. Join us in empowering learners worldwise!
-                </p>
+                <p class="paragraph"> Help us keep WebWise free for all. Every donation fuels our mission to provide accessible web
+                    development education. Join us in empowering learners worldwise! </p>
             </div>
             <div class="support-actions">
                 <a href="" class="secondary-btn" title="learn">Learn more</a>
-                <a href="" class="primary-btn" title="donate"> Donate now <svg xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <a href="" class="primary-btn" title="donate"> Donate now <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                 </a>
