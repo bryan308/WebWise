@@ -81,7 +81,8 @@ nav {
     padding: .75rem 1rem
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
     color: var(--violet-300)
 }
 
@@ -107,7 +108,24 @@ nav {
     font-weight: 400;
     background: var(--violet-500);
     border-radius: 8px;
-    transition: .2s cubic-bezier(0, 0, .2, 1)
+    transition: .2s ease
+}
+
+.nav-btn:hover {
+    transform: scale(1.015);
+    background: var(--violet-600)
+}
+
+.nav-btn:focus {
+    outline-offset: 2px;
+    outline: var(--violet-600) solid 1px;
+    background: var(--violet-700)
+}
+
+.nav-btn:active {
+    background: var(--violet-700);
+    outline: none;
+    transform: scale(.99)
 }
 
 .sidebar-wrapper {
@@ -123,14 +141,14 @@ nav {
     width: -webkit-fill-available;
     opacity: 1;
     background: #000;
-    transition: opacity 2s cubic-bezier(0, 0, .2, 1);
+    transition: opacity 2s ease;
     z-index: 60
 }
 
 .burger,
 .md-nav-menu .close-nav {
     display: none;
-    transition: .2s cubic-bezier(0, 0, .2, 1)
+    transition: .2s ease
 }
 
 .burger {
