@@ -250,7 +250,8 @@ article {
 .report-issue a svg {
     vertical-align: middle;
     width: 14px;
-    height: 14px
+    height: 14px;
+    margin-right: .25rem;
 }
 
 @keyframes logo-fill-delay {
@@ -907,8 +908,13 @@ details .ordered-list {
 }
 
 .form-container form .form-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
     color: var(--neutral-300);
     font-size: var(--text-sm);
+    margin-top: 1.5rem;
 }
 
 .form-container form .form-action a {
