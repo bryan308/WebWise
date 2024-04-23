@@ -1,0 +1,64 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "itemTitle": "Internet",
+            "itemSubtitle": "Navigating the Digital Realm: Understanding the Backbone of the Web and the Intricacies of the Internet Connectivity",
+            "dataLocation": "c1_l1_p2"
+        },
+        {
+            "id": 2,
+            "itemTitle": "Development Lifecycle",
+            "itemSubtitle": "From Concept to Creation: Unveiling the Web Development lifecycle and the Key Stages Involved in Bringing Digital Projects to Life.",
+            "dataLocation": "c1_l1_p3"
+        },
+        {
+            "id": 3,
+            "itemTitle": "Computer Basics",
+            "itemSubtitle": "Mastering the Machine: Essential Computer Knowledge for Web Development, Including Hardware, Software, and Operating Systems.",
+            "dataLocation": "c1_l2_p1"
+        },
+        {
+            "id": 4,
+            "itemTitle": "Text Editors",
+            "itemSubtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus ratione quos quas eius voluptate provident fuga consectetur..",
+            "dataLocation": "c1_l2_p2"
+        },
+        {
+            "id": 5,
+            "itemTitle": "Basic Elements",
+            "itemSubtitle": "Building Blocks of the Web: Exploring Essential HTML Elements for Creating Structured and accessible web content.",
+            "dataLocation": "c1_l3_p2"
+        },
+        {
+            "id": 6,
+            "itemTitle": "HTML Lists",
+            "itemSubtitle": "Structuring Information: Harnessing the power of HTML Lists to organize and present content effectively on webpages.",
+            "dataLocation": "c1_l3_p4"
+        },
+        {
+            "id": 7,
+            "itemTitle": "Designing Texts",
+            "itemSubtitle": "Crafting Visual Appeal: Techniques for text design in web development to enhance readability and user engagement.",
+            "dataLocation": "c1_l4_p2"
+        },
+        {
+            "id": 8,
+            "itemTitle": "Lists Properties",
+            "itemSubtitle": "Styling Structures: Manipulating HTML Lists with CSS properties to customize appearance and improve user experience.",
+            "dataLocation": "c1_l4_p5"
+        },
+        {
+            "id": 9,
+            "itemTitle": "Box Model",
+            "itemSubtitle": "Understanding Layout: Delving into the CSS Box Model and how it shpaes the visual structure of webpages.",
+            "dataLocation": "c1_l4_p6"
+        },
+        {
+            "id": 10,
+            "itemTitle": "Block and Inline",
+            "itemSubtitle": "Layout Fundamentals: Distinguishing Between Block and Inline Elements and their impact on webpage layout and design.",
+            "dataLocation": "c1_l4_p7"
+        }
+    ]
+}

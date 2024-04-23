@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             async function getPath(route) {
-                return new Promise((resolve, reject) => {
+                return new Promise((resolve) => {
                     setTimeout(() => {
                         const path = routes[route] || null;
                         resolve(path);
