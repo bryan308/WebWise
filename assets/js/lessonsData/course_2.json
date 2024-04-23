@@ -5,38 +5,31 @@
             "lessonListsItems": [
                 {
                     "id": 1,
-                    "dataLocation": "c2_l1_p1",
-                    "itemTitle": "Lesson 1 Part 1",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "Introduction",
+                    "itemSubtitle": "",
+                    "status": false
                 },
                 {
                     "id": 2,
-                    "dataLocation": "c2_l1_p2",
-                    "itemTitle": "Lesson 1 Part 2",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "Emmet",
+                    "itemSubtitle": "",
+                    "status": false
                 },
                 {
                     "id": 3,
-                    "dataLocation": "c2_l1_p3",
-                    "itemTitle": "Lesson 1 Part 3",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "SVG",
+                    "itemSubtitle": "",
+                    "status": false
                 },
                 {
                     "id": 4,
-                    "dataLocation": "c2_l1_p4",
-                    "itemTitle": "Lesson 1 Part 4",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
-                },
-                {
-                    "id": 5,
-                    "dataLocation": "c2_l1_p5",
-                    "itemTitle": "Lesson 1 Part 5",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "Tables",
+                    "itemSubtitle": "",
+                    "status": false
                 }
             ]
         },
@@ -45,38 +38,73 @@
             "lessonListsItems": [
                 {
                     "id": 1,
-                    "dataLocation": "c2_l2_p1",
-                    "itemTitle": "Lesson 2 Part 1",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "Default Styles",
+                    "itemSubtitle": "",
+                    "status": false
                 },
                 {
                     "id": 2,
-                    "dataLocation": "c2_l2_p2",
-                    "itemTitle": "Lesson 2 Part 2",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "CSS Units",
+                    "itemSubtitle": "",
+                    "status": false
                 },
                 {
                     "id": 3,
-                    "dataLocation": "c2_l2_p3",
-                    "itemTitle": "Lesson 2 Part 3",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "More Text Styles",
+                    "itemSubtitle": "",
+                    "status": false
                 },
                 {
                     "id": 4,
-                    "dataLocation": "c2_l2_p4",
-                    "itemTitle": "Lesson 2 Part 4",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "More CSS Properties",
+                    "itemSubtitle": "",
+                    "status": false
                 },
                 {
                     "id": 5,
-                    "dataLocation": "c2_l2_p5",
-                    "itemTitle": "Lesson 2 Part 5",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "Advanced Selectors",
+                    "itemSubtitle": "",
+                    "status": false
+                },
+                {
+                    "id": 6,
+                    "dataLocation": " ",
+                    "itemTitle": "Positioning",
+                    "itemSubtitle": "",
+                    "status": false
+                },
+                {
+                    "id": 7,
+                    "dataLocation": " ",
+                    "itemTitle": "CSS Functions",
+                    "itemSubtitle": "",
+                    "status": false
+                },
+                {
+                    "id": 8,
+                    "dataLocation": " ",
+                    "itemTitle": "Custom Properties",
+                    "itemSubtitle": "",
+                    "status": false
+                },
+                {
+                    "id": 9,
+                    "dataLocation": " ",
+                    "itemTitle": "Browser Compatibility",
+                    "itemSubtitle": "",
+                    "status": false
+                },
+                {
+                    "id": 10,
+                    "dataLocation": " ",
+                    "itemTitle": "Frameworks and Preprocessors",
+                    "itemSubtitle": "",
+                    "status": false
                 }
             ]
         },
@@ -85,38 +113,17 @@
             "lessonListsItems": [
                 {
                     "id": 1,
-                    "dataLocation": "c2_l3_p1",
-                    "itemTitle": "Lesson 3 Part 1",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "Form Basics",
+                    "itemSubtitle": "",
+                    "status": false
                 },
                 {
                     "id": 2,
-                    "dataLocation": "c2_l3_p2",
-                    "itemTitle": "Lesson 3 Part 2",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
-                },
-                {
-                    "id": 3,
-                    "dataLocation": "c2_l3_p3",
-                    "itemTitle": "Lesson 3 Part 3",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
-                },
-                {
-                    "id": 4,
-                    "dataLocation": "c2_l3_p4",
-                    "itemTitle": "Lesson 3 Part 4",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
-                },
-                {
-                    "id": 5,
-                    "dataLocation": "c2_l3_p5",
-                    "itemTitle": "Lesson 3 Part 5",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "Form Validation",
+                    "itemSubtitle": "",
+                    "status": false
                 }
             ]
         },
@@ -125,38 +132,38 @@
             "lessonListsItems": [
                 {
                     "id": 1,
-                    "dataLocation": "c2_l4_p1",
-                    "itemTitle": "Lesson 4 Part 1",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "Introduction to Grid",
+                    "itemSubtitle": "",
+                    "status": false
                 },
                 {
                     "id": 2,
-                    "dataLocation": "c2_l4_p2",
-                    "itemTitle": "Lesson 4 Part 2",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "Creating a Grid",
+                    "itemSubtitle": "",
+                    "status": false
                 },
                 {
                     "id": 3,
-                    "dataLocation": "c2_l4_p3",
-                    "itemTitle": "Lesson 4 Part 3",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "Positioning Grid Elements",
+                    "itemSubtitle": "",
+                    "status": false
                 },
                 {
                     "id": 4,
-                    "dataLocation": "c2_l4_p4",
-                    "itemTitle": "Lesson 4 Part 4",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "Advanced Grid Properties",
+                    "itemSubtitle": "",
+                    "status": false
                 },
                 {
                     "id": 5,
-                    "dataLocation": "c2_l4_p5",
-                    "itemTitle": "Lesson 4 Part 5",
-                    "itemSubtitle": "Item subtitle",
-                    "status": true
+                    "dataLocation": " ",
+                    "itemTitle": "Using Flexbox and Grid",
+                    "itemSubtitle": "",
+                    "status": false
                 }
             ]
         }

@@ -19,23 +19,16 @@
                 },
                 {
                     "id": 3,
-                    "itemTitle": "Webpage vs. Website",
-                    "itemSubtitle": "Key differences explained",
+                    "itemTitle": "Development Lifecycle",
+                    "itemSubtitle": "Navigating the development lifecycle journey",
                     "dataLocation": "c1_l1_p3",
                     "status": false
                 },
                 {
                     "id": 4,
-                    "itemTitle": "Development Lifecycle",
-                    "itemSubtitle": "Navigating the development lifecycle journey",
-                    "dataLocation": "c1_l1_p4",
-                    "status": false
-                },
-                {
-                    "id": 5,
                     "itemTitle": "Web Development Languages",
-                    "itemSubtitle": "Item subtitle",
-                    "dataLocation": "c1_l1_p5",
+                    "itemSubtitle": "Exploring Essential Web Languages",
+                    "dataLocation": "c1_l1_p4",
                     "status": false
                 }
             ]
@@ -71,7 +64,7 @@
                 },
                 {
                     "id": 2,
-                    "itemTitle": "HTML Skeleton",
+                    "itemTitle": "HTML Boilerplate",
                     "itemSubtitle": "Structuring web content",
                     "dataLocation": "c1_l3_p2",
                     "status": false
@@ -79,7 +72,7 @@
                 {
                     "id": 3,
                     "itemTitle": "HTML for Texts",
-                    "itemSubtitle": "Item Subtitle",
+                    "itemSubtitle": "Enhacning text presentation",
                     "dataLocation": "c1_l3_p3",
                     "status": false
                 },
