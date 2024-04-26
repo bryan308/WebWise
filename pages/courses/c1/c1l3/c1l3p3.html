@@ -39,7 +39,7 @@
                 <section>
                     <div class="section-container">
                         <div class="section-header">
-                            <img src="/assets/images/pngs/book.png" alt="fundamentals course icon">
+                            <img src="/assets/images/pngs/book.png" alt="course icon" />
                             <h1 class="header-title">HTML for Texts</h1>
                             <p>Fundamentals Course</p>
                         </div>
@@ -67,7 +67,7 @@
                             <p class="paragraph">
                                 Since you already know the basic structure of a webpage, let's now try to put contents in the webpage.
                                 Again, to show the contents in a webpage you need to put the contents inside the
-                                <span class="primary-highlight">&lt;body&gt;</span> and <span class="primary-highlight">&lt;/body&gt;</span>
+                                <span class="pri-hl">&lt;body&gt;</span> and <span class="pri-hl">&lt;/body&gt;</span>
                                 tags.
                             </p>
 <pre><code data-language="html">&lt;!DOCTYPE html&gt;
@@ -85,11 +85,36 @@
 &lt;/html&gt;</code></pre>
                             <h3 class="article-header">Output:</h3>
                             <div class="article-image">
-                                <img src="/assets/images/c1images/l3/output1.jpg" alt="nested paragraph output">
+                                <img src="/assets/images/c1images/l3/output-1.png" alt="nested paragraph output" />
                             </div>
                             <p class="paragraph">
-                                Why did the second line did not create another line? blablabla
+                                In HTML, by default, consecutive lines of text are displayed without line breaks. In other words, multiple 
+                                spaces, tabs, and line breaks in the HTML code are collapsed into a single space when rendered in the browser. 
+                                Therefore, even though we have placed each line of text on a separate line in the HTML code, they appear as a 
+                                single continuous line in the browser.
                             </p>
+                            <p class="paragraph">
+                                To create a new line in the rendered output, we need to use the line break tag 
+                                <span class="pri-hl">&lt;br /&gt;</span> after each line of text that 
+                                we want to appear on a new line. Let's modify the HTML code to include line break tags:
+                            </p>
+<pre><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8" /&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+        &lt;title&gt;My First Web Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        Hello! This is the first line.&lt;br /&gt;
+        Hello! This is the second line.&lt;br /&gt;
+        Hello! This is the third line.&lt;br /&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        <h3 class="article-header">Output:</h3>
+                        <div class="article-image">
+                            <img src="/assets/images/c1images/l3/br-output.png" alt="nested paragraph output" />
+                        </div>
                         </article>
                         <article>
                             <h3 class="article-header">Headings</h3>
@@ -97,48 +122,48 @@
                                 The HTML heading elements are very important when determining the style and structure of text within web pages.
                             </p>
                             <p class="paragraph">
-                                There are six section heading elements, <span class="primary-highlight">&lt;h1&gt;</span><span class="primary-highlight">&lt;/h1&gt;</span>
-                                to <span class="primary-highlight">&lt;h6&gt;</span><span class="primary-highlight">&lt;/h6&gt;</span>.
-                                <span class="primary-highlight">&lt;h1&gt;</span> being the largest size by default and most important by search engines.
-                                <span class="primary-highlight">&lt;h6&gt;</span> being the smallest and least important of the text headings within a web page.
+                                There are six section heading elements, <span class="pri-hl">&lt;h1&gt;</span><span class="pri-hl">&lt;/h1&gt;</span>
+                                to <span class="pri-hl">&lt;h6&gt;</span><span class="pri-hl">&lt;/h6&gt;</span>.
+                                <span class="pri-hl">&lt;h1&gt;</span> being the largest size by default and most important by search engines.
+                                <span class="pri-hl">&lt;h6&gt;</span> being the smallest and least important of the text headings within a web page.
                             </p>
                             <div class="lesson-card" card-type="tips">
                                 <h4 class="card-h"></h4>
                                 <p class="paragraph">
-                                    Search enginges will not penalize multiple uses of <span class="primary-highlight">&lt;h1&gt;</span>, but one use of an
-                                    <span class="primary-highlight">&lt;h1&gt;</span> per page is often preferred. Multiple uses of all the other headings are
+                                    Search enginges will not penalize multiple uses of <span class="pri-hl">&lt;h1&gt;</span>, but one use of an
+                                    <span class="pri-hl">&lt;h1&gt;</span> per page is often preferred. Multiple uses of all the other headings are
                                     common and encouraged.
                                 </p>
                                 <p class="paragraph">
-                                    By default, the <span class="primary-highlight">&lt;h4&gt;</span> heading is the same size as the <span class="primary-highlight">&lt;p&gt;</span>,
-                                    which is <span class="secondary-highlight">16px</span>.
+                                    By default, the <span class="pri-hl">&lt;h4&gt;</span> heading is the same size as the <span class="pri-hl">&lt;p&gt;</span>,
+                                    which is <span class="sec-hl">16px</span>.
                                 </p>
                                 <p class="paragraph">
-                                    Don't skip heading sequences, like using <span class="primary-highlight">&lt;h1&gt;</span> and then an <span
-                                        class="primary-highlight">&lt;h3&gt;</span>.
-                                    You'll only want to use <span class="primary-highlight">&lt;h3&gt;</span> if you both have <span class="primary-highlight">&lt;h1&gt;</span> &
-                                    <span class="primary-highlight">&lt;h2&gt;</span> on the page.
+                                    Don't skip heading sequences, like using <span class="pri-hl">&lt;h1&gt;</span> and then an <span
+                                        class="pri-hl">&lt;h3&gt;</span>.
+                                    You'll only want to use <span class="pri-hl">&lt;h3&gt;</span> if you both have <span class="pri-hl">&lt;h1&gt;</span> &
+                                    <span class="pri-hl">&lt;h2&gt;</span> on the page.
                                 </p>
                             </div>
                         </article>
                         <article>
                             <h3 class="article-header">Paragraphs</h3>
                             <p class="paragraph">
-                                In HTML, the <span class="primary-highlight">&lt;p&gt;</span> defines the start of the paragraph and the
-                                <span class="primary-highlight">&lt;/p&gt;</span> defines the end.
+                                In HTML, the <span class="pri-hl">&lt;p&gt;</span> defines the start of the paragraph and the
+                                <span class="pri-hl">&lt;/p&gt;</span> defines the end.
                             </p>
                             <pre><code data-language="html">&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
-                            <p class="secondary-highlight">The defaults of the paragraphs:</p>
+                            <p class="sec-hl">The defaults of the paragraphs:</p>
                             <ul class="unordered-list">
-                                <li>The font size is <span class="secondary-highlight">16px</span> (pixels).</li>
-                                <li>The alignment is <span class="secondary-highlight">left aligned</span>.</li>
-                                <li>The font family is <span class="secondary-highlight">Times New Roman</span>.</li>
+                                <li>The font size is <span class="sec-hl">16px</span> (pixels).</li>
+                                <li>The alignment is <span class="sec-hl">left aligned</span>.</li>
+                                <li>The font family is <span class="sec-hl">Times New Roman</span>.</li>
                                 <li>There is a margin of space around the top and the bottom of each paragraph that is typically
-                                    <span class="secondary-highlight">1em</span> or equivalent to <span class="secondary-highlight">16px</span>.
+                                    <span class="sec-hl">1em</span> or equivalent to <span class="sec-hl">16px</span>.
                                 </li>
                             </ul>
                             <p class="paragraph">
-                                Paragraph <span class="primary-highlight">&lt;p&gt;</span> can be nested, for now there is no magical like happening but
+                                Paragraph <span class="pri-hl">&lt;p&gt;</span> can be nested, for now there is no magical like happening but
                                 in some later lessons you will appriciate them.
                             </p>
 <pre><code data-language="html">&lt;p&gt;
@@ -155,18 +180,12 @@ This is a paragraph.
 &lt;/p&gt;</code></pre>
                             <h3 class="article-header">Output:</h3>
                             <div class="article-image">
-                                <img src="/assets/images/c1images/l3/nested-paragraph-output.jpg" alt="nested paragraph output">
+                                <img src="/assets/images/c1images/l3/nested-paragraph-output.png" alt="nested paragraph output" />
                             </div>
                             <p class="paragraph">
-                                The result explains the behavior of <span class="secondary-highlight">block elements</span>, each of the 
-                                    <span class="primary-highlight">&lt;p&gt;</span> tags occupy a whole line, and the spacing above and 
+                                The result explains the behavior of <span class="sec-hl">block elements</span>, each of the 
+                                    <span class="pri-hl">&lt;p&gt;</span> tags occupy a whole line, and the spacing above and 
                                     below them is constant.
-                            </p>
-                        </article>
-                        <article>
-                            <h3 class="article-header"></h3>
-                            <p class="paragraph">
-                                <!-- template -->
                             </p>
                         </article>
                         <article>
@@ -176,10 +195,10 @@ This is a paragraph.
                             </p>
                             <ul class="unordered-list">
                                 <li>
-                                    <a href="http://" target="_blank" class="primary-link">Quotation and Citation Elements</a>
+                                    <a href="http://" target="_blank" class="pri-link">Quotation and Citation Elements</a>
                                 </li>
                                 <li>
-                                    <a href="http://" target="_blank" class="primary-link">Formatting elements</a>
+                                    <a href="http://" target="_blank" class="pri-link">Formatting elements</a>
                                 </li>
                             </ul>
                         </article>
@@ -189,22 +208,21 @@ This is a paragraph.
                                     stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
                                     <line x1="4" y1="22" x2="4" y2="15"></line>
-                                </svg>
-                                report an issue 
+                                </svg>report an issue 
                             </a>
                         </span>
                     </div>
                 </section>
                 <hr />
                 <div class="page-nav-container">
-                    <a href="" class="secondary-btn hyperlink" data-location="c1_l3_p2" tippy="c1_l3_p2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                            stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
-                        </svg> Previous </a>
-                    <a href="" class="primary-btn hyperlink" data-location="sign_in" tippy="signIn">Track progress</a>
-                    <a href="" class="secondary-btn hyperlink" data-location="c1_l3_p4" tippy="c1_l3_p4"> Next Topic <svg
+                    <a href="" class="sec-btn hyperlink" data-location="c1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg> 
+                        Back to Course
+                    </a>
+                    <a href="" class="pri-btn hyperlink" data-location="sign_in" tippy="signIn">Track progress</a>
+                    <a href="" class="sec-btn hyperlink" data-location="c1_l3_p4" tippy="c1_l3_p4"> Next Topic <svg
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                             stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round"
