@@ -1,4 +1,6 @@
-const $ = (e) => { return document.querySelector(e); }
+const $ = (e) => {
+    return document.querySelector(e);
+};
 
 document.addEventListener("DOMContentLoaded", () => {
     const toggle = $("#burger");
@@ -29,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
             left: "0rem",
             display: ["block", "flex"],
             opacity: "0.7",
-        }
-    }
+        },
+    };
 
     function hideSidebar() {
         setTimeout(() => {
@@ -163,5 +165,5 @@ const navbar_component = `
 </div>
 `;
 
-$('.sidebar-wrapper').innerHTML = md_nav;
-$('.navbar').innerHTML = navbar_component;
+$(".sidebar-wrapper").innerHTML = md_nav;
+$(".navbar").innerHTML = navbar_component;

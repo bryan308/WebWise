@@ -1,4 +1,3 @@
-
 const support_card = `
 <div class="support-container">
     <div class="text-content">
@@ -9,8 +8,8 @@ const support_card = `
         </p>
     </div>
     <div class="support-actions">
-        <a class="secondary-btn hyperlink" href="" data-location="">Learn more</a>
-        <a class="primary-btn hyperlink" href="" data-location=""> Donate now 
+        <a class="sec-btn hyperlink" href="" data-location="">Learn more</a>
+        <a class="pri-btn hyperlink" href="" data-location=""> Donate now 
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -19,7 +18,7 @@ const support_card = `
 </div>
 `;
 
-$('.support-wrapper').innerHTML = support_card;
+$(".support-wrapper").innerHTML = support_card;
 
 const footer_component = `
 <div class="footer-wrapper">
@@ -109,4 +108,4 @@ const footer_component = `
 </div>
 `;
 
-$('.footer').innerHTML = footer_component;
+$(".footer").innerHTML = footer_component;
