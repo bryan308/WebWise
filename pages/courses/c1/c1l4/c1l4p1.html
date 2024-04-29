@@ -101,7 +101,7 @@
                                 <li>
                                     <p class="sec-hl">Internal CSS</p>
                                     <p class="paragraph">
-                                        Internal CSS refers to styling rules declared within the <span class="pri-hl">&lt;style"&gt;</span> element in the head section of an HTML document, affecting the 
+                                        Internal CSS refers to styling rules declared within the <span class="pri-hl">&lt;style&gt;</span> element in the head section of an HTML document, affecting the 
                                         appearance of multiple elemenets within that document.
                                     </p>
 
@@ -315,7 +315,7 @@
                                     <p class="sec-hl">Group Selector</p>
                                     <p class="paragraph">
                                         The concept of grouping selectors comes into play when we encounter situations where multiple groups of elements share some common style declarations. Take, for 
-                                        instance, the scenario where we have two groups of elements, one marked as "<span class="pri-hl">.read</span> and the other as "<span class="pri-hl">.unread</span>", 
+                                        instance, the scenario where we have two groups of elements, one marked as <span class="pri-hl">.read</span> and the other as <span class="pri-hl">.unread</span>, 
                                         both of which have identical color and background-color 
                                         declarations, along with several unique ones of their own.
                                     </p>
@@ -332,7 +332,7 @@
     /* several unique declarations */
 }</code></pre>
                                     <p class="paragraph">
-                                        In the above example, both "<span class="pri-hl">.read</span>" and "<span class="pri-hl">.unread</span>" selectors share the color and background-color declarations, reducing repetition. This approach streamlines the code 
+                                        In the above example, both <span class="pri-hl">.read</span> and <span class="pri-hl">.unread</span> selectors share the color and background-color declarations, reducing repetition. This approach streamlines the code 
                                         and makes it more efficient to modify shared properties across multiple classes simultaneously.
                                     </p>
                                 </li>
@@ -348,7 +348,7 @@
 &lt;/div&gt;</code></pre>
 
                                     <p class="paragraph">
-                                        Suppose we want to apply a specific style to elements that have both the "<span class="pri-hl">subsection</span>" and "<span class="pri-hl">header</span>" classes. We can achieve this by chaining the class selectors together 
+                                        Suppose we want to apply a specific style to elements that have both the <span class="pri-hl">subsection</span> and <span class="pri-hl">header</span> classes. We can achieve this by chaining the class selectors together 
                                         in our CSS:
                                     </p>
 
@@ -357,7 +357,7 @@
 }</code></pre>
 
                                     <p class="paragraph">
-                                        In this example, the "<span class="pri-hl">.subsection.header</span>" selector targets any element that has both the "<span class="pri-hl">subsection</span>" and "<span class="pri-hl">header</span>" classes. Note that there is no space between the 
+                                        In this example, the <span class="pri-hl">.subsection.header</span> selector targets any element that has both the <span class="pri-hl">subsection</span> and <span class="pri-hl">header</span> classes. Note that there is no space between the 
                                         class selectors.
                                     </p>
                                     <p class="paragraph">
@@ -382,7 +382,7 @@
                                         <h4 class="card-h"></h4>
                                         <p class="paragraph">
                                             However, it's important to note that chaining more than one type selector is not possible, as an element cannot belong to multiple types simultaneously. For 
-                                            instance, attempting to chain two type selectors like "<span class="pri-hl">div</span>" and "<span class="pri-hl">p</span>" would result in an invalid selector.
+                                            instance, attempting to chain two type selectors like <span class="pri-hl">div</span> and <span class="pri-hl">p</span> would result in an invalid selector.
                                         </p>
                                     </div>
                                 </li>
@@ -393,7 +393,7 @@
                                         Specifically, it selects elements that match the last selector if they are nested inside an ancestor that matches the previous selector.
                                     </p>
                                     <p class="paragraph">
-                                        For example, in the CSS rule "<span class="pri-hl">.ancestor .child</span>", the "<span class="pri-hl">child</span>" element will be selected only if it is nested inside an element with the class "<span class="pri-hl">ancestor</span>", regardless of 
+                                        For example, in the CSS rule <span class="pri-hl">.ancestor .child</span>, the <span class="pri-hl">child</span> element will be selected only if it is nested inside an element with the class <span class="pri-hl">ancestor</span>, regardless of 
                                         the depth of nesting.
                                     </p>
                                     <p class="sec-hl">
@@ -421,7 +421,7 @@
                                     <div class="lesson-card" card-type="tips">
                                         <h4 class="card-h"></h4>
                                         <p class="paragraph">
-                                            While there is no limit to the number of combinators you can add to a rule, such as "<span class="pri-hl">.one .two .three .four</span>", it is recommended to 
+                                            While there is no limit to the number of combinators you can add to a rule, such as <span class="pri-hl">.one .two .three .four</span>, it is recommended to 
                                             avoid excessive nesting in selectors. This can lead to confusion, longer and more complex selectors, and potential issues with specificity.
                                         </p>
                                     </div>
@@ -450,7 +450,7 @@
 }</code></pre>
 
                             <p class="paragraph">
-                                In this scenario, the second rule "<span class="pri-hl">.main .list</span>" is more specific because it contains more class selectors. Therefore, the text color will be red.
+                                In this scenario, the second rule <span class="pri-hl">.main .list</span> is more specific because it contains more class selectors. Therefore, the text color will be red.
                             </p>
 
                             <p class="sec-hl">Similarly, when comparing ID selectors to class selectors:</p>
@@ -464,10 +464,10 @@
 }</code></pre>
 
                             <p class="paragraph">
-                                Despite having more class selectors, the first rule "<span class="pri-hl">#subsection</span>" takes precedence because IDs are more specific than classes.
+                                Despite having more class selectors, the first rule <span class="pri-hl">#subsection</span> takes precedence because IDs are more specific than classes.
                             </p>
                             <p class="paragraph">
-                                It's worth noting that not all selector symbols contribute to specificity. Symbols like the universal selector "<span class="pri-hl">*</span>" and combinators 
+                                It's worth noting that not all selector symbols contribute to specificity. Symbols like the universal selector <span class="pri-hl">*</span> and combinators 
                                 <span class="pri-hl">+</span>, <span class="pri-hl">~</span>, <span class="pri-hl">&lt;</span>, and <span class="pri-hl">space</span> do not add to 
                                 specificity. Inheritance is another factor in the cascade, where certain properties are inherited by child elements. However, directly targeting an element always overrides 
                                 inheritance.
