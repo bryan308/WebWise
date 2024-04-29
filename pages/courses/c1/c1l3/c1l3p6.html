@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/assets/css/style.min.css" />
+        <link rel="shortcut icon" href="/assets/images/svgs/logo.svg" type="image/x-icon" />
+        <title>HTML Hyperlink | WebWise</title>
+    </head>
+
+    <body>
+        <div class="nav-wrapper">
+            <div class="sidebar-wrapper"></div>
+            <nav class="navbar"></nav>
+        </div>
+        <div class="breadcrumbs-container">
+            <div class="breadcrumbs-content">
+                <a href="" class="hyperlink" data-location="courses_page"> Courses </a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+                <a href="" class="hyperlink" data-location="c1"> Fundamentals </a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+                <a href="" class="hyperlink" data-location="c1_l3"> HTML Fundamentals </a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+                <span> HTML Hyperlink </span>
+            </div>
+        </div>
+        <main animate="fadeIn">
+            <div class="main-wrapper">
+                <section>
+                    <div class="section-container">
+                        <div class="section-header">
+                            <img src="/assets/images/pngs/book.png" alt="course icon" />
+                            <h1 class="header-title">HTML Hyperlink</h1>
+                            <p>Fundamentals Course</p>
+                        </div>
+                        <article>
+                            <h3 class="article-header">Introduction</h3>
+                            <p class="paragraph"> 
+                                Hyperlinks, often referred to simply as links, are essential elements in web development. They allow users to navigate between different web pages, enhancing the overall 
+                                browsing experience. In HTML, hyperlinks are created using <span class="pri-hl">&lt;a&gt;</span> and <span class="pri-hl">&lt;/a&gt;</span> tags, which stands for <span 
+                                class="sec-hl">"anchor"</span>. Here's is the deeper look at hyperlinks:
+                            </p>
+                            <div class="article-image">
+                                <img src="/assets/images/lesson-images/l3/hyperlink-anatomy.webp" alt="hyperlink-anatomy">
+                                <p>Source:
+                                    <a href="https://www.semrush.com/blog/html-a-tag/" target="_blank">
+                                        https://www.semrush.com/blog/html-a-tag/
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <h3 class="article-header">Creating Hyperlinks</h3>
+                            <p class="paragraph">
+                                To create a hyperlink, use the <span class="pri-hl">&lt;a&gt;</span> element and set the <span class="pri-hl">href</span> attribute to the desired URL.    
+                                Optionally, you can include additional attributes like <span class="pri-hl">target</span> to specify how the linked page should open.
+                            </p>
+                            <p class="sec-hl">Different values for the target attribute:</p>
+                            <ul class="unordered-list">
+                                <li>
+                                    <span class="pri-hl">_self:</span> Load the URL into the same browsing context as the current one. This is the default behavior.
+                                </li>
+                                <li>
+                                    <span class="pri-hl">_blank:</span> Load the URL into a new browsing context. This is usually a tab, but users can conifgure browsers to use na windows instead.
+                                </li>
+                                <li>
+                                    <span class="pri-hl">_parent:</span> Load the URL into the parent browsing context of the current one. If there is no parent, this behaves the same way as 
+                                    <span class="pri-hl">_self</span>.
+                                </li>
+                                <li>
+                                    <span class="pri-hl">_top:</span> Load the URL into the top-level browsing context (that is, the "highest" browsing context that is an ancestor of the current one, and has 
+                                    no parent). If there is no parent, this behaves the same way as <span class="pri-hl">_self</span>.
+                                </li>
+                            </ul>
+                            <div class="lesson-card" card-type="note">
+                                <h4 class="card-h"></h4>
+                                <p class="paragraph">
+                                    When using <span class="sec-hl">target</span>, consider adding <span class="pri-hl">rel="noreferrer"</span> to avoid exploitation of the 
+                                    <span class="pri-hl">window.opener</span> API.
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <h3 class="article-header">Types of Hyperlinks</h3>
+                            <ul class="unordered-list">
+                                <li>
+                                    <span class="sec-hl">Absolute:</span> Links to pages on other websites on the internet are called absolute links. A typical absolute link will be made up of the following
+                                    parts: <span class="pri-hl">protocol://domain/path</span>. An absolute link will always contain the protocol and domain of the destination.
+                                </li>
+                                <li>
+                                    <span class="sec-hl">Relative:</span> Links to other pages within our own website are called relative links. Relative links do not include the domain name, since it is     
+                                    another page on the same site, it assumes the domain name will be the same as the page we created the link on. Relative links only include the file path to the other page, 
+                                    relative to the page you are creating the link on.
+                                </li>
+                            </ul>
+                            <p class="sec-hl">Example code:</p>
+<pre><code data-language="html"> <!-- Absolute Path -->
+&lt;a href="https://wwww.google.com"&gt;Go to Google&lt;/a&gt;
+
+<!-- Relative Path -->
+&lt;a href="lesson1.html"&gt;Lesson 1&lt;/a&gt;</code></pre>
+                        </article>
+                        <article>
+                            <h3 class="article-header">Hyperlink Colors</h3>
+                            <p class="paragraph">As defaults hyperlinks can have different visual states to indicate their status.</p>
+                            <ul class="unordered-list">
+                                <li>
+                                    An <span class="sec-hl">unvisited link</span> is underlined and blue.
+                                </li>
+                                <li>
+                                    A <span class="sec-hl">visited link</span> is underlined and purple.
+                                </li>
+                                <li>
+                                    An <span class="sec-hl">active link</span> is underlined and red.
+                                </li>
+                            </ul>
+                            <div class="article-image">
+                                <img src="/assets/images/lesson-images/l3/hyperlink-colors.png" alt="">
+                                <p></p>
+                            </div>
+                        </article>
+                        <span class="report-issue">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                                    <line x1="4" y1="22" x2="4" y2="15"></line>
+                                </svg>report an issue 
+                            </a>
+                        </span>
+                    </div>
+                </section>
+                <hr />
+                <div class="page-nav-container">
+                    <a href="" class="sec-btn hyperlink" data-location="c1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg> 
+                        Back to Course
+                    </a>
+                    <a href="" class="pri-btn hyperlink" data-location="sign_in" tippy="signIn">Track progress</a>
+                    <a href="" class="sec-btn hyperlink" data-location="c1_l4_p1" tippy="c1_l4_p1"> 
+                        Next Topic 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <div class="support-wrapper"></div>
+        <footer class="footer"></footer>
+
+        <script src="/assets/js/components/nav.js"></script>
+        <script src="/assets/js/components/footer.js"></script>
+        <script src="/assets/js/routing.js"></script>
+        <script src="/assets/js/rainbow.js"></script>
+        <script src="/assets/js/rainbow.linenumbers.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script src="/assets/js/tooltip.js"></script>
+    </body>
+
+</html>

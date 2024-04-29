@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/assets/css/style.min.css" />
+        <link rel="shortcut icon" href="/assets/images/svgs/logo.svg" type="image/x-icon" />
+        <title>Designing Texts | WebWise</title>
+    </head>
+
+    <body>
+        <div class="nav-wrapper">
+            <div class="sidebar-wrapper"></div>
+            <nav class="navbar"></nav>
+        </div>
+        <div class="breadcrumbs-container">
+            <div class="breadcrumbs-content">
+                <a href="" class="hyperlink" data-location="courses_page"> Courses </a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+                <a href="" class="hyperlink" data-location="c1"> Fundamentals </a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+                <a href="" class="hyperlink" data-location="c1_l4"> CSS Fundamentals </a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+                <span> Designing Texts </span>
+            </div>
+        </div>
+        <main animate="fadeIn">
+            <div class="main-wrapper">
+                <section>
+                    <div class="section-container">
+                        <div class="section-header">
+                            <img src="/assets/images/pngs/book.png" alt="course icon" />
+                            <h1 class="header-title">Designing Texts</h1>
+                            <p>Fundamentals Course</p>
+                        </div>
+                        <article>
+                            <h3 class="article-header">Introduction</h3>
+                            <p class="paragraph">
+                                In web design, text plays a crucial role in conveying information and shaping the overall user experience. By mastering the art of styling text using CSS, you can transform 
+                                ordinary content into visually engaging elements that captivate your audience. Let's explore some key aspects of designing texts in CSS:
+                            </p>
+                        </article>
+                        <article>
+                            <h3 class="article-header">Color Property</h3>
+                            <p class="paragraph">
+                                The color property defines the <span class="sec-hl">text</span> color for an HTML element.
+                            </p>
+                            <div class="sec-hl">Color Values:</div>
+                            <ul class="unordered-list">
+                                <li>
+                                    <span class="sec-hl">Color Name:</span> Use defined color names like <span class="sec-hl">red</span>, <span class="sec-hl">blue</span>, or <span class="sec-hl">green</span> 
+                                    to apply basic color to your element.
+                                </li>
+                                <li>
+                                    <span class="sec-hl">Hexadecimal Values:</span> Specify colors using dexadecimal notation, such as <span class="sec-hl">#FF0000</span> for red or <span class="sec-hl">#00FF00</span> for green.
+                                </li>
+                                <li>
+                                    <span class="sec-hl">RGB Values:</span> Defines colors using RGB values, such as <span class="sec-hl">rgb(255, 0, 0)</span> for red or <span class="sec-hl">rgb(0, 255, 0)</span> for green.
+                                </li>
+                                <li>
+                                    <span class="sec-hl">RGBS Values:</span> Similar to RGB Values, RGBS values include an additional alpha channel to control opacity, allowing you to create transparent colors.
+                                </li>
+                                <li>
+                                    <span class="sec-hl">HSL Values:</span> Specify colors using hue, saturation, and lightness values, providing a more intuitive way to select colors.
+                                </li>
+                                <li>
+                                    <span class="sec-hl">HSLA Values:</span> Like HSL values, HSLA values include an alpha channel to control opacity.
+                                </li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h3 class="article-header">CSS Units</h3>
+                            <p class="paragraph">
+                                CSS provides various units for specifying measurements, allowing developers to create repsonsive and visually appealing web designs.
+                            </p>
+                            <ul class="unordered-list">
+                                <li>
+                                    <span class="sec-hl">Pixels (px):</span> Pixel is a fixed-size unit commonly used for precise control over element dimensions and spacing. One pixel corresponds to one dot on a screen, making it a reliable choice for achieving consistent visual appearance across devices.
+                                </li>
+                                <li>
+                                    <span class="sec-hl">Percentage (%):</span> Percentage units are relative to the parent element's font size, width, or height. They allow for flexible and scalable designs by adapting to changes in the parent element's dimensions. For example, setting a font size to 150% increases it to 1.5 times the size of the parent element's font.
+                                </li>
+                                <li>
+                                    <span class="sec-hl">Viewport Width (vw) and Viewport Height (vh):</span> Viewport units are relative to the dimensions of the browser's viewport. One viewport width (vw) is equal to 1% of the viewport's width, while one viewport height (vh) is equal to 1% of the viewport's height. These units are particularly useful for creating layouts that adapt seamlessly to different screen sizes.
+                                </li>
+                                <li>
+                                    <span class="sec-hl">Em (em):</span> The em unit is relative to the font size of the element itself. When used for font sizes, one em is equivalent to the current font size of the element. For example, setting a font size to 1.5em increases it to 1.5 times the size of the element's parent font size.
+                                </li>
+                                <li>
+                                    <span class="sec-hl">Root Em (rem):</span> Similar to the em unit, the rem unit is relative to the font size of the root element (usually the <span class="pri-hl">&lt;html&gt;</span> element). This makes rem units ideal for creating scalable designs that maintain consistent proportions across the entire document.
+                                </li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h3 class="article-header">Text align property</h3>
+                            <p class="paragraph">
+                                The <span class="pri-hl">text-align</span> property defines the horizontal text alignment for an HTML element. A text can be <span class="sec-hl">left</span> or <span class="sec-hl">right</span> aligned, <span class="sec-hl">center</span> or <span class="sec-hl">justify</span>.
+                            </p>
+<pre><code data-language="css">text-align: left;
+text-align: right;
+text-align: center;
+text-align: justify;</code></pre>
+                        </article>
+                        <article>
+                            <h3 class="article-header">Text Decoration</h3>
+                            <p class="paragraph">
+                                The text-decoration property is used to add a decorative line to a text.
+                            </p>
+                            <p class="sec-hl">
+                                The text-decoration property is a shorthand property for:
+                            </p>
+                            <ol class="ordered-list">
+                                <li>
+                                    text-decoration-line
+                                    <ul class="unordered-list">
+                                        <li><span class="pri-hl">none</span></li>
+                                        <li><span class="pri-hl">underline</span></li>
+                                        <li><span class="pri-hl">overline</span></li>
+                                        <li><span class="pri-hl">line-through</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    text-decoration-color
+                                    <ul class="unordered-list">
+                                        <li><span class="pri-hl">color name</span></li>
+                                        <li><span class="pri-hl">rgb</span></li>
+                                        <li><span class="pri-hl">hsl</span></li>
+                                        <li><span class="pri-hl">hex</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    text-decoration-style
+                                    <ul class="unordered-list">
+                                        <li><span class="pri-hl">solid</span></li>
+                                        <li><span class="pri-hl">double</span></li>
+                                        <li><span class="pri-hl">dotted</span></li>
+                                        <li><span class="pri-hl">dashed</span></li>
+                                        <li><span class="pri-hl">wavy</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    text-decoration-thickness
+                                </li>
+                            </ol>
+                        </article>
+                        <article>
+                            <h3 class="article-header">Text Transform</h3>
+                            <p class="paragraph">
+                                The text-transform property is used to specify uppercase and lowercase letters in a text. It can be used to turn everything into <span class="sec-hl">uppercase</span> or 
+                                <span class="sec-hl">lowercase</span> letters, or <span class="sec-hl">capitalize the first letter</span> of each word.
+                            </p>
+
+<pre><code data-language="css">text-transform: uppercase;
+text-transform: lowercase;
+text-transform: capitalize;
+text-transform: none;</code></pre>
+
+                            <ul class="unordered-list">
+                                <li style="text-transform: uppercase;"> this is how <span class="sec-hl">uppercase</span> looks like.</li>
+                                <li style="text-transform: lowercase;"> this is how <span class="sec-hl">lowercase</span> looks like.</li>
+                                <li style="text-transform: capitalize;">this is how <span class="sec-hl">capitalize</span> looks like.</li>
+                            </ul>
+
+                        </article>
+                        <article>
+                            <h3 class="article-header">Text Indent</h3>
+                            <p class="paragraph">
+                                The <span class="pri-hl">text-indent</span> property is used to specify the indentation of the first line of text.
+                            </p>
+
+<pre><code data-language="css">p {
+    text-indent: 50px;
+}</code></pre>
+
+                        </article>
+                        
+                        <article>
+                            <h3 class="article-header">Font Family</h3>
+                            <p class="paragraph">
+                                The <span class="pri-hl">font-family</span> property defines the fonts to be used for an HTML element. The font-family property should hold several font names as a <span class="sec-hl">"fallback"</span> system.
+                            </p>
+                            <h3 class="article-header">Generic Font Family</h3>
+                            <p class="paragraph">
+                                When specifying fonts in CSS, it's essential to include a generic font family as a fallback option. This ensures that if a specific font is not available, the browser can use a 
+                                suitable alternative. Here are some recommended generic font families:
+                            </p>
+                            <ul class="unordered-list">
+                                <li><span class="sec-hl">sans-serif:</span> Arial, Verdana, Tahoma, Trebuchet MS</li>
+                                <li><span class="sec-hl">serif:</span> Times New Roman, Georgia, Garamond</li>
+                                <li><span class="sec-hl">monospace:</span> Courier New</li>
+                                <li><span class="sec-hl">cursive:</span> Brush Script MT</li>
+                            </ul>
+                            <div class="lesson-card" card-type="note">
+                                <h4 class="card-h"></h4>
+                                <p class="paragraph">
+                                    Always test your font choices across different browsers and devices and provide fallback options to maintain consistency and accessibility.
+                                </p>
+                            </div>
+                            <h3 class="article-header">Font Style</h3>
+                            <p class="paragraph">
+                                The <span class="pri-hl">font-style</span> property allows you to specify the style of your text, including italic and oblique variations. For example:
+                            </p>
+
+<pre><code data-language="css">p {
+    font-style: italic;
+}</code></pre>
+                            <h3 class="article-header">Font Weight</h3>
+                            <p class="paragraph">
+                                The <span class="pri-hl">font-weight</span> property specifies the weight of a font. The value can be <span class="sec-hl">normal</span>, <span class="sec-hl">bold</span>, and <span class="sec-hl">100</span> to <span class="sec-hl">900</span>.
+                            </p>
+
+<pre><code data-language="css">font-weight: normal;
+font-weight: bold;
+font-weight: [100 - 900];</code></pre>
+
+
+                            <h3 class="article-header">Font Size</h3>
+                            <p class="paragraph">
+                                The <span class="pri-hl">font-size</span> property defines the text size for an HTML element. The font-size value can be an <span class="sec-hl">absolute (pixels)</span> or 
+                                <span class="sec-hl">relative (em)</span> size.
+                            </p>
+
+<pre><code data-language="css">/* absolute size */
+font-size: 20px;
+
+/* relative size */
+font-size: 2em;</code></pre>
+                        </article>
+                        <article>
+                            <h3 class="article-header"> More Resources </h3>
+                            <p class="paragraph">
+                                You will discover additional resources and references to further enhance your understanding of the lesson topics.
+                            </p>
+                            <ul class="unordered-list">
+                                <li>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text" target="_blank" class="pri-link">MDN CSS Styling Texts</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.w3schools.com/css/css_text.asp" target="_blank" class="pri-link">w3schools Text Formatting</a>
+                                </li>
+                            </ul>
+                        </article>
+                        <span class="report-issue">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                                    <line x1="4" y1="22" x2="4" y2="15"></line>
+                                </svg>report an issue 
+                            </a>
+                        </span>
+                    </div>
+                </section>
+                <hr />
+                <div class="page-nav-container">
+                    <a href="" class="sec-btn hyperlink" data-location="c1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg> 
+                        Back to Course
+                    </a>
+                    <a href="" class="pri-btn hyperlink" data-location="sign_in" tippy="signIn">Track progress</a>
+                    <a href="" class="sec-btn hyperlink" data-location="c1_l4_p3" tippy="c1_l4_p3"> 
+                        Next Topic 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <div class="support-wrapper"></div>
+        <footer class="footer"></footer>
+
+        <script src="/assets/js/components/nav.js"></script>
+        <script src="/assets/js/components/footer.js"></script>
+        <script src="/assets/js/routing.js"></script>
+        <script src="/assets/js/rainbow.js"></script>
+        <script src="/assets/js/rainbow.linenumbers.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script src="/assets/js/tooltip.js"></script>
+    </body>
+
+</html>

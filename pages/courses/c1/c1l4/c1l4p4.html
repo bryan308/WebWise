@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/assets/css/style.min.css" />
+        <link rel="shortcut icon" href="/assets/images/svgs/logo.svg" type="image/x-icon" />
+        <title>Lists Properties | WebWise</title>
+    </head>
+
+    <body>
+        <div class="nav-wrapper">
+            <div class="sidebar-wrapper"></div>
+            <nav class="navbar"></nav>
+        </div>
+        <div class="breadcrumbs-container">
+            <div class="breadcrumbs-content">
+                <a href="" class="hyperlink" data-location="courses_page"> Courses </a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+                <a href="" class="hyperlink" data-location="c1"> Fundamentals </a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+                <a href="" class="hyperlink" data-location="c1_l4"> CSS Fundamentals </a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+                <span> Lists Properties </span>
+            </div>
+        </div>
+        <main animate="fadeIn">
+            <div class="main-wrapper">
+                <section>
+                    <div class="section-container">
+                        <div class="section-header">
+                            <img src="/assets/images/pngs/book.png" alt="course icon" />
+                            <h1 class="header-title">Lists Properties</h1>
+                            <p>Fundamentals Course</p>
+                        </div>
+                        <article>
+                            <h3 class="article-header">Introduction</h3>
+                            <p class="paragraph">
+                                CSS provides powerful properties for styling and customizing lists in web pages. Whether you are creating unordered list with bullet points or ordered list with numbers or 
+                                letters, CSS offers a range of options to control thier appearance and behavior.
+                            </p>
+                        </article>
+                        <article>
+                            <h3 class="article-header">List-Style-Type</h3>
+                            <p class="paragraph">
+                                The list-style-type property specifies the type of marker used for list items. You can choose from a variety of predefined marker styles, including disc, circle, square, 
+                                decimal, lowercase and uppercase Roman numerals, and alphabetical characters.
+                            </p>
+                            <h3 class="article-header">Style type for <span class="pri-hl">&lt;ul&gt;</span> element:</h3>
+                            <ul class="unordered-list">
+                                <li>
+                                    <span class="sec-hl">disc</span> value sets the list item marker to a bullet
+<pre><code data-language="html">&lt;ul style="list-style-type: disc;"&gt;
+    &lt;li&gt; Google Chrome &lt;/li&gt;
+    &lt;li&gt; Mozilla Firefox &lt;/li&gt;
+    &lt;li&gt; Opera Browser &lt;/li&gt;
+    &lt;li&gt; Microsoft Edge &lt;/li&gt;
+    &lt;li&gt; Safari Browser &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                    <h3 class="article-header">Output:</h3>
+                                    <div class="article-image">
+                                        <img src="/assets/images/lesson-images/l4/disc-output.png" alt="disc output" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="sec-hl">circle</span> value sets the list item marker to a circle
+<pre><code data-language="html">&lt;ul style="list-style-type: circle;"&gt;
+    &lt;li&gt; Google Chrome &lt;/li&gt;
+    &lt;li&gt; Mozilla Firefox &lt;/li&gt;
+    &lt;li&gt; Opera Browser &lt;/li&gt;
+    &lt;li&gt; Microsoft Edge &lt;/li&gt;
+    &lt;li&gt; Safari Browser &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                    <h3 class="article-header">Output:</h3>
+                                    <div class="article-image">
+                                        <img src="/assets/images/lesson-images/l4/circle-output.png" alt="circle output" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="sec-hl">square</span> value sets the list item marker to a square
+<pre><code data-language="html">&lt;ul style="list-style-type: square;"&gt;
+    &lt;li&gt; Google Chrome &lt;/li&gt;
+    &lt;li&gt; Mozilla Firefox &lt;/li&gt;
+    &lt;li&gt; Opera Browser &lt;/li&gt;
+    &lt;li&gt; Microsoft Edge &lt;/li&gt;
+    &lt;li&gt; Safari Browser &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                    <h3 class="article-header">Output:</h3>
+                                    <div class="article-image">
+                                        <img src="/assets/images/lesson-images/l4/square-output.png" alt="square output" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="sec-hl">none</span> value will not display markers on list items
+<pre><code data-language="html">&lt;ul style="list-style-type: none;"&gt;
+    &lt;li&gt; Google Chrome &lt;/li&gt;
+    &lt;li&gt; Mozilla Firefox &lt;/li&gt;
+    &lt;li&gt; Opera Browser &lt;/li&gt;
+    &lt;li&gt; Microsoft Edge &lt;/li&gt;
+    &lt;li&gt; Safari Browser &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                    <h3 class="article-header">Output:</h3>
+                                    <div class="article-image">
+                                        <img src="/assets/images/lesson-images/l4/none-output.png" alt="square output" />
+                                    </div>
+                                </li>
+                            </ul>
+                            <h3 class="article-header">Style type for <span class="pri-hl">&lt;ol&gt;</span> element:</h3>
+                            <ul class="unordered-list">
+                                <li>
+                                    <span class="sec-hl">decimal</span> (1, 2, 3...)
+<pre><code data-language="html">&lt;ol style="list-style-type: decimal;"&gt;
+    &lt;li&gt; first item &lt;/li&gt;
+    &lt;li&gt; second item &lt;/li&gt;
+    &lt;li&gt; third item &lt;/li&gt;
+    &lt;li&gt; fifth item &lt;/li&gt;
+    &lt;li&gt; sizth item &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                                    <h3 class="article-header">Output:</h3>
+                                    <div class="article-image">
+                                        <img src="/assets/images/lesson-images/l4/decimal-output.png" alt="deciaml output" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="sec-hl">decimal-leading-zero</span> (01, 02, 03...)
+<pre><code data-language="html">&lt;ol style="list-style-type: decimal-leading-zero;"&gt;
+    &lt;li&gt; first item &lt;/li&gt;
+    &lt;li&gt; second item &lt;/li&gt;
+    &lt;li&gt; third item &lt;/li&gt;
+    &lt;li&gt; fifth item &lt;/li&gt;
+    &lt;li&gt; sizth item &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                                    <h3 class="article-header">Output:</h3>
+                                    <div class="article-image">
+                                        <img src="/assets/images/lesson-images/l4/decimal-leading-zero.png" alt="decimal-leading-zero" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="sec-hl">lower-alpha</span> (a, b, c...)
+<pre><code data-language="html">&lt;ol style="list-style-type: lower-alpha;"&gt;
+    &lt;li&gt; first item &lt;/li&gt;
+    &lt;li&gt; second item &lt;/li&gt;
+    &lt;li&gt; third item &lt;/li&gt;
+    &lt;li&gt; fifth item &lt;/li&gt;
+    &lt;li&gt; sizth item &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                                    <h3 class="article-header">Output:</h3>
+                                    <div class="article-image">
+                                        <img src="/assets/images/lesson-images/l4/lower-alpha-output.png" alt="lower alpha output" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="sec-hl">upper-alpha</span> (A, B, C...)
+<pre><code data-language="html">&lt;ol style="list-style-type: upper-alpha;"&gt;
+    &lt;li&gt; first item &lt;/li&gt;
+    &lt;li&gt; second item &lt;/li&gt;
+    &lt;li&gt; third item &lt;/li&gt;
+    &lt;li&gt; fifth item &lt;/li&gt;
+    &lt;li&gt; sizth item &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                                    <h3 class="article-header">Output:</h3>
+                                    <div class="article-image">
+                                        <img src="/assets/images/lesson-images/l4/upper-alpha-output.png" alt="upper alpha output" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="sec-hl">lower-roman</span> (i, ii, iii...)
+<pre><code data-language="html">&lt;ol style="list-style-type: lower-roman;"&gt;
+    &lt;li&gt; first item &lt;/li&gt;
+    &lt;li&gt; second item &lt;/li&gt;
+    &lt;li&gt; third item &lt;/li&gt;
+    &lt;li&gt; fifth item &lt;/li&gt;
+    &lt;li&gt; sizth item &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                                    <h3 class="article-header">Output:</h3>
+                                    <div class="article-image">
+                                        <img src="/assets/images/lesson-images/l4/lower-roman-output.png" alt="upper roman output" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="sec-hl">upper-roman</span> (I, II, III...)
+<pre><code data-language="html">&lt;ol style="list-style-type: upper-roman;"&gt;
+    &lt;li&gt; first item &lt;/li&gt;
+    &lt;li&gt; second item &lt;/li&gt;
+    &lt;li&gt; third item &lt;/li&gt;
+    &lt;li&gt; fifth item &lt;/li&gt;
+    &lt;li&gt; sizth item &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                                    <h3 class="article-header">Output:</h3>
+                                    <div class="article-image">
+                                        <img src="/assets/images/lesson-images/l4/upper-roman-output.png" alt="upper roman output" />
+                                    </div>
+                                </li> 
+                            </ul>
+                        </article>
+                        <article>
+                            <h3 class="article-header">List Style Image</h3>
+                            <p class="paragraph">
+                                Instead of using predefined marker styles, you can use custom images as list item markers with the <span class="pri-hl">list-style-image</span> property. Simply specify the URL 
+                                of the image you want to use, and it will be displayed as the marker for each list item.
+                            </p>
+<pre><code data-language="html">&lt;ul style="list-style-image: url('hashtag.png')"&gt;
+    &lt;li>item 1&lt;/li&gt;
+    &lt;li>item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                            <h3 class="article-header">Output:</h3>
+                            <div class="article-image">
+                                <img src="/assets/images/lesson-images/l4/list-style-image.png" alt="list-style-image output" />
+                            </div>
+                        </article>
+                        <article>
+                            <h3 class="article-header">List Style Position</h3>
+                            <p class="paragraph">
+                                The <span class="pri-hl">list-style-position</span> property specifies the position of the list item marker in unordered lists.
+                            </p>
+                            <p class="paragraph">
+                                The <span class="sec-hl">outside</span> value means that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically.
+                            </p>
+<pre><code data-language="html">&lt;ul style="list-style-position: outside"&gt;
+    &lt;li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. &lt;/li&gt;
+    &lt;li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. &lt;/li&gt;
+    &lt;li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. &lt;/li&gt;
+    &lt;li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                            <h3 class="article-header">Output:</h3>
+                            <div class="article-image">
+                                <img src="/assets/images/lesson-images/l4/outside-position-output.png" alt="list style position output1">
+                            </div>
+                            <p class="paragraph">
+                                The <span class="sec-hl">inside</span> value means that the bullet points will be inside the list item. The list item will be part of the text and push the text at the start.
+                            </p>
+                            <br />
+                            <br />
+<pre><code data-language="html">&lt;ul style="list-style-position: inside"&gt;
+    &lt;li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. &lt;/li&gt;
+    &lt;li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. &lt;/li&gt;
+    &lt;li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. &lt;/li&gt;
+    &lt;li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                            <h3 class="article-header">Output:</h3>
+                            <div class="article-image">
+                                <img src="/assets/images/lesson-images/l4/inside-position-output.png" alt="list style position output2">
+                            </div>
+                        </article>
+                        <article>
+                            <h3 class="article-header">Shorthand List Style Property</h3>
+                            <p class="paragraph">
+                                The <span class="pri-hl">list-style</span> property is a shorthand property. It is use to set all the list properties in one declaration.
+                            </p>
+                            <p class="paragraph">
+                                When using the shorthand property, the order of the property values are:
+                            </p>
+                            <ol class="ordered-list">
+                                <li><span class="pri-hl">list-style-type</span></li>
+                                <li><span class="pri-hl">list-style-position</span></li>
+                                <li><span class="pri-hl">list-style-image</span></li>
+                            </ol>
+                        </article>
+                        <span class="report-issue">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                                    <line x1="4" y1="22" x2="4" y2="15"></line>
+                                </svg>report an issue 
+                            </a>
+                        </span>
+                    </div>
+                </section>
+                <hr />
+                <div class="page-nav-container">
+                    <a href="" class="sec-btn hyperlink" data-location="c1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg> 
+                        Back to Course 
+                    </a>
+                    <a href="" class="pri-btn hyperlink" data-location="sign_in" tippy="signIn">Track progress</a>
+                    <a href="" class="sec-btn hyperlink" data-location="c1_l4_p5" tippy="c1_l4_p5"> 
+                        Next Topic 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <div class="support-wrapper"></div>
+        <footer class="footer"></footer>
+
+        <script src="/assets/js/components/nav.js"></script>
+        <script src="/assets/js/components/footer.js"></script>
+        <script src="/assets/js/routing.js"></script>
+        <script src="/assets/js/rainbow.js"></script>
+        <script src="/assets/js/rainbow.linenumbers.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script src="/assets/js/tooltip.js"></script>
+    </body>
+
+</html>
