@@ -4,15 +4,121 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/assets/css/style.min.css" />
-        <link rel="shortcut icon" href="/assets/images/svgs/logo.svg" type="image/x-icon" />
+        <link rel="stylesheet" href="../../assets/css/style.min.css" />
+        <link rel="shortcut icon" href="../../assets/images/svgs/logo.svg" type="image/x-icon" />
         <title>WebWise | Contact</title>
     </head>
 
     <body>
         <div class="nav-wrapper">
-            <nav class="navbar"></nav>
-            <div class="sidebar-wrapper"></div>
+            <div class="sidebar-wrapper">
+                <div class="md-nav-menu">
+                    <button class="close-nav" type="button" id="close-nav" tippy="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <div class="md-logo-container">
+                        <a href="../../tindex.html" tippy="home">
+                            <svg id="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                                <g id="left" transform="translate(.000001 0.000001)">
+                                    <rect width="17" height="115" rx="8" ry="8" transform="matrix(1.066595 0.803676-.890585 1.181937 102.417258 15.2588)" stroke-width="0" />
+                                    <rect width="17" height="115" rx="8" ry="8" transform="matrix(1.066566-.803715 0.890628 1.181904 0 148.822253)" stroke-width="0" />
+                                    <rect width="17" height="132.808061" rx="8" ry="8" transform="matrix(-.510551 0.653475-.500665-.391162 123.802249 148.903328)" stroke-width="0" />
+                                    <rect width="17" height="115" rx="8" ry="8" transform="matrix(-.510551-.653475 0.578228-.451761 57.307959 203.495336)" stroke-width="0" />
+                                </g>
+                                <g id="right" transform="translate(0 0.000001)">
+                                    <rect width="17" height="115" rx="8" ry="8" transform="matrix(1.066595 0.803676-.890585 1.181937 281.863367 135.15599)" stroke-width="0" />
+                                    <rect width="17" height="115" rx="8" ry="8" transform="matrix(1.066566-.803715 0.890628 1.181904 179.446109 28.925063)" stroke-width="0" />
+                                    <g transform="matrix(-.919935 0 0 1 291.529863 0)">
+                                        <rect width="17" height="132.808061" rx="8" ry="8" transform="matrix(-.510551 0.653475-.500665-.391162 123.802249 148.903328)" stroke-width="0" />
+                                        <rect width="17" height="115" rx="8" ry="8" transform="matrix(-.510551-.653475 0.578228-.451761 57.307959 203.495336)" stroke-width="0" />
+                                    </g>
+                                </g>
+                                <rect id="middle" width="17" height="115" rx="8" ry="8" transform="matrix(1.279117 0.383901-.550976 1.835793 170.759581 41.342227)" stroke-width="0" />
+                            </svg>
+                            <span class="md-logo-name">WebWise</span>
+                        </a>
+                    </div>
+                    <div class="md-nav-links">
+                        <a class="md-nav-link" href="../../index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                            </svg> Home
+                        </a>
+                        <a class="md-nav-link" href="../../pages/courses/index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                            </svg> Courses
+                        </a>
+                        <a class="md-nav-link" href="../../pages/about/index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg> About 
+                        </a>
+                        <a class="md-nav-link" href="../../pages/contact/index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg> Contact
+                        </a>
+                        <hr />
+                        <a class="md-nav-link" href="../../pages/auth/sign_up.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                            </svg> Get Started 
+                        </a>
+                        <a class="md-nav-link" href="../../pages/auth/sign_in.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                            </svg> Sign in
+                        </a>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <nav class="navbar">
+                <div class="nav-container">
+                    <a class="logo-container" href="../../index.html" tippy="home">
+                        <svg id="svg-logo" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" shape-rendering="geometricPrecision"
+                            text-rendering="geometricPrecision">
+                            <g id="left" transform="translate(.000001 0.000001)">
+                                <rect width="17" height="115" rx="8" ry="8" transform="matrix(1.066595 0.803676-.890585 1.181937 102.417258 15.2588)" stroke-width="0" />
+                                <rect width="17" height="115" rx="8" ry="8" transform="matrix(1.066566-.803715 0.890628 1.181904 0 148.822253)" stroke-width="0" />
+                                <rect width="17" height="132.808061" rx="8" ry="8" transform="matrix(-.510551 0.653475-.500665-.391162 123.802249 148.903328)" stroke-width="0" />
+                                <rect width="17" height="115" rx="8" ry="8" transform="matrix(-.510551-.653475 0.578228-.451761 57.307959 203.495336)" stroke-width="0" />
+                            </g>
+                            <g id="right" transform="translate(0 0.000001)">
+                                <rect width="17" height="115" rx="8" ry="8" transform="matrix(1.066595 0.803676-.890585 1.181937 281.863367 135.15599)" stroke-width="0" />
+                                <rect width="17" height="115" rx="8" ry="8" transform="matrix(1.066566-.803715 0.890628 1.181904 179.446109 28.925063)" stroke-width="0" />
+                                <g transform="matrix(-.919935 0 0 1 291.529863 0)">
+                                    <rect width="17" height="132.808061" rx="8" ry="8" transform="matrix(-.510551 0.653475-.500665-.391162 123.802249 148.903328)" stroke-width="0" />
+                                    <rect width="17" height="115" rx="8" ry="8" transform="matrix(-.510551-.653475 0.578228-.451761 57.307959 203.495336)" stroke-width="0" />
+                                </g>
+                            </g>
+                            <rect id="middle" width="17" height="115" rx="8" ry="8" transform="matrix(1.279117 0.383901-.550976 1.835793 170.759581 41.342227)" stroke-width="0" />
+                        </svg>
+                        <span class="logo-name">WebWise</span>
+                    </a>
+                    <div class="nav-menu">
+                        <div class="nav-links">
+                            <a class="nav-link" href="../../index.html"> Home </a>
+                            <a class="nav-link" href="../../pages/courses/index.html"> Courses </a>
+                            <a class="nav-link" href="../../pages/about/index.html"> About </a>
+                            <a class="nav-link" href="../../pages/contact/index.html"> Contact</a>
+                            <a class="nav-link" href="../../pages/auth/sign_in.html"> Sign in </a>
+                        </div>
+                    </div>
+                    <div class="nav-btn-wrapper">
+                        <a class="nav-btn" href="../../pages/auth/sign_up.html" tippy="signUp"> Get Started </a>
+                    </div>
+                    <button type="button" class="burger" id="burger">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                        </svg>
+                    </button>
+                </div>
+            </nav>
         </div>
         <main animate="fadeIn">
             <div class="main-wrapper">
@@ -48,15 +154,116 @@
                 </div>
             </div>
         </main>
-        <div class="support-wrapper"></div>
-        <footer class="footer"></footer>
+        <div class="support-wrapper">
+            <div class="support-container">
+                <div class="text-content">
+                    <h1> Support Us </h1>
+                    <p class="paragraph"> 
+                        Help us keep WebWise free for all. Every donation fuels our mission to provide accessible web
+                        development education. Join us in empowering learners worldwise!
+                    </p>
+                </div>
+                <div class="support-actions">
+                    <a class="sec-btn" href="../../pages/404.html">Learn more</a>
+                    <a class="pri-btn" href="../../pages/404.html"> Donate now 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-links-wrapper">
+                <div class="footer-logo-container">
+                    <a href="../../index.html" class="footer-logo-link" tippy="home">
+                        <svg id="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                            <g id="left" transform="translate(.000001 0.000001)">
+                                <rect width="17" height="115" rx="8" ry="8" transform="matrix(1.066595 0.803676-.890585 1.181937 102.417258 15.2588)" stroke-width="0" />
+                                <rect width="17" height="115" rx="8" ry="8" transform="matrix(1.066566-.803715 0.890628 1.181904 0 148.822253)" stroke-width="0" />
+                                <rect width="17" height="132.808061" rx="8" ry="8" transform="matrix(-.510551 0.653475-.500665-.391162 123.802249 148.903328)" stroke-width="0" />
+                                <rect width="17" height="115" rx="8" ry="8" transform="matrix(-.510551-.653475 0.578228-.451761 57.307959 203.495336)" stroke-width="0" />
+                            </g>
+                            <g id="right" transform="translate(0 0.000001)">
+                                <rect width="17" height="115" rx="8" ry="8" transform="matrix(1.066595 0.803676-.890585 1.181937 281.863367 135.15599)" stroke-width="0" />
+                                <rect width="17" height="115" rx="8" ry="8" transform="matrix(1.066566-.803715 0.890628 1.181904 179.446109 28.925063)" stroke-width="0" />
+                                <g transform="matrix(-.919935 0 0 1 291.529863 0)">
+                                    <rect width="17" height="132.808061" rx="8" ry="8" transform="matrix(-.510551 0.653475-.500665-.391162 123.802249 148.903328)" stroke-width="0" />
+                                    <rect width="17" height="115" rx="8" ry="8" transform="matrix(-.510551-.653475 0.578228-.451761 57.307959 203.495336)" stroke-width="0" />
+                                </g>
+                            </g>
+                            <rect id="middle" width="17" height="115" rx="8" ry="8" transform="matrix(1.279117 0.383901-.550976 1.835793 170.759581 41.342227)" stroke-width="0" />
+                        </svg>
+                        <span>WebWise</span>
+                    </a>
+                </div>
+                <div class="footer-grid-links">
+                    <div>
+                        <h2 class="footer-grid-headers">About us</h2>
+                        <ul class="footer-grid-list">
+                            <li>
+                                <a href="../../pages/about/index.html">About</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/about/team.html">Team</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="footer-grid-headers">Support</h2>
+                        <ul class="footer-grid-list">
+                            <li>
+                                <a href="../../pages/404.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/contact/index.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/404.html">Donate</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="footer-grid-headers">Legal</h2>
+                        <ul class="footer-grid-list">
+                            <li>
+                                <a href="../../pages/404.html">Terms</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/404.html">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="copyright-social-links">
+                <span class="copyright-text">© 2024 <a href="../../index.html" tippy="home">WebWise</a>. All rights reserved. </span>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" target="_blank" tippy="fb">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                            <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="https://discord.com/" target="_blank" tippy="discord">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                            <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/" target="_blank" tippy="github">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-        <script src="/assets/js/components/nav.js"></script>
-        <script src="/assets/js/components/footer.js"></script>
-        <script src="/assets/js/routing.js"></script>
+        <script src="../../assets/js/components/nav.js"></script>
+        <script src="../../assets/js/routing.js"></script>
         <script src="https://unpkg.com/@popperjs/core@2"></script>
         <script src="https://unpkg.com/tippy.js@6"></script>
-        <script src="/assets/js/tooltip.js"></script>
+        <script src="../../assets/js/tooltip.js"></script>
     </body>
 
 </html>
