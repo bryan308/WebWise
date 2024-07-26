@@ -106,7 +106,7 @@ function Home() {
 				<p className={`${styles.subheader} ${lexend.className}`}>WebWise Testimonials</p>
 				<div className={`${styles.testimonial_container} flex flex-col md:grid`}>
 					{testimonials.map((t, i: number) => (
-						<figure>
+						<figure key={i}>
 							<blockquote>
 								<h3>{t.header}</h3>
 								<p>{t.qoute}&rdquo;</p>
