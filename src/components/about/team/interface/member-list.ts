@@ -1,6 +1,7 @@
 type ITags = {
 	icon: any;
 	href: string;
+	tooltip: string;
 }[];
 
 export interface IMember {
