@@ -1,10 +1,10 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faFacebook, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
+import PageHeader from '@/components/shared/ui/header';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IMember, IMemberList } from '@/components/about/team/interface/member-list';
-import TeamHeader from '@/components/about/team/header';
+import { faGithub, faFacebook, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
 
 const memberList: IMemberList = {
 	member1: {
@@ -87,7 +87,7 @@ export default function Team() {
 	return (
 		<main>
 			<div className='pt-4 px-4 pb-0'>
-				<TeamHeader />
+				<PageHeader>WebWise’s Team</PageHeader>
 				<section>
 					<div className='my-0 mx-auto max-w-[50rem]'>
 						<p className='text-base dark:text-neutral-400 mb-4 leading-[1.75]'>
