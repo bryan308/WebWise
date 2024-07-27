@@ -1,14 +1,14 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import { lexend } from '@/lib/fonts';
-import Link from 'next/link';
-import { cards } from '../components/home/overview-meta';
-import styles from '../components/home/styles/home.module.scss';
-import { testimonials } from '@/components/home/testimonials';
 import { Button } from '@/components/shared/ui/button';
+import { cards } from '../components/home/overview-meta';
+import { testimonials } from '@/components/home/testimonials';
+import styles from '../components/home/styles/home.module.scss';
 
 function Home() {
 	return (
-		<>
+		<section className='animate-fadeIn [--fadeIn-delay:0ms] opacity-0'>
 			<div className='flex items-center justify-center m-auto max-w-7xl h-[75dvh]'>
 				<div className='my-0 mx-auto py-0 px-4'>
 					<div className='max-w-[60rem] m-auto text-center'>
@@ -128,7 +128,7 @@ function Home() {
 					))}
 				</div>
 			</div>
-		</>
+		</section>
 	);
 }
 

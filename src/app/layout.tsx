@@ -1,10 +1,9 @@
 import './globals.css';
-import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { poppins } from '@/lib/fonts';
 import Providers from '@/components/shared/theme-provider';
 import Nav from '@/components/shared/nav';
-// import Footer from '@/components/shared/footer/footer';
+import Footer from '@/components/shared/footer';
 
 export const metadata: Metadata = {
 	title: {
@@ -27,15 +26,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 			suppressHydrationWarning
 		>
 			<body
-				className={cn(
-					'text-gray-950 dark:text-gray-200 bg-[#f5f5f5] dark:bg-[#0e0e10] transition-all',
-					poppins.className
-				)}
+				className={`${poppins.className} text-gray-950 dark:text-gray-200 bg-neutral-100 dark:bg-[#0e0e10] transition-all`}
 			>
 				<Providers>
 					<Nav />
 					<main>{children}</main>
-					{/* <Footer /> */}
+					<Footer />
 				</Providers>
 			</body>
 		</html>

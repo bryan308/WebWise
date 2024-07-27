@@ -5,7 +5,12 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IMember, IMemberList } from '@/components/about/team/interface/member-list';
 import { faGithub, faFacebook, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/shared/ui/tooltip';
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipProvider,
+	TooltipTrigger,
+} from '@/components/shared/ui/tooltip';
 
 const memberList: IMemberList = {
 	member1: {
@@ -84,11 +89,7 @@ const TeamMember = ({ member }: IMember) => {
 										<FontAwesomeIcon icon={tag.icon} />
 									</Link>
 								</TooltipTrigger>
-								<TooltipContent>
-									{/* <p className='bg-violet-300 text-black px-3 py-1.5 text-xs rounded-lg'> */}
-										{tag.tooltip}
-									{/* </p> */}
-								</TooltipContent>
+								<TooltipContent>{tag.tooltip}</TooltipContent>
 							</Tooltip>
 						</TooltipProvider>
 					))}
@@ -100,27 +101,25 @@ const TeamMember = ({ member }: IMember) => {
 
 export default function Team() {
 	return (
-		<main>
+		<section className='animate-fadeIn [--fadeIn-delay:0ms] opacity-0'>
 			<div className='pt-4 px-4 pb-0'>
 				<PageHeader>WebWise’s Team</PageHeader>
-				<section>
-					<div className='my-0 mx-auto max-w-[50rem]'>
-						<p className='text-base dark:text-neutral-400 mb-4 leading-[1.75]'>
-							Meet the dedicated individuals behind WebWise, passionate about revolutionizing web
-							development education. With a shared commitment to accessibility and innovation, our
-							team strives to empower learners worldwide.
-						</p>
-						<div className='my-12 mx-0 border-l-2 border-b-2 dark:border-l-purple-950 border-b-purple-950 rounded-bl-[32px]'>
-							{Object.values(memberList).map((member, index) => (
-								<TeamMember
-									key={index}
-									member={member}
-								/>
-							))}
-						</div>
+				<div className='my-0 mx-auto max-w-[50rem]'>
+					<p className='text-base dark:text-neutral-400 mb-4 leading-[1.75]'>
+						Meet the dedicated individuals behind WebWise, passionate about revolutionizing web
+						development education. With a shared commitment to accessibility and innovation, our
+						team strives to empower learners worldwide.
+					</p>
+					<div className='my-12 mx-0 border-l-2 border-b-2 dark:border-l-purple-950 border-b-purple-950 rounded-bl-[32px]'>
+						{Object.values(memberList).map((member, index) => (
+							<TeamMember
+								key={index}
+								member={member}
+							/>
+						))}
 					</div>
-				</section>
+				</div>
 			</div>
-		</main>
+		</section>
 	);
 }
