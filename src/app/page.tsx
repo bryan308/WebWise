@@ -2,8 +2,9 @@ import Image from 'next/image';
 import { lexend } from '@/lib/fonts';
 import Link from 'next/link';
 import { cards } from '../components/home/overview-meta';
-import styles from '../components/home/styles/explore.module.scss';
+import styles from '../components/home/styles/home.module.scss';
 import { testimonials } from '@/components/home/testimonials';
+import { Button } from '@/components/shared/ui/button';
 
 function Home() {
 	return (
@@ -21,12 +22,12 @@ function Home() {
 						</p>
 					</div>
 					<div className='w-max mt-12 mx-auto mb-0'>
-						<Link
-							href='/courses'
-							className='flex gap-2 items-center justify-center text-gray-800 dark:text-gray-200 text-sm font-medium underline-none py-3 px-4 rounded-lg border border-gray-400 dark:border-gray-600 bg-none transition-all hover:border-gray-600 dark:hover:border-gray-400 hover:scale-[1.015] active:scale-[.99]'
+						<Button
+							variant='outline'
+							asChild
 						>
-							Explore now
-						</Link>
+							<Link href='/courses'>Explore now</Link>
+						</Button>
 					</div>
 				</div>
 			</div>
@@ -75,12 +76,12 @@ function Home() {
 							</p>
 						</div>
 					</div>
-					<Link
-						href='/about'
-						className='flex gap-2 items-center m-auto w-max justify-center text-gray-800 dark:text-gray-200 text-sm font-medium underline-none py-3 px-4 rounded-lg border border-gray-400 dark:border-gray-600 bg-none transition-all hover:border-gray-600 dark:hover:border-gray-400 hover:scale-[1.015] active:scale-[.99]'
+					<Button
+						variant='outline'
+						asChild
 					>
-						Learn more
-					</Link>
+						<Link href='/about'>Learn more</Link>
+					</Button>
 				</div>
 			</div>
 			<p className={`${lexend.className} text-3xl text-center px-4`}>Overview of WebWise lessons</p>

@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { poppins } from '@/lib/fonts';
 import Providers from '@/components/shared/theme-provider';
-// import Nav from '../components/shared/nav/navbar';
+import Nav from '@/components/shared/nav';
 // import Footer from '@/components/shared/footer/footer';
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 				)}
 			>
 				<Providers>
-					{/* <Nav /> */}
+					<Nav />
 					<main>{children}</main>
 					{/* <Footer /> */}
 				</Providers>

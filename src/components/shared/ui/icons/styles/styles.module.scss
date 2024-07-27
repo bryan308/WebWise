@@ -1,0 +1,72 @@
+@keyframes logoFillDelay {
+	0% {
+		fill: #fefce8;
+	}
+	20% {
+		fill: #fef9c3;
+	}
+	60% {
+		fill: #fef08a;
+	}
+	80% {
+		fill: #fde047;
+	}
+	100% {
+		fill: #facc15;
+	}
+}
+@keyframes move-right {
+	0% {
+		transform: translateX(-6rem);
+	}
+	50% {
+		transform: translateX(-1.5);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes move-left {
+	0% {
+		transform: translateX(6rem);
+	}
+	50% {
+		transform: translateX(1.5rem);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes appear {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.svg_logo {
+	width: 1.75rem;
+	margin-right: 0.5rem;
+	overflow: visible;
+	.left {
+		animation: move-right 2s forwards, logoFillDelay 500ms forwards;
+		rect {
+			animation: appear 500ms forwards, logoFillDelay 1500ms forwards;
+			animation-delay: 1000ms;
+			opacity: 0;
+		}
+	}
+	.right {
+		animation: move-left 2s forwards, logoFillDelay 1000ms forwards;
+		rect {
+			animation: appear 500ms forwards, logoFillDelay 1500ms forwards;
+			animation-delay: 500ms;
+			opacity: 0;
+		}
+	}
+	.middle {
+		animation: appear 500ms forwards, logoFillDelay 1500ms forwards;
+		opacity: 0;
+	}
+}

@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.overview_grid_container {
+	@apply flex flex-col md:grid md:grid-cols-3 md:grid-rows-5 gap-4;
+}
+
+.grad_text_container {
+	@apply p-4 rounded-lg dark:bg-gradient-to-b from-transparent to-violet-900 border dark:border-violet-950 dark:hover:bg-violet-950 transition-all duration-[300ms];
+}
+
+.grad_text {
+	display: block;
+	font-weight: 700;
+	font-size: 1.875rem /* 30px */;
+	line-height: 2.25rem /* 36px */;
+	background: linear-gradient(
+		to right,
+		#3b82f6,
+		#d946ef,
+		#a855f7,
+		#06b6d4,
+		#a855f7,
+		#d946ef,
+		#3b82f6
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
+	background-size: 500%;
+	background-position: right;
+	transition-property: background;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 2000ms;
+}
+
+.grid_item_title {
+  @apply dark:text-neutral-200 mb-2 text-xl font-semibold
+}
+
+.subheader {
+	@apply mb-4 text-3xl text-center py-0 px-4 dark:text-neutral-200;
+}
+
+.paragraph {
+	@apply text-sm dark:text-neutral-300 mb-4 leading-[1.75];
+}
