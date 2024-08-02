@@ -5,10 +5,10 @@ import type { MDXFrontMatter } from '@/lib/types';
 
 const root = process.cwd();
 
-export const postsPath = path.join(root, 'posts');
+export const lessonsPath = path.join(root, 'lessons');
 
 export const getMdx = (fileName: string) => {
-	const fullPath = path.join(postsPath, fileName);
+	const fullPath = path.join(lessonsPath, fileName);
 	const docSource = fs.readFileSync(fullPath, 'utf-8');
 
 	const { data, content } = matter(docSource);
@@ -23,7 +23,7 @@ export const getMdx = (fileName: string) => {
 };
 
 export const getAllMdx = () => {
-	const items = fs.readdirSync(postsPath).map((item) => getMdx(item));
+	const items = fs.readdirSync(lessonsPath).map((item) => getMdx(item));
 	return items.sort(
 		(a, b) => new Date(b.frontMatter.date).getTime() - new Date(a.frontMatter.date).getTime()
 	);

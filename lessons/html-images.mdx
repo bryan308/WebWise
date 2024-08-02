@@ -1,0 +1,80 @@
+---
+title: HTML Images
+description: Incorporating Images
+date: '2022-01-25'
+---
+
+<Section>
+### Introduction
+Websites would be fairly boring if they could only display text. Luckily HTML provides a wide variety of elements for displaying all sorts of different media. The most widely used of these is the image element.
+
+The HTML `<img />` tag is a void element used t embed images into web pages. As a void element. it does not require a closing tag and is self-contained within a single tag.
+
+The `<img />` tag is used to insert images into HTML documents. It is a void element, meaning it does not have a closing tag and requires no content. The `<img />` tag typically includes attributes that specify the image sourse(src), alternative text(alt), width, height, and more.
+</Section>
+<Section>
+### Lesson overview
+In this lesson overview, you will find a comprehensive outline of the topics covered in each section.
+- Common image extensions
+- Image tag attributes
+</Section>
+<Section>
+### Image Extensions
+Common file extensions for images include:
+- **Joint Photographic Experts Group (.jpg or .jpeg):** is a graphic image saved using a lossy compression techniques that discards some data during compression process. JPEG file format supports images with many colors (&lt;256), such as photographs.
+  <MDXImage 
+    src='/images/pic-webdev.jpg'
+    alt='JPG example image'
+    width={392}
+    height={223}
+  />
+- **Portable Network Graphics (.png)**: newest format for images that supports multiple colors and resolutions. The PNG format is patent-free.
+  <MDXImage 
+    src='/images/pngs/png-sample.png'
+    alt='PNG example image'
+    width={392}
+    height={223}
+  />
+- **Graphics Interchange Format (.gif)**: use for images with few colors (&lt;256) and allows transparent backgrounds. It uses compression techniques called LZW compression, to make it smaller to download on the Web.
+  <MDXImage 
+    src='/images/gif-example.gif'
+    alt='GIF example image'
+    width={240}
+    height={240}
+  />
+</Section>
+<Section>
+### Attributes
+- **src (required)**: Specifies the URL or file path of the image to be displayed. Without it, there is nothing to render.
+- **alt (required)**: Provides alternative text for the image, which is displayed if the image fils to lead or for users with screen readers.
+- Image size attributes
+  + **width**: Specifies the widht of the image in pixels or as a percentage of the containing element's width.
+  + **height**: Specifies the height of the image in pixels or as a percentage of the contianing element's height.
+- **loading**: Indicates how the browser should load the image.
+  + **eager**: Loads the image immediately, regardless of whether or not the image is currently within the visible viewport (this is the default value.)
+  + **lazy**: Defers loading the image until it reaches a calculated distance from the viewport, as defined bt the browser. The intent is to avoid the network and storage bandwidth needed to handle the image intil it's reasonably certain that it will be needed. This generally improves the performance of the content in most typical use cases.
+**Combining all the attributes**:
+```html
+<img src="image.jpg" alt="Description" widht="30" height="50" loading="lazy" />
+```
+</Section>
+<Section>
+### Absolute and Relative Image URL
+Images can be embedded using both absolute and relative paths.
+- **Absolute Path**: Specifies the complete URL of the image `protocol://domain/path`, starting from the root fo the website.
+- **Relative Path**: Specifies the path of the image relative to the location of the HTML file.
+**Example code:**
+```html
+<!-- Absolute Path -->
+<img src="https://example.com/image.jpg" alt="Description" />
+
+<!-- Relative Path -->
+<img src="images/image.jpg" alt="Description" />
+```
+</Section>
+<Section>
+### More Resources
+You will discover additional resources and references to further enhance your understanding of the lesson topics.
+- <MDXLink href='https://developer.mozilla.org/en-US/docs/Web/SVG'>MDN SVG</MDXLink>
+- <MDXLink href='https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML'>MDN Images in HTML</MDXLink>
+</Section>

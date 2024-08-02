@@ -5,21 +5,13 @@ date: '2022-01-21'
 ---
 
 <Section>
-
 ### Introduction
-
 HTML, or Hypertext Markup Language, is an essential building block of every web page. HTML's primary purpose is to list the content used in the web page. HTML wll display text, labels, lists, insert photos and other media, create hyperlinks, buttons, and containers. This is all done with appropriate HTML elements.
-
 Additionally, each HTML elements can be used to separate content into sections. You can also nest HTML elements with one another for better control over the page layouts and content.
-
 </Section>
-
 <Section>
-
 ### Elements
-
 HTML describes the structure of a web page semantically and uses Elements that are made up of tags. Tags are easy to recognize as they use angle brackets (`<` and `>`).
-
 <Card
 	variant='notes'
 	header='Take note'
@@ -27,13 +19,15 @@ HTML describes the structure of a web page semantically and uses Elements that a
 	For now, we will use `<p></p>` as our primary element that represents as a paragraph, we will explain
 	it further after some lessons.
 </Card>
-
 **Opening tags** use angle brackets `<>` and a keyword inside, like `<p>` for paragraph.
-
 **Closing tags** look similar to opening tags, but with a forward slash before the keyword, like `</p>` to end the paragraph.
-
 ```html
 <p>Content here</p>
 ```
-
+</Section>
+<Section>
+### Void Elements
+Void elements in HTML are a unique kind, requiring only a single tag to be defined, and they don't contain any inner content. For instance, the `<br>` tag creates a line break without the need for a closing tag.
+You might occasionally see them with a slash at the end, like `<br />`. However, to keep things simple and in line with modern standards, it's best to avoid this format. Some users find adding a slash at the end of the void tag more readable.
+In HTML5, it's not necessary, but in XHTML, it's a requirement. While some tools or extensions may include the slash for compatibility, it's not essential, as long as your code adheres to the standards.
 </Section>

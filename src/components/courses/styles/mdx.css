@@ -11,6 +11,7 @@ h3 {
 	font-size: 1.25rem;
 	line-height: 1.5;
 	font-family: var(--lexend);
+	@apply text-neutral-200
 }
 
 p {

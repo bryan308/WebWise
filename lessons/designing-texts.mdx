@@ -1,0 +1,153 @@
+---
+title: Designing Texts
+description: Enhancing Text Design
+date: '2022-01-27'
+---
+
+<Section>
+### Introduction
+In web design, text plays a crucial role in conveying information and shaping the overall user experience. By mastering the art of styling text using CSS, you can transform ordinary content into visually engaging elements that captivate your audience. Let's explore some key aspects of designing texts in CSS:
+</Section>
+<Section>
+### Color Property
+The color property defines the **text** color for an HTML element.
+
+**Color Values:**
+- **Color Name**: Use defined color names like **red**, **blue**, or **green** to apply basic color to your element.
+- **Hexadecimal** Values: Specify colors using dexadecimal notation, such as **#FF0000** for red or **#00FF00** for green.
+- **RGB Values**: Defines colors using RGB values, such as **rgb(255, 0, 0)** for red or **rgb(0, 255, 0)** for green.
+- **RGBS Values**: Similar to RGB Values, RGBS values include an additional alpha channel to control opacity, allowing you to create transparent colors.
+- **HSL Values**: Specify colors using hue, saturation, and lightness values, providing a more intuitive way to select colors.
+- **HSLA Values**: Like HSL values, HSLA values include an alpha channel to control opacity.
+
+</Section>
+<Section>
+
+### CSS Units
+CSS provides various units for specifying measurements, allowing developers to create repsonsive and visually appealing web designs.
+
+- **Pixels (px)**: Pixel is a fixed-size unit commonly used for precise control over element dimensions and spacing. One pixel corresponds to one dot on a screen, making it a reliable choice for achieving consistent visual appearance across devices.
+- **Percentage (%)**: Percentage units are relative to the parent element's font size, width, or height. They allow for flexible and scalable designs by adapting to changes in the parent element's dimensions. For example, setting a font size to 150% increases it to 1.5 times the size of the parent element's font.
+- **Viewport Width (vw) and Viewport Height (vh)**: Viewport units are relative to the dimensions of the browser's viewport. One viewport width (vw) is equal to 1% of the viewport's width, while one viewport height (vh) is equal to 1% of the viewport's height. These units are particularly useful for creating layouts that adapt seamlessly to different screen sizes.
+- **Em (em)**: The em unit is relative to the font size of the element itself. When used for font sizes, one em is equivalent to the current font size of the element. For example, setting a font size to 1.5em increases it to 1.5 times the size of the element's parent font size.
+- **Root Em (rem)**: Similar to the em unit, the rem unit is relative to the font size of the root element (usually the `<html>` element). This makes rem units ideal for creating scalable designs that maintain consistent proportions across the entire document.
+
+</Section>
+<Section>
+### Text align property
+
+The `text-align` property defines the horizontal text alignment for an HTML element. A text can be **left** or **right** aligned, **center** or **justify**.
+
+```css
+p {
+  text-align: left | right | center | justify;
+}
+```
+
+</Section>
+<Section>
+
+### Text Decpration
+The text-decoration property is used to add a decorative line to a text.
+
+**The text-decoration property is a shorthand property for:**
+1. text-decoration-line
+  - `none`
+  - `underline`
+  - `overline`
+  - `line-through`
+2. text-decoration-color
+  - `color name`
+  - `rgb`
+  - `hsl`
+  - `hex`
+3. text-decoration-style
+  - `solid`
+  - `double`
+  - `dotted`
+  - `dashed`
+  - `wavy`
+4. text-decoration-thickness
+
+</Section>
+<Section>
+### Text Transform
+
+The text-transform property is used to specify uppercase and lowercase letters in a text. It can be used to turn everything into **uppercase** or **lowercase** letters, or **capitalize** the first letter of each word.
+
+```css
+p {
+  text-transform: uppercase | lowercase | capitalize | none;
+}
+```
+
+- THIS IS HOW **UPPERCASE** LOOKS LIKE.
+- this is how **lowercase** looks like.
+- This Is How **Capitalize** Looks Like.
+
+</Section>
+<Section>
+### Text Indent
+The text-indent property is used to specify the indentation of the first line of text.
+```css
+p {
+  text-indent: 50px;
+}
+```
+
+</Section>
+<Section>
+### Font Family
+The `font-family` property defines the fonts to be used for an HTML element. The font-family property should hold several font names as a **"fallback"** system.
+
+
+### Generic Font Family
+When specifying fonts in CSS, it's essential to include a generic font family as a fallback option. This ensures that if a specific font is not available, the browser can use a suitable alternative. Here are some recommended generic font families:
+
+- **sans-serif**: Arial, Verdana, Tahoma, Trebuchet MS
+- **serif**: Times New Roman, Georgia, Garamond
+- **monospace**: Courier New
+- **cursive**: Brush Script MT
+
+<Card variant='notes'>
+Always test your font choices across different browsers and devices and provide fallback options to maintain consistency and accessibility.
+</Card>
+
+### Font Style
+The `font-style` property allows you to specify the style of your text, including italic and oblique variations. For example:
+```css
+p {
+  font-style: italic;
+}
+```
+
+### Font Weight
+The font-weight property specifies the weight of a font. The value can be normal, bold, and 100 to 900.
+```css
+p {
+  font-weight: normal | bold | [100 - 900];
+}
+```
+
+### Font size
+The `font-size` property defines the text size for an HTML element. The font-size value can be an **absolute (pixels)** or **relative (em)** size.
+```css
+/* absolute size */
+p {
+  font-size: 20px;
+}
+
+  /* relative size */
+p {
+  font-size: 2em;
+}
+```
+
+</Section>
+<Section>
+### More Resources
+You will discover additional resources and references to further enhance your understanding of the lesson topics.
+
+- <MDXLink href='https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text'>MDN CSS Styling Texts</MDXLink>
+- <MDXLink href='https://www.w3schools.com/css/css_text.asp'>w3schools Text Formatting</MDXLink>
+</Section>

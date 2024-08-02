@@ -1,0 +1,48 @@
+---
+title: Block and Inline
+description: Introduction of Display Positioning
+date: '2022-01-30'
+---
+
+<Section>
+### Introduction
+In our previous lesson, we delved into the distinctive box models associated with different display types, realizing how we can alter box calculations by adjusting the display property. CSS introduces two fundamental box types: block and inline boxes, dictating the behavior and interaction of elements. The display property serves as a means to control the appearance of HTML elements on a webpage. Let's delve deeper into its diverse options in this lesson.
+</Section>
+
+<Section>
+### Lesson overview
+In this lesson overview, you will find a comprehensive outline of the topics covered in each section.
+- Understanding "Normal flow."
+- Differentiating between block and inline elements.
+- Identifying elements defaulting to block and those defaulting to inline.
+- Exploring the concepts of divs and spans.
+</Section>
+
+<Section>
+### Block vs Inline
+The majority of elements you've encountered thus far are block elements, signified by their default style, `display: block`. By default, block elements are displayed stacked on top of each other, with each new element initiating on a new line.
+
+On the other hand, inline elements do not commence on a new line but rather appear in line with adjacent elements. A prime example of an inline element is a link, or `<a>` tag. When placed within a paragraph of text, a link seamlessly integrates into the paragraph. Moreover, padding and margin behave distinctively on inline elements. Typically, it's discouraged to add extra padding or margin to inline elements.
+</Section>
+
+<Section>
+### The Middle Ground: Inline-block
+Inline-block elements exhibit characteristics of both inline and block elements, featuring block-style padding and margin while maintaining inline behavior. display: inline-block proves to be a valuable tool, yet in practice, flexbox is often preferred for aligning multiple boxes.
+</Section>
+
+<Section>
+### Divs and Spans
+A discussion on block and inline elements wouldn't be complete without addressing divs and spans. Unlike other HTML elements that imbue meaning to their content, divs and spans are devoid of specific meaning. They serve as generic containers, capable of housing any content.
+
+Despite their seemingly straightforward nature, divs and spans offer remarkable utility. They can serve as "hook" elements, allowing us to target them for styling with CSS using ids or classes. Additionally, we frequently use these elements to group related elements under one parent, facilitating proper positioning on the page.
+
+- `div`: By default, div is a block-level element, commonly employed as a container to group other elements. Divs enable us to segment the page into distinct blocks and apply styling as needed.
+- `span`: By default, span is an inline-level element, useful for grouping text content and inline HTML elements for styling purposes. It should be used judiciously when no other semantic HTML element is suitable.
+</Section>
+
+<Section>
+### More Resources
+You will discover additional resources and references to further enhance your understanding of the lesson topics.
+
+- <MDXLink href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flow_layout/Block_and_inline_layout_in_normal_flow'>Block and inline layout in normal flow</MDXLink>
+</Section>

@@ -1,20 +1,18 @@
-// app/posts/[slug]/page.tsx
-
 import { serialize } from 'next-mdx-remote/serialize';
 import rehypePrism from 'rehype-prism-plus';
 import { getAllMdx, getMdx } from '@/lib/mdx';
 import remarkGfm from 'remark-gfm';
-import PostContent from './PostContet';
+import LessonContent from './lesson-content';
 
-interface PostProps {
+interface ListProp {
 	params: { slug: string };
 }
 
-async function fetchPostData(slug: string) {
+async function fetchLessonData(slug: string) {
 	const mdxFiles = getAllMdx();
-	const postIndex = mdxFiles.findIndex((p) => p.frontMatter.slug === slug);
-	const post = mdxFiles[postIndex];
-	const { frontMatter, content } = post;
+	const lessonIndex = mdxFiles.findIndex((p) => p.frontMatter.slug === slug);
+	const lesson = mdxFiles[lessonIndex];
+	const { frontMatter, content } = lesson;
 	const mdxContent = await serialize(content, {
 		mdxOptions: {
 			remarkPlugins: [remarkGfm],
@@ -22,15 +20,19 @@ async function fetchPostData(slug: string) {
 		},
 		scope: frontMatter,
 	});
-	const previous = mdxFiles[postIndex + 1]?.frontMatter || null;
-	const next = mdxFiles[postIndex - 1]?.frontMatter || null;
+	const previous = mdxFiles[lessonIndex + 1]?.frontMatter || null;
+	const next = mdxFiles[lessonIndex - 1]?.frontMatter || null;
 
 	return { frontMatter, mdxContent, previous, next };
 }
 
-export default async function Post({ params }: PostProps) {
+export default async function Lesson({ params }: ListProp) {
 	const { slug } = params;
-	const postData = await fetchPostData(slug);
+	const postData = await fetchLessonData(slug);
 
-	return <PostContent {...postData} />;
+	return (
+		<div className='space-x-4'>
+			<LessonContent {...postData} />
+		</div>
+	);
 }

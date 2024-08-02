@@ -1,0 +1,141 @@
+---
+title: HTML Boilerplate
+description: Structuring Web Content
+date: '2022-01-22'
+---
+
+<Section>
+### Introduction
+In every HTML document, there is a standard structure that serves as the foundation. Before we dive into the details, let's take a look at the various components of this structure and understand how they work together.
+</Section>
+<Section>
+### Lesson overview
+In this lesson overview, you will find a comprehensive outline of the topics covered in each section.
+- DOCTYPE
+- HTML Versions
+- HTML Element and the lang attribute
+- Head Element and the required components inside the element
+</Section>
+<Section>
+### DOCTYPE
+The DOCTYPE in HTML serves as a declaration that tells the web browser which version of HTML is used in the document. Unlike HTML elements or tags, it's an instruction that defines the markup language and its standard or version. Placed at the beginning of an HTML document, before any other elements.
+<Card variant='tips'>
+	Although the `DOCTYPE` declaration is not case-sensitive, you have the flexibility to declare it
+	in lowercase or sentence case, such as `doctype` or `Doctype`. However, for improved readability,
+	it is advisable to use uppercase format for the `DOCTYPE`.
+</Card>
+**HTML Versions**:
+- **HTML 5**
+  ```html
+  <!DOCTYPE html>
+  ```
+- **HTML 4.01**
+  ```html
+  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+  ```
+- **HTML 1.1**
+  ```html
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "hhtp://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+  ```
+</Section>
+<Section>
+### HTML Element
+After declaring the DOCTYPE, the next step is to include the `<html>` and `</html>` serve as the pri element, marking the beginning and end of an HTML document.
+```html
+<!DOCTYPE html>
+<html></html>
+```
+</Section>
+<Section>
+### Lang attribute
+It's essential to always specify a language attribute within the `<html>` tag to indicate the default languages of the text on the page. This attribute is inherited by all other elements. For instance:
+```html
+<!DOCTYPE html>
+<html lang="en"></html>
+```
+<Card variant='warning'>
+Ensure you use the `<html>` element for this purpose rather than the `<body>` element, as the `<body>` element does not cover the text within the document's `<head>` element.
+</Card>
+</Section>
+<Section>
+### Head Element
+Enclosed within `<html>` and `</html>` tags, the `<head>` and `</head>` elements encapsulates crucial details about the HTML documnet. The `<head>` element specifically houses machine-readable information, known as metadata, such as the document's title, scripts, and style sheets.
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head> </head>
+</html>
+```
+### Required components inside the head element
+
+The document metadata, including the document title, character set, viewport settings, description, base URL, stylesheet links, anc icons, are found in the `<head>` element. While you may not need all these features, always include character set, title, and viewport settings.
+1. ### Character encoding
+    The very first element in the `<head>` should be the charset character encoding declaration. It comes before the title to ensure the browser can render the characters in that title and all the characters in the rest of the document.
+
+    The default encoding in most browsers is `windows-1252`, depending on the locale. However, you should use `UTF-8`, as it enables the one to four-byte encoding of all characters, even ones you didn't even know existed. Also, it's the encoding type required by `HTML5`.
+
+    **To set the character encoding to UTF-8, include**:
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+      </head>
+      <body>
+      </body>
+    </html>
+    ```
+
+2. ### Viewport Metadata
+    The other meta tag that should be considered essential is the `viewport` meta tag, which helps site responsiveness, enabling content to render well by default, no matter the viewpprt width. While the `viewport meta tag` has been around since June 2007, when the first iPhone came out, it's only recently been documented in a specification. As it enables conrolling a viewport's size and scale, and prevents the site's content from being sized down to fit a 960px site onto a 320px screen, it is definitely recommended.
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body>
+      </body>
+    </html>
+    ```
+3. ### Title Element
+    The `<title>` element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab. The `<title>` element is required in HTML documents and the content of the page title is very important for search engine optimazation (SEO).
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>A Meaningful Page Title</title>
+      </head>
+      <body>
+      </body>
+    </html>
+    ```
+    <Card variant='warning'>
+      Neglecting to include text in the `<title>` element can result a poor user experience. Browsers may display generic title like **"Untitled"** or the **filename** of the HTML document, which offer no insight into the webpage's content.
+    </Card>
+</Section>
+<Section>
+### Body Element
+The `<body>` and `</body>` elements contain all the visible content within the webpage. They are just written after the `<head></head>` inside the `<html></html>` tags.
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Meaningful Page Title</title>
+  </head>
+  <body>
+  </body>
+</html>
+```
+</Section>
+<Section>
+### More Resources
+You will discover additional resources and references to further enhance your understanding of the lesson topics.
+- <MDXLink href='https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode'>What is Quirks Mode?</MDXLink>
+- <MDXLink href='https://www.w3resource.com/html/HTML-versions.php'>w2resource: Lists of HTML Versions</MDXLink>
+</Section>

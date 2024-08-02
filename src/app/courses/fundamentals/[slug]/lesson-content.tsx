@@ -1,24 +1,26 @@
-// app/posts/[slug]/PostContent.tsx
-
 'use client';
 
 import Link from 'next/link';
 import { MDXRemote } from 'next-mdx-remote';
 import { MDXFrontMatter } from '@/lib/types';
 import { Page } from '@/components/courses/Page';
-// import { Prose } from '@/components/Prose';
 import { cn } from '@/lib/utils';
 import { components } from '@/components/courses/MDX';
 import '@/components/courses/styles/mdx.css';
 
-interface PostContentProps {
+interface ILessonContentProp {
 	frontMatter: MDXFrontMatter;
 	mdxContent: any;
 	previous: MDXFrontMatter | null;
 	next: MDXFrontMatter | null;
 }
 
-export default function PostContent({ frontMatter, mdxContent, previous, next }: PostContentProps) {
+export default function LessonContent({
+	frontMatter,
+	mdxContent,
+	previous,
+	next,
+}: ILessonContentProp) {
 	return (
 		<Page {...frontMatter}>
 			{/* <Prose> */}

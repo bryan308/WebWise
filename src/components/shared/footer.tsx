@@ -39,7 +39,7 @@ export default function Footer() {
 											className='mb-4'
 										>
 											<Link
-												href={`${l.href}`}
+												href={l.href}
 												className='text-neutral-600 dark:text-neutral-300 text-sm no-underline mb-2 font-medium dark:hover:text-neutral-200 hover:text-neutral-700'
 											>
 												{l.text}

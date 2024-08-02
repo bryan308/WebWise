@@ -10,7 +10,7 @@ interface PostListProps {
 	posts: Array<MDXFrontMatter>;
 }
 
-export const PostList: NextPage<PostListProps> = ({ posts }) => {
+export const LessonList: NextPage<PostListProps> = ({ posts }) => {
 	return (
 		<ul className={cn('divide-y -my-8', 'divide-gray-200', 'dark:divide-gray-700')}>
 			{posts.map((post, index) => {

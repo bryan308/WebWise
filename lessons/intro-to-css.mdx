@@ -1,0 +1,320 @@
+---
+title: Intro to CSS
+description: Gettings Satrted with CSS
+date: '2022-01-27'
+---
+
+<Section>
+
+### Introduction
+
+Cascading Style Sheets (CSS) is a fundamental technology in web development used to control the visual presentation of HTML elements. In this lesson, we'll explore the basics of CSS and how it enhances the appearance of web content.
+
+</Section>
+<Section>
+
+### Basic Syntax
+At the most basic level, CSS is made up of various rules. These rules are made up of a selector (more on this in a bit) and a semicolon-separated list of declarations, with each of those declarations being made up of a property-value pair. Each property-value is separated by **semicolon ( ; )**.
+
+```css
+selector {property: value;property: value;}
+```
+</Section>
+<Section>
+
+**Different ways to apply CSS:**
+- **Inline CSS**
+  Inline CSS involves applying styling directly within HTML elements using `style` attribute, allowing for specific element-level customization.
+  ```html
+  <element style="property: value;"></element>
+  ```
+  Inline CSS allows you to apply styles directly to HTML elements using the `style` attribute, like so:
+  ```html
+  <body>
+    <div style="color: white; background-color: black;">...</div>
+  </body>
+  ```
+  Here, the styles are directly embedded within the opening `<div>` tag, without the need for selectors. The `style` attribute contains declarations enclosed in quotation marks.
+  <Card variant='warning'>
+  While inline CSS can be useful for adding unique styles to individual elements, it's not typically recommended for several reasons:
+  1. **Messy Markup**: Adding multiple declarations to a single element can quickly clutter your HTML file, making it harder to read and maintain.
+  2. **Repetition**: If you want multiple elements to have the same style, you'll need to duplicate the inline styles for each element, leading to unnecessary repetition.
+  3. **Specificity Issues**: Inline styles override styles applied using external or internal CSS, which can sometimes lead to unexpected behavior.
+  </Card>
+
+- **Internal CSS**
+  Internal CSS refers to styling rules declared within the `<style>` element in the head section of an HTML document, affecting the appearance of multiple elemenets within that document.
+  ```html
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal CSS</title>
+    <style type="text/css">
+      div {
+        color: white;
+        background-color: black;
+      }
+
+      p {
+        color: red;
+      }
+    </style>
+  </head>
+  ```
+
+- **External CSS** <br />
+  External CSS involves liking an external CSS file to an HTML document, enabling consistent styling across multiple web pages and facilitating easier maintenance.
+  
+  External CSS is a form of CSS which is used to add styling to multiple HTML pages at a time. It is one of the most commonly used CSS for updating, styling, and modifying the distinctive styles in many HTML web pages at once. With External CSS, you can change the look of an entire website by changing just one file
+  ```html
+  <div>Hello!</div>
+  <div>How are you?</div>
+  <div>I'm under the water.</div>
+  <p>Please help me.</p>
+  <div>Too much raining</div>
+  <p>huhuhu</p>
+  ```
+  ```html
+  div {
+    color: yellow;
+  }
+  ```
+  **Advantages of Using External CSS**
+  - For any change in the styling of an HTML page, a single modification to the style sheet can be applied to all the connected pages, resulting in saving time and effort.
+  - Selector and grouping techniques are used to apply styles under complex contexts.
+  - It helps to keep our code nice and readable as all the code for the styling part is done in a separate file.
+
+  **Link Element** <br />
+  An External CSS file can be written in any text editor. The file should not contain any HTML tags and must be saved with a `.css` extension. Each page must include a reference to the external style sheet file inside the `<link />` element.
+  ```html
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"  />
+    <title>External CSS</title>
+  </head>
+  ```
+
+- **CSS Frameworks**<br />
+  CSS frameworks are pre-written sets of CSS styles and rules that help developers quickly and efficiently build and style web pages.
+
+  They provide a foundation of commonly used design patterns, layout structures, and UI components, which can significantly speed up the development process by reducing the need to write repetitive CSS code from scratch.
+
+  **Advantages of using CSS Frameworks**
+  - Rapid Development
+  - Consistency
+  - Responsive Design
+  - Cross-Browser Compatibility
+  - Community Support and Documentation
+  - Scalability
+
+  **How do web insert a CSS Framework?**
+  1. Choose a CSS Framework
+  2. Download CSS File or Link to the Framewor's CDN(Content Delivery Network)
+  3. Include the CSS Files by using the `<link />` tag
+  4. Start using the Framework Classes
+  5. Customize as Needed
+
+  **Best CSS Frameworks of 2024 rated by ColorLib | March 12, 2024**
+  - Bootstrap (https://getbootstrap.com)
+  - Tailwind CSS (https://tailwindcss.com)
+  - Semantic UI (https://semantic-ui.com)
+  - Bulma (https://bulma.io)
+  - Materialize (https://materializecss.com)
+  - Foundation (https://get.foundation)
+  - Pure CSS (https://purecss.io)
+  - UIKit (https://getuikit.com)
+  - W3.CSS (https://www.w3schools.com/w3css.default.asp)
+
+</Section>
+<Section>
+
+### Selectors
+Selectors are patterns used to select the elements you want to style. There are several types of selectors:
+
+- **Universal Selector**
+  The universal selector, denoted by the **asterisk (*)** symbol, targets all elements on a web page. It allows you to appy styles universally, affecting every element within the specified scope. In the example below, every element would have the `color: yellow` style applied to it.
+  ```css
+  * {
+    color: yellow;
+  }
+  ```
+- **Type Selector**
+  Targets specific HTML elements by their tag name. Here, all four `<div>` elements would be selected, while the `<p>` element wouldn't be.
+  ```html
+  <div>Hello!</div>
+  <div>How are you?</div>
+  <div>I'm under the water.</div>
+  <p>Please help me.</p>
+  <div>Too much raining</div>
+  <p>huhuhu</p>
+  ```
+  ```css
+  div {
+    color: yellow;
+  }
+  ```
+- **Class Selector**<br />
+  Class selectors will select all elements with the given class, which is just an attribute you place on an HTML Element.
+  ```html
+  <div class="error-text">Hello World!</div>
+  ```
+  ```css
+  .error-text {
+    color: red;
+  }
+  ```
+  <Card variant='notes'>
+  Take note of the syntax for class selectors: a period followed directly by the **case-sensitive** value of the **class attribute**.
+  </Card>
+  Classes do not need to be exclusive to a specifc element, allowing you to apply the same calss to multiple elements if needed.
+  ```html
+  <div class="error-text">Hello World!</div>
+
+  <p class="error-text">Hello again!</p>
+  ```
+  Furthermore, you have the option to assign multiple classes to a single element by listing them as a space-separated series, like so:
+  ```html
+  <div class="error-text severe-text">Hello World!</div>
+  ```
+- **ID Selector**<br />
+  ID Selector function similarly to class selectors, targeting an element with the specified ID attribute, which is another attribute assigned to an HTML element However, a crucial distinction between classes and IDs is that an element can only possess **one** ID and cannot be repeated on a single web page. Additionally, IDs should not include any whitespace and cannot start with a number.
+
+  To select elements by their IDs, we use a hashtag followed directly by the case-sensitive value of the ID attribute, as shown in the example:
+
+  ```html
+  <div id="title">Lesson 1</div>
+  ```
+  ```css
+  #title {
+    background-color: yellow;
+  }
+  ```
+  While there are scenarios where using IDs is appropriate, such as when specificity is required or when creating links that navigate to specific sections within a page, it's important to avoid overusing IDs when classes can fulfill the same purpose. IDs should be used judiciously, considering their potential impact on CSS specificity and overall maintainability of the codebase.
+
+- **Group Selector**<br />
+  The concept of grouping selectors comes into play when we encounter situations where multiple groups of elements share some common style declarations. Take, for instance, the scenario where we have two groups of elements, one marked as `.read` and the other as `.unread`, both of which have identical color and background-color declarations, along with several unique ones of their own.
+  ```css
+  .read, .unread {
+    color: white;
+    background-color: black;
+  }
+      
+  .read {
+      /* several unique declarations */
+  }
+      
+  .unread {
+      /* several unique declarations */
+  }
+  ```
+  In the above example, both `.read` and `.unread` selectors share the color and background-color declarations, reducing repetition. This approach streamlines the code and makes it more efficient to modify shared properties across multiple classes simultaneously.
+
+- **Chaining Selector**<br />
+  Chaining selectors allows us to target elements that have multiple classes or a combination of classes and IDs. For instance, consider the HTML snippet below:
+  ```html
+  <div>
+    <div class="subsection header">Latest Posts</div>
+    <p class="subsection preview">This is where a preview for a post might go.</p>
+  </div>
+  ```
+  Suppose we want to apply a specific style to elements that have both the `subsection` and `header` classes. We can achieve this by chaining the class selectors together in our CSS:
+  ```html
+  .subsection.header {
+    color: red;
+  }
+  ```
+  In this example, the `.subsection.header` selector targets any element that has both the `subsection` and `header` classes. Note that there is no space between the class selectors.
+
+  This chaining technique can also be used with a class and an ID, as demonstrated below:
+
+  ```html
+  <div class="subsection header">Latest Posts</div>
+    <p class="subsection" id="preview">
+      This is where a preview for a post might go.
+    </p>
+  </div>
+  ```
+  ```css
+  .subsection.header {
+    color: red;
+  }
+  .subsection#preview {
+    color: blue;
+  }
+  ```
+  <Card variant='notes'>
+  However, it's important to note that chaining more than one type selector is not possible, as an element cannot belong to multiple types simultaneously. For instance, attempting to chain two type selectors like `div` and `p` would result in an invalid selector.
+  </Card>
+
+- Descendant Combinator
+  The descendant combinator in CSS, represented by a single space between selectors, allows us to select elements based on their relationship to ancestor elements. Specifically, it selects elements that match the last selector if they are nested inside an ancestor that matches the previous selector.
+
+  For example, in the CSS rule `.ancestor` `.child`, the `child` element will be selected only if it is nested inside an element with the class `ancestor`, regardless of the depth of nesting.
+
+  **Consider the following HTML snippet:**
+  ```html
+  <div class="ancestor">
+    <div class="contents">
+      <!-- Selected (B) -->
+      <div class="contents"><!-- Selected (C) --></div>
+    </div>
+  </div>
+
+  <div> class="contents"><!-- Not selected (D) --></div>
+  ```
+  ```css
+  .ancestor .contents {
+    color: red;
+  }
+  ```
+  In this example, elements `B` and `C` would be selected based on the CSS rule, while element `D` would not.
+  <Card variant='tips'>
+  While there is no limit to the number of combinators you can add to a rule, such as `.one` `.two` `.three` `.four`, it is recommended to avoid excessive nesting in selectors. This can lead to confusion, longer and more complex selectors, and potential issues with specificity.
+  </Card>
+</Section>
+<Section>
+### Cascade
+The cascade of CSS plays a crucial role in determining which style rules get applied to our HTML elements. It's important to note that CSS behaves based on our instructions, although sometimes unexpected results may occur due to default browser styles or misunderstandings about the cascade.
+
+One of the key factors in the cascade is specificity. This refers to the level of importance assigned to different types of CSS selectors. For instance, inline styles have the highest specificity, followed by ID selectors, class selectors, and type selectors. In cases where conflicting rules exist, the more specific rule takes precedence. Let's illustrate this with some examples:
+
+**Consider two rules targeting the same element:**
+```css
+.subsection {
+  color: blue;
+}
+
+.main .list {
+  color: red;
+}
+```
+In this scenario, the second rule `.main` `.list` is more specific because it contains more class selectors. Therefore, the text color will be red.
+
+**Similarly, when comparing ID selectors to class selectors:**
+```css
+#subsection {
+  color: blue;
+}
+
+.main .list {
+  color: red;
+}
+```
+
+Despite having more class selectors, the first rule `#subsection` takes precedence because IDs are more specific than classes.
+
+It's worth noting that not all selector symbols contribute to specificity. Symbols like the universal selector `*` and combinators `+`, `~`, `<`, and `space` do not add to specificity. Inheritance is another factor in the cascade, where certain properties are inherited by child elements. However, directly targeting an element always overrides inheritance.
+
+Lastly, in cases where all other factors are equal, the order of rule definition becomes the deciding factor. The rule defined last is the one that gets applied.
+
+Understanding these aspects of the cascade can help avoid frustration and ensure that CSS behaves as expected.
+</Section>
+<Section>
+### More Resources
+You will discover additional resources and references to further enhance your understanding of the lesson topics.
+
+- <MDXLink href='https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps'>MDN CSS First steps</MDXLink>
+- <MDXLink href='https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors'>MDN CSS Selectors</MDXLink>
+
+</Section>

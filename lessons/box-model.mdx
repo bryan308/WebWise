@@ -1,0 +1,90 @@
+---
+title: Box Model
+description: Understanding the Box Model
+date: '2022-01-29'
+---
+
+<Section>
+### Introduction
+In CSS, the concept of the "box model" is fundamental for understanding the layout and design of HTML elements. Essentially, every HTML element can be visualized as a rectangular box, comprising four main components: content, padding, border, and margin. Here's a breakdown of each part:
+
+<MDXImage 
+  src='/images/lesson-images/l4/box_model.png'
+  alt='box model'
+  width={400}
+  height={225}
+/>
+
+- **Content**: This is the inner area of the box where text, images, or other content appears.
+- **Padding**: Padding clears an area around the content, creating space between the content and the border. The padding area is transparent.
+- **Border**: The border surrounds the padding and content, defining the outer edge of the box.
+- **Margin**: Margin clears an area outside the border, providing space between the border of this element and adjacent elements. Like padding, the margin area is transparent.
+
+</Section>
+<Section>
+### The box model
+All components of a webpage are organized in a rectangular structure. These blocks can contain other blocks and align next to each other. You can gain a basic understanding of this concept by visually highlighting each element on the page, as if delineating them with a border.
+
+```css
+* {
+  outline: red solid 2px;
+}
+```
+
+<MDXImage 
+  src='/images/lesson-images/l4/outline-sample.png'
+  alt='outline demo'
+  width={400}
+  height={225}
+/>
+
+### Here's a demonstration showcasing the box model in action:
+```css
+div {
+  width: 300px;
+  padding: 50px;
+  border: 15px solid green;
+  margin: 20px;
+}
+```
+</Section>
+<Section>
+### Width and Height of an Element
+To accurately set the width and height of an element across different browsers, understanding how the box model functions is crucial.
+
+When specifying the width and height properties of an element in CSS, you're defining the dimensions of the content area only. To calculate the total width and height of the element, you must also account for padding and borders.
+
+**Consider the following `<div>` element, which will have a total width of 350px and a total height of 80px:**
+```css
+div {
+  width: 320px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+```
+**Here's the breakdown of the calculation:**
+- **Width:**
+  - Content area: **320px**
+  - Left and Right padding: **20px**
+  - Left and Right border: **10px**
+
+  `Total width: 350px`
+- **Height:**
+  - Content area: **50px**
+  - Top and Bottom padding: **20px**
+  - Top and Bottom border: **10px**
+  
+  `Total width: 80px`
+
+**When determining the total width and height of an element:**
+
+**Total element width = width + left padding + right padding + left border + right border**
+**Total element width = height + top padding + bottom padding + top border + bottom border**
+
+<Card variant='notes'>
+While the margin property influences the space the box occupies on the page, it's not included in the actual size of the box. The total width and height of the box end at the border.
+</Card>
+
+</Section>

@@ -1,0 +1,165 @@
+---
+title: HTML Lists
+description: Organizing Informations with Lists
+date: '2022-01-24'
+---
+
+<Section>
+### Introduction
+HTML lists are essential for organizing and structuring content on web pages. They allow you to present information in a structured and readable format, making it easier for users to navigate and understand you content.
+</Section>
+<Section>
+### Lesson overview
+In this lesson overview, you will find a comprehensive outline of the topics covered in each section.
+- Unordered Lists
+- Ordered Lists and **start** attribute
+- Description Lists
+</Section>
+<Section>
+### Unordered List
+Unordered lists are used to present items in no particulare oreder, typically represented by bullet points.
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Lists</title>
+  </head>
+  <body>
+    <h1>Most Popular Web Browsers</h1>
+    <ul>
+      <li>Google Chrome</li>
+      <li>Mozilla Firefox</li>
+      <li>Opera Browser</li>
+      <li>Microsoft Edge</li>
+      <li>Safari Browser</li>
+    </ul>
+  </body>
+</html>
+```
+### Output:
+<MDXImage 
+  src='/images/lesson-images/l3/ul-output.png'
+  alt='unordered list output'
+  width={400}
+  height={225}
+/>
+<Card variant='tips'>
+- Use unordered lists when the order of items doesn't matter.
+- The bullet point is the default of the `<ul>` tag items, signify a lack of sequential order, making unordered lists ideal for presenting items without hierarchy.
+</Card>
+</Section>
+<Section>
+### Ordered Lists
+Ordered lists are used to present items in a sequential order, typically represented by numbers or letters.
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Lists</title>
+  </head>
+  <body>
+    <h1>Ordered Lists Example</h1>
+    <ol>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ol>
+  </body>
+</html>
+```
+### Output:
+<MDXImage 
+  src='/images/lesson-images/l3/ol-output.png'
+  alt='ordered list output'
+  width={400}
+  height={225}
+/>
+<Card variant='tips'>
+- Use ordered lists when presenting items in a specific order or sequence.
+- The numbered format guides users through a logical progression, making orderd lists suitable for ste-by-step instructions or hierarchy content.
+</Card>
+### Start Attribute
+`start` attribute specifies the starting value of the ordered-list.
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Lists</title>
+  </head>
+  <body>
+    <h1>Ordered Lists Example</h1>
+    <ol start="5">
+      <li>Fifth item</li>
+      <li>Sixth item</li>
+      <li>Seventh item</li>
+    </ol>
+  </body>
+</html>
+```
+### Output:
+<MDXImage 
+  src='/images/lesson-images/l3/ol-output-2.png'
+  alt='ordered list output'
+  width={400}
+  height={225}
+/>
+**Explanation:**
+The `start` attribute allows you to specify the starting value of ther ordered-list, the list starts from the value **"5"** instead of the default **"1"**. This is useful when you want to continue a list from a specific number or customize the starting point for easthetic or organizational purposes.
+</Section>
+<Section>
+### Definition Lists
+Definition lists are used to present terms and their corresponding definitions.
+- The `<dl>` and `</dl>` tag pair defines the description list.
+- The `<dt>` and `</dt>` tag pair defines the term (name).
+- The `<dd>` and `</dd>` tag pair describes each term.
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Lists</title>
+  </head>
+  <body>
+    <h1>Definition Lists Example</h1>
+    <dl>
+      <dt>Web Page</dt>
+      <dd>
+        is a document commonly written in HTML that is accessible through 
+        the internet or other network using a web browser. 
+      </dd>
+      <dt>Web Site</dt>
+      <dd>
+        is a collection of related web pages, including multimedia content, 
+        typically identified with a common domain name, and published on at 
+        least one web server.
+      </dd>
+    </dl>
+  </body>
+</html>
+```
+### Output:
+<MDXImage 
+  src='/images/lesson-images/l3/dl-output.png'
+  alt='definition lists output'
+  width={400}
+  height={158}
+/>
+<Card variant='tips'>
+- Use definition lists when presenting glossaries, dictionaries, or sets of terma and their explanantions.
+- The term and definition structure clarifies relationships between terms, aiding comprehension for users seeking specific information.
+</Card>
+</Section>
+<Section>
+### More Resources
+You will discover additional resources and references to further enhance your understanding of the lesson topics.
+- <MDXLink href='https://www.geeksforgeeks.org/nested-list-in-html/'>Nested list in HTML</MDXLink>
+- <MDXLink href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul'>MDN documentation on the unordered list element</MDXLink>
+- <MDXLink href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol'>MDN documentation on the ordered list element</MDXLink>
+</Section>

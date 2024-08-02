@@ -1,0 +1,257 @@
+---
+title: Lists Properties
+description: Mastering List Styling
+date: '2022-01-28'
+---
+
+<Section>
+### Introduction
+CSS provides powerful properties for styling and customizing lists in web pages. Whether you are creating unordered list with bullet points or ordered list with numbers or letters, CSS offers a range of options to control thier appearance and behavior.
+</Section>
+
+<Section>
+### List-Style-Type
+
+The list-style-type property specifies the type of marker used for list items. You can choose from a variety of predefined marker styles, including disc, circle, square, decimal, lowercase and uppercase Roman numerals, and alphabetical characters.
+
+### Style type for `<ul>` element:
+
+- **disc** value sets the list item marker to a bullet
+  ```html
+  <ul style="list-style-type: disc;">
+    <li> Google Chrome </li>
+    <li> Mozilla Firefox </li>
+    <li> Opera Browser </li>
+    <li> Microsoft Edge </li>
+    <li> Safari Browser </li>
+  </ul>
+  ```
+  ### Output:
+  <MDXImage 
+    src='/images/lesson-images/l4/disc-output.png'
+    alt='disc output'
+    width={392}
+    height={294}
+  />
+- **circle** value sets the list item marker to circle.
+  ```html
+  <ul style="list-style-type: circle;">
+    <li> Google Chrome </li>
+    <li> Mozilla Firefox </li>
+    <li> Opera Browser </li>
+    <li> Microsoft Edge </li>
+    <li> Safari Browser </li>
+  </ul>
+  ```
+  ### Output:
+  <MDXImage 
+    src='/images/lesson-images/l4/circle-output.png'
+    alt='circle output'
+    width={392}
+    height={294}
+  />
+- **square** value sets the list item marker to a square
+  ```html
+  <ul style="list-style-type: square;">
+    <li> Google Chrome </li>
+    <li> Mozilla Firefox </li>
+    <li> Opera Browser </li>
+    <li> Microsoft Edge </li>
+    <li> Safari Browser </li>
+  </ul>
+  ```
+  ### Output:
+  <MDXImage 
+    src='/images/lesson-images/l4/square-output.png'
+    alt='square output'
+    width={392}
+    height={294}
+  />
+- **none** value will not display markers on list items
+  ```html
+  <ul style="list-style-type: none;">
+    <li> Google Chrome </li>
+    <li> Mozilla Firefox </li>
+    <li> Opera Browser </li>
+    <li> Microsoft Edge </li>
+    <li> Safari Browser </li>
+  </ul>
+  ```
+  ### Ouptput:
+  <MDXImage 
+    src='/images/lesson-images/l4/none-output.png'
+    alt='none output'
+    width={392}
+    height={294}
+  />
+
+### Style type for `<ol>` element:
+- **decimal** (1, 2, 3...)
+  ```html
+  <ol style="list-style-type: decimal;">
+    <li> first item </li>
+    <li> second item </li>
+    <li> third item </li>
+    <li> fifth item </li>
+    <li> sizth item </li>
+  </ol>
+  ```
+  ### Output:
+  <MDXImage 
+    src='/images/lesson-images/l4/decimal-output.png'
+    alt='decimal output'
+    width={392}
+    height={294}
+  />
+- **decimal-leading-zero** (01, 02, 03...)
+  ```html
+  <ol style="list-style-type: decimal-leading-zero;">
+    <li> first item </li>
+    <li> second item </li>
+    <li> third item </li>
+    <li> fifth item </li>
+    <li> sizth item </li>
+  </ol>
+  ```
+  ### Output:
+  <MDXImage 
+    src='/images/lesson-images/l4/decimal-leading-zero-output.png'
+    alt='decimal leading zero output'
+    width={392}
+    height={294}
+  />
+- **lower-roman** (a, b, c...)
+  ```html
+  <ol style="list-style-type: lower-roman;">
+    <li> first item </li>
+    <li> second item </li>
+    <li> third item </li>
+    <li> fifth item </li>
+    <li> sizth item </li>
+  </ol>
+  ```
+  ### Output:
+  <MDXImage 
+    src='/images/lesson-images/l4/lower-roman-output.png'
+    alt='lower roman output'
+    width={392}
+    height={294}
+  />
+- **upper-alpha** (a, b, c...)
+  ```html
+  <ol style="list-style-type: upper-alpha;">
+    <li> first item </li>
+    <li> second item </li>
+    <li> third item </li>
+    <li> fifth item </li>
+    <li> sizth item </li>
+  </ol>
+  ```
+  ### Output:
+  <MDXImage 
+    src='/images/lesson-images/l4/upper-alpha-output.png'
+    alt='upper alpha output'
+    width={392}
+    height={294}
+  />
+- **lower-roman** (i, ii, iii...)
+  ```html
+  <ol style="list-style-type: lower-roman;">
+    <li> first item </li>
+    <li> second item </li>
+    <li> third item </li>
+    <li> fifth item </li>
+    <li> sizth item </li>
+  </ol>
+  ```
+  ### Output:
+  <MDXImage 
+    src='/images/lesson-images/l4/lower-roman-output.png'
+    alt='lower roman output'
+    width={392}
+    height={294}
+  />
+- **upper-roman** (I, II, III...)
+  ```html
+  <ol style="list-style-type: upper-roman;">
+    <li> first item </li>
+    <li> second item </li>
+    <li> third item </li>
+    <li> fifth item </li>
+    <li> sizth item </li>
+  </ol>
+  ```
+  ### Output:
+  <MDXImage 
+    src='/images/lesson-images/l4/upper-roman-output.png'
+    alt='upper roman output'
+    width={392}
+    height={294}
+  />
+</Section>
+<Section>
+### List Style Image
+Instead of using predefined marker styles, you can use custom images as list item markers with the list-style-image property. Simply specify the URL of the image you want to use, and it will be displayed as the marker for each list item.
+```html
+<ul style="list-style-image: url('hashtag.png')">
+  <li>item 1</li>
+  <li>item 2</li>
+</ul>
+```
+### Output:
+<MDXImage 
+  src='/images/lesson-images/l4/list-style-image.png'
+  alt='list style image output'
+  width={400}
+  height={300}
+/>
+</Section>
+<Section>
+### List Style Position
+The `list-style-position` property specifies the position of the list item marker in unordered lists.
+
+The **outside** value means that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically.
+```html
+<ul style="list-style-position: outside">
+  <li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. </li>
+  <li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. </li>
+  <li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. </li>
+  <li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. </li>
+</ul>
+```
+### Output: 
+<MDXImage 
+  src='/images/lesson-images/l4/outside-position-output.png'
+  alt='list style position output1'
+  width={400}
+  height={300}
+/>
+
+The **inside** value means that the bullet points will be inside the list item. The list item will be part of the text and push the text at the start.
+```html
+<ul style="list-style-position: inside">
+  <li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. </li>
+  <li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. </li>
+  <li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. </li>
+  <li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem maxime dicta consectetur impedit. </li>
+</ul>
+```
+### Output: 
+<MDXImage 
+  src='/images/lesson-images/l4/inside-position-output.png'
+  alt='list style position output2'
+  width={400}
+  height={300}
+/>
+
+</Section>
+<Section>
+### Shorthand List Style Property
+The `list-style` property is a shorthand property. It is use to set all the list properties in one declaration.
+
+When using the shorthand property, the order of the property values are:
+
+1. `list-style-type`
+2. `list-style-position`
+3. `list-style-image`
+</Section>

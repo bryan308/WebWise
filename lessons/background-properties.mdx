@@ -1,0 +1,97 @@
+---
+title: Background Properties
+description: asdasdsd
+date: '2022-01-28'
+---
+
+<Section>
+### Introduction
+In web design, backgrounds play a crucial role in setting the tone and enhancing the visual appeal of a webpage. CSS provides a variety of background properties to help you create stunning backgrounds for your elements. Let's dive into the key CSS background properties:
+</Section>
+
+<Section>
+### Background Color
+The `background-color` property defines the background color for an HTML element. You can use any color values we tackled in the previous lesson.
+
+```css
+div {
+  background-color: red;
+}
+```
+</Section>
+<Section>
+### Background Image
+The `background-image` property specifies an image to use as the background of an element. By default, the image is **repeated** so it covers the entire element.
+```css
+div {
+  background-image: url(images/image.jpg);
+}
+```
+</Section>
+
+<Section>
+### Background Repeat
+The background-repeat property repeats an image both horizontally and vertically. The value can be horizontally repeated `repeat-x`, vertically repeated `repeat-y`, or `no-repeat`.
+```css
+div {
+  background-repeat: no-repeat | repeat-x | repeat-y;
+}
+```
+</Section>
+<Section>
+### Background Attachment
+The background-attachment property specifies whether the background image should scroll or be fixed.
+```css
+div {
+  background-attachment: scroll | fixed;
+}
+```
+</Section>
+
+
+<Section>
+### Background Position
+The background-position property is used to specify the position of the background image.
+```css
+div {
+  background-position: top | right | bottom | left;
+}
+div {
+  background-position: top left; /* can be a doubled value separated by space */
+}
+```
+</Section>
+
+<Section>
+### Background Size
+The background-size property allows you to specify the size of background images. The size can be specified in lengths , percentages, or by using one of the two keywords: contain or cover.
+```css
+div {
+  background-size: 350px 240px;
+}
+div {
+  background-size: 30% 100%;
+}
+div {
+  background-size: contain | cover;
+}
+```
+</Section>
+<Section>
+### Background Property
+The CSS background property sets all the background properties in one declaration. When using the shorthand property the order of the property values is:
+
+1. `background-color`
+2. `background-image`
+3. `background-repeat`
+4. `background-attachment`
+5. `background-position`
+
+**Using all together:**
+```css
+div {
+  background: #000000 url(images/image.jpg) no-repeat fixed top right;
+  background-size: cover;
+}
+```
+</Section>

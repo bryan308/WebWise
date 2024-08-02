@@ -33,7 +33,7 @@ CardHeader.displayName = 'CardHeader';
 const Card = ({ header, children, variant }: ICard) => {
 	return (
 		<div
-			card-type={`${variant}`}
+			card-type={variant}
 			className={cn(cardVariants({ variant }))}
 		>
 			{variant == 'notes' ? (
@@ -45,7 +45,7 @@ const Card = ({ header, children, variant }: ICard) => {
 			) : (
 				<Loader />
 			)}
-			<CardHeader>{header}</CardHeader>
+			{header ? <CardHeader>{header}</CardHeader> : <div className='h-12'></div>}
 			{children}
 		</div>
 	);
@@ -54,7 +54,7 @@ Card.displayName = 'Card';
 
 const MDXLink = ({ href, children }: ILink) => (
 	<Link
-		href={`${href}`}
+		href={href}
 		className='leading-none text-blue-500 text-base underline decoration-blue-500 underline-offset-4 decoration-2 visited:text-violet-500 transition-all hover:text-indigo-400 hover:decoration-[1.5px] focus:text-indigo-400 focus:decoration-[1.5px] active:text-red-500'
 		target='_blank'
 	>
@@ -86,7 +86,7 @@ const MDXImage = ({ className, source, ...props }: TImageRender) => {
 				<p className='max-w-[50%] mx-auto whitespace-nowrap overflow-hidden text-ellipsis text-center'>
 					Source:{' '}
 					<Link
-						href={`${source}`}
+						href={source}
 						className='text-sm text-neutral-400'
 					>
 						{source}

@@ -1,0 +1,121 @@
+---
+title: HTML for Texts
+description: Enhancing Text Presentation
+date: '2022-01-23'
+---
+
+<Section>
+### Introduction
+Understanding HTML text elements is crucial since much web content is text-based. This lesson will explore fundamental text elements used in web development.
+</Section>
+<Section>
+### Lesson overview
+In this lesson overview, you will find a comprehensive outline of the topics covered in each section.
+- Line Break Tag
+- Paragraphs and its defaults
+- Headings
+</Section>
+<Section>
+### Line break tag
+Since you already know the basic structure of a webpage, let's now try to put contents in the webpage. Again, to show the contents in a webpage you need to put the contents inside the `<body>` and `</body>` tags.
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Web Page</title>
+  </head>
+  <body>
+    Hello! This is the first line.
+    Hello! This is the second line.
+    Hello! This is the third line.
+  </body>
+</html>
+```
+### Output:
+<MDXImage 
+  src='/images/lesson-images/l3/output-1.png'
+  alt='output-1'
+  width={400}
+  height={121}
+/>
+In HTML, by default, consecutive lines of text are displayed without line breaks. In other words, multiple spaces, tabs, and line breaks in the HTML code are collapsed into a single space when rendered in the browser. Therefore, even though we have placed each line of text on a separate line in the HTML code, they appear as a single continuous line in the browser.
+
+To create a new line in the rendered output, we need to use the line break tag `<br />` after each line of text that we want to appear on a new line. Let's modify the HTML code to include line break tags:
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Web Page</title>
+  </head>
+  <body>
+    Hello! This is the first line.<br />
+    Hello! This is the second line.<br />
+    Hello! This is the third line.<br />
+  </body>
+</html>
+```
+### Output:
+<MDXImage 
+  src='/images/lesson-images/l3/br-output.png'
+  alt='break line output'
+  width={400}
+  height={225}
+/>
+</Section>
+<Section>
+### Paragraph
+In HTML, the `<p>` defines the start of the paragraph and the `</p>` defines the end.
+```html
+<p>This is a paragraph.</p>
+```
+**The defaults of the paragraphs:**
+- The font size is **16px** (pixels).
+- The alignment is **left aligned**.
+- The font family is **Times New Roman**.
+- There is a margin of space around the top and the bottom of each paragraph that is typically **1em** or equivalent to **16px**.
+
+Paragraph `<p>` can be nested, for now there is no magical like happening but in some later lessons you will appriciate them.
+```html
+<p>
+This is a paragraph.
+  <p>
+    This is the first nested paragraph.
+  </p>
+  <p>
+    This is the second nested paragraph.
+    <p>
+      This is a nested paragraph in a nested paragraph.
+    </p>
+  </p>
+</p>
+```
+### Output:
+<MDXImage 
+  src='/images/lesson-images/l3/nested-paragraph-output.png'
+  alt='nested paragraph output'
+  width={400}
+  height={225}
+/>
+The result explains the behavior of **block elements**, each of the `<p>` tags occupy a whole line, and the spacing above and below them is constant.
+</Section>
+<Section>
+### Headings
+The HTML heading elements are very important when determining the style and structure of text within web pages.
+
+There are six section heading elements, `<h1></h1>` to `<h6></h6>`. `<h1>` being the largest size by default and most important by search engines. `<h6>` being the smallest and least important of the text headings within a web page.
+<Card variant='tips'>
+- Search enginges will not penalize multiple uses of `<h1>`, but one use of an `<h1>` per page is often preferred. Multiple uses of all the other headings are common and encouraged.
+- By default, the `<h4>` heading is the same size as the `<p>`, which is **16px**.
+- Don't skip heading sequences, like using `<h1>` and then an `<h3>`. You'll only want to use `<h3>` if you both have `<h1>` & `<h2>` on the page.
+</Card>
+</Section>
+<Section>
+### More Resources
+You will discover additional resources and references to further enhance your understanding of the lesson topics.
+- <MDXLink href=''> Quotation and Citation Elements</MDXLink>
+- <MDXLink href=''> Formatting elements</MDXLink>
+</Section>

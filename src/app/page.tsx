@@ -89,7 +89,7 @@ function Home() {
 				{cards.map((c, i: number) => (
 					<Link
 						key={i}
-						href={`${c.href}`}
+						href={c.href}
 						style={{
 							gridArea: `${c.grid}`,
 							backgroundImage: `linear-gradient(to bottom, #00000000, #5b21b6 ), url(${c.image})`,
@@ -133,5 +133,3 @@ function Home() {
 }
 
 export default Home;
-
-// npm i @sindresorhus/slugify gray-matter next-mdx-remote next-remote-watch next-themes prism-react-renderer react-children-utilities react-feather rehype-prism-plus remark-gfm 
