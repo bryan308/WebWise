@@ -47,7 +47,7 @@ function Home() {
 					>
 						Explore WebWise’s Impact
 					</p>
-					<p className='text-base text-neutral-400 mb-4 leading-relaxed'>
+					<p className='text-base text-neutral-300 mb-4 leading-relaxed'>
 						Take a peek behind the scenes and see how WebWise changed the game in web development
 						education. Since we started in February 2019, we’ve been all about making learning easy
 						for everyone. Check out the numbers below to see what we’ve been up to!
@@ -133,3 +133,5 @@ function Home() {
 }
 
 export default Home;
+
+// npm i @sindresorhus/slugify gray-matter next-mdx-remote next-remote-watch next-themes prism-react-renderer react-children-utilities react-feather rehype-prism-plus remark-gfm 

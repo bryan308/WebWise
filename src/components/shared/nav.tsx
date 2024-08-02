@@ -16,7 +16,7 @@ function Nav() {
 	};
 
 	return (
-		<div>
+		<>
 			<div
 				id='nav-wrapper'
 				className='sticky top-0 flex justify-center z-40'
@@ -125,7 +125,7 @@ function Nav() {
 											onClick={toggleSidebar}
 											className={cn(
 												'text-gray-700 dark:text-gray-200 text-base leading-5 no-underline',
-												'hover:text-violet-700 active:text-violet-500 dark:hover:text-violet-400 dark:active:text-violet-300',
+												'hover:text-violet-400 focus:text-violet-400 active:text-violet-500 dark:hover:text-violet-400 dark:active:text-violet-300',
 												index === 4 && 'hidden'
 											)}
 										>
@@ -138,6 +138,7 @@ function Nav() {
 						<div className='hidden md:block min-w-[135px]'>
 							<Button
 								variant='default'
+								className='w-full'
 								asChild
 							>
 								<Link href='/signup'>Get Started</Link>
@@ -166,7 +167,7 @@ function Nav() {
 					</div>
 				</nav>
 			</div>
-		</div>
+		</>
 	);
 }
 

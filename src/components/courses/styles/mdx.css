@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lexend {
+	font-family: 'Lexend', sans-serif;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	font-family: var(--lexend);
+}
+
+p {
+	color: #a3a3a3;
+	margin-bottom: 1rem;
+	font-size: 1rem;
+	line-height: 1.75;
+}
+
+/* a {
+	@apply leading-none text-blue-500 text-base underline decoration-blue-500 underline-offset-4 decoration-2 visited:text-violet-500 transition-all hover:text-indigo-400 hover:decoration-[1.5px] focus:text-indigo-400 focus:decoration-[1.5px] active:text-red-500;
+} */
+
+strong {
+	@apply text-neutral-300 font-medium;
+}
+
+code {
+	@apply text-base p-1 rounded-md text-rose-400 bg-neutral-900 font-mono;
+}
+
+ul {
+	list-style-position: outside;
+	list-style-type: disc;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+ul,
+ol {
+	padding-left: 1rem;
+	font-size: 1rem;
+	margin-bottom: 1.25rem;
+}
+
+li {
+	color: #a3a3a3;
+	margin-bottom: 0.5rem;
+	line-height: 1.75;
+}

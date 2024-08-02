@@ -10,7 +10,7 @@ const buttonVariants = cva(
 		variants: {
 			variant: {
 				default:
-					'text-violet-50 font-normal bg-violet-500 hover:bg-violet-600 active:bg-violet-700 transition-all hover:scale-[1.015] active:scale-[.98]',
+					'text-violet-50 font-normal bg-primary hover:bg-violet-600 active:bg-violet-700 transition-all hover:scale-[1.015] active:scale-[.98]',
 				destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90',
 				outline:
 					'border border border-gray-400 dark:border-gray-600 bg-none hover:border-gray-600 dark:hover:border-gray-400 hover:scale-[1.015] active:scale-[.99]',
@@ -19,7 +19,7 @@ const buttonVariants = cva(
 				link: 'text-primary underline-offset-4 hover:underline',
 			},
 			size: {
-				default: 'h-10 px-4 py-3',
+				default: 'px-4 py-3',
 				sm: 'h-9 rounded-md px-3',
 				lg: 'h-11 rounded-md px-8',
 				icon: 'h-10 w-10',

@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { poppins } from '@/lib/fonts';
+import { lexend, poppins } from '@/lib/fonts';
 import Providers from '@/components/shared/theme-provider';
 import Nav from '@/components/shared/nav';
 import Footer from '@/components/shared/footer';
@@ -19,14 +19,14 @@ export const metadata: Metadata = {
 	},
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html
 			lang='en'
 			suppressHydrationWarning
 		>
 			<body
-				className={`${poppins.className} text-gray-950 dark:text-gray-200 bg-neutral-100 dark:bg-[#0e0e10] transition-all`}
+				className={`${poppins.className} ${lexend.variable} text-gray-950 dark:text-gray-50 bg-neutral-100 dark:bg-[#0e0e10] transition-all`}
 			>
 				<Providers>
 					<Nav />

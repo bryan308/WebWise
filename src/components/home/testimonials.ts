@@ -3,7 +3,7 @@ export const testimonials = [
 		header: 'Simple yet Powerful!',
 		qoute:
 			'WebWise made learning web development so easy for me. The lessons were clear and straightforward. I’d recommend it to anyone looking to learn coding.',
-		src: 'avatar5',
+		src: 'avatar6',
 		name: 'Leanrey Fuenticilla',
 		school: 'Student at GORDON College',
 	},
