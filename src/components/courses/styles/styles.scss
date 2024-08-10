@@ -1,0 +1,77 @@
+.lesson_list_items {
+	border-radius: 8px;
+	margin: 0.5rem 0 1rem 0;
+	gap: 1rem;
+	padding: 1rem;
+	background-color: #101028;
+	border: 1px solid #4c1d95;
+
+	.topic_item {
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0.5rem;
+		text-decoration: none;
+		border: 1px solid #2e1065;
+		border-radius: 6px;
+		padding: 12px;
+		transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
+
+		&:hover {
+			border-color: #4c1d95;
+			background-color: #1e1b4b;
+			transform: scale(1.015);
+		}
+		&:active {
+			transform: scale(0.99);
+		}
+
+		.item_content {
+			display: flex;
+			text-wrap: nowrap;
+			overflow: hidden;
+
+			.item_number {
+				opacity: 0;
+				text-align: center;
+				width: 0;
+				max-height: 24px;
+				margin: auto 0;
+				transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+
+				span {
+					color: #c4b5fd;
+					line-height: 1;
+				}
+			}
+			.item_text {
+				line-height: 1;
+
+				h4 {
+					font-weight: 500;
+				}
+				span {
+					text-overflow: ellipsis;
+				}
+			}
+			.item_status_icon {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				svg {
+					width: 24px;
+					height: 24px;
+				}
+			}
+		}
+
+		&:hover .item_number,
+		&:focus .item_number {
+			width: 24px;
+			opacity: 1;
+			margin-right: 0.5rem;
+		}
+	}
+}

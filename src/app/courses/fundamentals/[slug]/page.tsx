@@ -1,8 +1,10 @@
-import { serialize } from 'next-mdx-remote/serialize';
-import rehypePrism from 'rehype-prism-plus';
-import { getAllMdx, getMdx } from '@/lib/mdx';
 import remarkGfm from 'remark-gfm';
-import LessonContent from './lesson-content';
+import { getAllMdx } from '@/lib/mdx';
+import rehypePrism from 'rehype-prism-plus';
+import { serialize } from 'next-mdx-remote/serialize';
+import FundamentalsLayout from '../fundamentals-layout';
+import LessonContent from '@/components/courses/lesson-content';
+import { lessonGroupTitles } from '@/components/courses/interface/course';
 
 interface ListProp {
 	params: { slug: string };
@@ -10,9 +12,22 @@ interface ListProp {
 
 async function fetchLessonData(slug: string) {
 	const mdxFiles = getAllMdx();
-	const lessonIndex = mdxFiles.findIndex((p) => p.frontMatter.slug === slug);
-	const lesson = mdxFiles[lessonIndex];
+
+	const sortedLessons = mdxFiles.sort((a, b) => {
+		if (a.frontMatter.lessonGroup === b.frontMatter.lessonGroup) {
+			return a.frontMatter.lessonNumber - b.frontMatter.lessonNumber;
+		}
+		return a.frontMatter.lessonGroup - b.frontMatter.lessonGroup;
+	});
+
+	const lessonIndex = sortedLessons.findIndex((p) => p.frontMatter.slug === slug);
+	if (lessonIndex === -1) {
+		throw new Error('Lesson not found');
+	}
+
+	const lesson = sortedLessons[lessonIndex];
 	const { frontMatter, content } = lesson;
+
 	const mdxContent = await serialize(content, {
 		mdxOptions: {
 			remarkPlugins: [remarkGfm],
@@ -20,19 +35,35 @@ async function fetchLessonData(slug: string) {
 		},
 		scope: frontMatter,
 	});
-	const previous = mdxFiles[lessonIndex + 1]?.frontMatter || null;
-	const next = mdxFiles[lessonIndex - 1]?.frontMatter || null;
 
-	return { frontMatter, mdxContent, previous, next };
+	const next = sortedLessons[lessonIndex + 1]?.frontMatter || null;
+
+	return { frontMatter, mdxContent, next };
 }
 
 export default async function Lesson({ params }: ListProp) {
 	const { slug } = params;
 	const postData = await fetchLessonData(slug);
 
+	const lessonGroup = postData.frontMatter.lessonGroup - 1;
+
+	const breadcrumbs = [
+		{
+			title: lessonGroupTitles[lessonGroup] || 'Unknown',
+			link: `/courses/fundamentals/${lessonGroup + 1}`,
+		},
+		{
+			title: postData.frontMatter.title,
+			link: `/courses/fundamentals/${postData.frontMatter.slug}`,
+		},
+	];
+
 	return (
-		<div className='space-x-4'>
+		<FundamentalsLayout
+			breadcrumbs={breadcrumbs}
+			pageHeader={postData.frontMatter.title}
+		>
 			<LessonContent {...postData} />
-		</div>
+		</FundamentalsLayout>
 	);
 }

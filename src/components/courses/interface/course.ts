@@ -42,3 +42,10 @@ export interface ICard extends IChildren {
 	className?: string;
 	header?: string;
 }
+
+export const lessonGroupTitles: string[] = [
+	'Introduction',
+	'Prerequisites',
+	'HTML Fundamentals',
+	'CSS Fundamentals',
+];

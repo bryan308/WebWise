@@ -1,42 +1,53 @@
-import Link from 'next/link';
-import { formatDate } from '@/lib/formatDate';
 import type { MDXFrontMatter } from '@/lib/types';
-// import { Prose } from "@/components/Prose";
-import { cn, slugify } from '@/lib/utils';
-import { Tag } from './elements/Tag';
-import { NextPage } from 'next';
+import Link from 'next/link';
+import '@/components/courses/styles/styles.scss';
+import { lexend } from '@/lib/fonts';
 
-interface PostListProps {
-	posts: Array<MDXFrontMatter>;
+interface LessonListProps {
+	lessons: MDXFrontMatter[];
 }
 
-export const LessonList: NextPage<PostListProps> = ({ posts }) => {
+export const lessonGroupTitles = [
+	'Introduction',
+	'Prerequisites',
+	'HTML Fundamentals',
+	'CSS Fundamentals',
+];
+
+export const LessonList = ({ lessons }: LessonListProps) => {
 	return (
-		<ul className={cn('divide-y -my-8', 'divide-gray-200', 'dark:divide-gray-700')}>
-			{posts.map((post, index) => {
+		<>
+			{lessonGroupTitles.map((groupTitle, i: number) => {
 				return (
-					<li
-						className='py-8'
-						key={index}
-					>
-						<article>
-							<time className={cn('block mb-2', 'text-gray-500', 'dark:text-gray-400')}>
-								{formatDate(post.date)}
-							</time>
-							<h2 className='font-bold text-xl'>
-								<Link href={`/courses/fundamentals/${post.slug}`}>{post.title}</Link>
-							</h2>
-							{post.description ? (
-								<div className='mt-3'>
-									{/* <Prose> */}
-									<p>{post.description}</p>
-									{/* </Prose> */}
-								</div>
-							) : null}
-						</article>
-					</li>
+					<div key={i}>
+						<h3 className={`${lexend.className} font-semibold text-xl`}>{groupTitle}</h3>
+						<div className='lesson_list_items grid grid-cols-1 md:grid-cols-2'>
+							{lessons
+								.filter((lesson) => lesson.lessonGroup === i + 1)
+								.sort((a, b) => a.lessonNumber - b.lessonNumber)
+								.map((l, i: number) => (
+									<Link
+										key={i}
+										href={`/courses/fundamentals/${l.slug}`}
+										className='topic_item hyperlink'
+									>
+										<div className='item_content'>
+											<div className='item_number'>
+												<span className={`${lexend.className} text-xl font-bold`}>
+													{l.lessonNumber}
+												</span>
+											</div>
+											<div className='item_text'>
+												<h4 className={`${lexend.className} text-neutral-200`}>{l.title}</h4>
+												<span className='text-neutral-400 text-xs'>{l.description}</span>
+											</div>
+										</div>
+									</Link>
+								))}
+						</div>
+					</div>
 				);
 			})}
-		</ul>
+		</>
 	);
 };
