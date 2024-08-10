@@ -8,14 +8,14 @@ import Footer from '@/components/shared/footer';
 export const metadata: Metadata = {
 	title: {
 		default: 'WebWise',
-		template: 'WebWise | %s',
+		template: '%s | WebWise',
 	},
 	metadataBase: new URL('https://webwisee.vercel.app'),
 	description: 'Start Your Knowledge Here and Be Wiser in Web Development.',
 	openGraph: {
-		title: 'WebWise | Learn Web',
+		title: 'Learn more about web development.',
 		description: 'Start Your Knowledge Here and Be Wiser in Web Development.',
-		images: [`https://webwisee.vercel.app`],
+		images: [`https://webwisee.vercel.app/images/landing-page.jpg`],
 	},
 };
 

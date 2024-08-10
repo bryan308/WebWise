@@ -84,7 +84,9 @@ function Home() {
 					</Button>
 				</div>
 			</div>
-			<p className={`${lexend.className} text-3xl text-center px-4`}>Overview of WebWise lessons</p>
+			<p className={`${styles.subheader} ${lexend.className} text-3xl text-center px-4`}>
+				Overview of WebWise lessons
+			</p>
 			<div className={styles.gallery_grid}>
 				{cards.map((c, i: number) => (
 					<Link

@@ -3,13 +3,14 @@ lessonNumber: 1
 lessonGroup: 4
 title: Intro to CSS
 description: Gettings Satrted with CSS
+extendedDesc: Cascading Style Sheets (CSS) is a fundamental technology in web development used to control the visual presentation of HTML elements. In this lesson, we’ll explore the basics of CSS and how it enhances the appearance of web content.
 ---
 
 <Section>
 
 ### Introduction
 
-Cascading Style Sheets (CSS) is a fundamental technology in web development used to control the visual presentation of HTML elements. In this lesson, we'll explore the basics of CSS and how it enhances the appearance of web content.
+Cascading Style Sheets (CSS) is a fundamental technology in web development used to control the visual presentation of HTML elements. In this lesson, we’ll explore the basics of CSS and how it enhances the appearance of web content.
 
 </Section>
 <Section>
@@ -40,9 +41,9 @@ selector {
   ```
   Here, the styles are directly embedded within the opening `<div>` tag, without the need for selectors. The `style` attribute contains declarations enclosed in quotation marks.
   <Card variant='warning'>
-  While inline CSS can be useful for adding unique styles to individual elements, it's not typically recommended for several reasons:
+  While inline CSS can be useful for adding unique styles to individual elements, it’s not typically recommended for several reasons:
   1. **Messy Markup**: Adding multiple declarations to a single element can quickly clutter your HTML file, making it harder to read and maintain.
-  2. **Repetition**: If you want multiple elements to have the same style, you'll need to duplicate the inline styles for each element, leading to unnecessary repetition.
+  2. **Repetition**: If you want multiple elements to have the same style, you’ll need to duplicate the inline styles for each element, leading to unnecessary repetition.
   3. **Specificity Issues**: Inline styles override styles applied using external or internal CSS, which can sometimes lead to unexpected behavior.
   </Card>
 
@@ -69,7 +70,7 @@ selector {
 - **External CSS** <br />
   External CSS involves liking an external CSS file to an HTML document, enabling consistent styling across multiple web pages and facilitating easier maintenance.
   
-  External CSS is a form of CSS which is used to add styling to multiple HTML pages at a time. It is one of the most commonly used CSS for updating, styling, and modifying the distinctive styles in many HTML web pages at once. With External CSS, you can change the look of an entire website by changing just one file
+  External CSS is a form of CSS which is used to add styling to multiple HTML pages at a time. It is one of the most commonly used CSS for updating, styling, and modifying the distinctive styles in many HTML web pages at once. With External CSS, you can change the look of an entire website by changing just one file.
   ```html
   <div>Hello!</div>
   <div>How are you?</div>
@@ -78,7 +79,7 @@ selector {
   <div>Too much raining</div>
   <p>huhuhu</p>
   ```
-  ```html
+  ```css
   div {
     color: yellow;
   }
@@ -114,7 +115,7 @@ selector {
 
   **How do web insert a CSS Framework?**
   1. Choose a CSS Framework
-  2. Download CSS File or Link to the Framewor's CDN(Content Delivery Network)
+  2. Download CSS File or Link to the Framewor’s CDN(Content Delivery Network)
   3. Include the CSS Files by using the `<link />` tag
   4. Start using the Framework Classes
   5. Customize as Needed
@@ -144,11 +145,11 @@ Selectors are patterns used to select the elements you want to style. There are 
   }
   ```
 - **Type Selector**
-  Targets specific HTML elements by their tag name. Here, all four `<div>` elements would be selected, while the `<p>` element wouldn't be.
+  Targets specific HTML elements by their tag name. Here, all four `<div>` elements would be selected, while the `<p>` element wouldn’t be.
   ```html
   <div>Hello!</div>
   <div>How are you?</div>
-  <div>I'm under the water.</div>
+  <div>I’m under the water.</div>
   <p>Please help me.</p>
   <div>Too much raining</div>
   <p>huhuhu</p>
@@ -194,7 +195,7 @@ Selectors are patterns used to select the elements you want to style. There are 
     background-color: yellow;
   }
   ```
-  While there are scenarios where using IDs is appropriate, such as when specificity is required or when creating links that navigate to specific sections within a page, it's important to avoid overusing IDs when classes can fulfill the same purpose. IDs should be used judiciously, considering their potential impact on CSS specificity and overall maintainability of the codebase.
+  While there are scenarios where using IDs is appropriate, such as when specificity is required or when creating links that navigate to specific sections within a page, it’s important to avoid overusing IDs when classes can fulfill the same purpose. IDs should be used judiciously, considering their potential impact on CSS specificity and overall maintainability of the codebase.
 
 - **Group Selector**<br />
   The concept of grouping selectors comes into play when we encounter situations where multiple groups of elements share some common style declarations. Take, for instance, the scenario where we have two groups of elements, one marked as `.read` and the other as `.unread`, both of which have identical color and background-color declarations, along with several unique ones of their own.
@@ -248,7 +249,7 @@ Selectors are patterns used to select the elements you want to style. There are 
   }
   ```
   <Card variant='notes'>
-  However, it's important to note that chaining more than one type selector is not possible, as an element cannot belong to multiple types simultaneously. For instance, attempting to chain two type selectors like `div` and `p` would result in an invalid selector.
+  However, it’s important to note that chaining more than one type selector is not possible, as an element cannot belong to multiple types simultaneously. For instance, attempting to chain two type selectors like `div` and `p` would result in an invalid selector.
   </Card>
 
 - **Descendant Combinator**<br />
@@ -279,9 +280,9 @@ Selectors are patterns used to select the elements you want to style. There are 
 </Section>
 <Section>
 ### Cascade
-The cascade of CSS plays a crucial role in determining which style rules get applied to our HTML elements. It's important to note that CSS behaves based on our instructions, although sometimes unexpected results may occur due to default browser styles or misunderstandings about the cascade.
+The cascade of CSS plays a crucial role in determining which style rules get applied to our HTML elements. It’s important to note that CSS behaves based on our instructions, although sometimes unexpected results may occur due to default browser styles or misunderstandings about the cascade.
 
-One of the key factors in the cascade is specificity. This refers to the level of importance assigned to different types of CSS selectors. For instance, inline styles have the highest specificity, followed by ID selectors, class selectors, and type selectors. In cases where conflicting rules exist, the more specific rule takes precedence. Let's illustrate this with some examples:
+One of the key factors in the cascade is specificity. This refers to the level of importance assigned to different types of CSS selectors. For instance, inline styles have the highest specificity, followed by ID selectors, class selectors, and type selectors. In cases where conflicting rules exist, the more specific rule takes precedence. Let’s illustrate this with some examples:
 
 **Consider two rules targeting the same element:**
 ```css
@@ -308,7 +309,7 @@ In this scenario, the second rule `.main` `.list` is more specific because it co
 
 Despite having more class selectors, the first rule `#subsection` takes precedence because IDs are more specific than classes.
 
-It's worth noting that not all selector symbols contribute to specificity. Symbols like the universal selector `*` and combinators `+`, `~`, `<`, and `space` do not add to specificity. Inheritance is another factor in the cascade, where certain properties are inherited by child elements. However, directly targeting an element always overrides inheritance.
+It’s worth noting that not all selector symbols contribute to specificity. Symbols like the universal selector `*` and combinators `+`, `~`, `<`, and `space` do not add to specificity. Inheritance is another factor in the cascade, where certain properties are inherited by child elements. However, directly targeting an element always overrides inheritance.
 
 Lastly, in cases where all other factors are equal, the order of rule definition becomes the deciding factor. The rule defined last is the one that gets applied.
 

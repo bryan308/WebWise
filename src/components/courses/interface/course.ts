@@ -17,7 +17,6 @@ interface ICourseMeta {
 
 type TTags = {
 	text: string;
-	href: string;
 }[];
 
 export interface IChildren {

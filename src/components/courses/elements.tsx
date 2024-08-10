@@ -83,7 +83,7 @@ const MDXImage = ({ className, source, ...props }: TImageRender) => {
 			{source === '' || source === undefined ? (
 				<></>
 			) : (
-				<p className='text-neutral-200 max-w-[50%] mx-auto truncate text-center'>
+				<p className='text-neutral-200 w-full md:max-w-[50%] mx-auto truncate text-center'>
 					Source:{' '}
 					<Link
 						href={source}

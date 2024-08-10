@@ -3,6 +3,7 @@ lessonNumber: 5
 lessonGroup: 4
 title: Box Model
 description: Understanding the Box Model
+extendedDesc: 'In CSS, the concept of the "box model" is fundamental for understanding the layout and design of HTML elements. Essentially, every HTML element can be visualized as a rectangular box, comprising four main components: content, padding, border, and margin.'
 ---
 
 <Section>
@@ -53,7 +54,7 @@ div {
 ### Width and Height of an Element
 To accurately set the width and height of an element across different browsers, understanding how the box model functions is crucial.
 
-When specifying the width and height properties of an element in CSS, you're defining the dimensions of the content area only. To calculate the total width and height of the element, you must also account for padding and borders.
+When specifying the width and height properties of an element in CSS, you’re defining the dimensions of the content area only. To calculate the total width and height of the element, you must also account for padding and borders.
 
 **Consider the following `<div>` element, which will have a total width of 350px and a total height of 80px:**
 ```css
@@ -85,7 +86,7 @@ div {
 **Total element width = height + top padding + bottom padding + top border + bottom border**
 
 <Card variant='notes'>
-While the margin property influences the space the box occupies on the page, it's not included in the actual size of the box. The total width and height of the box end at the border.
+While the margin property influences the space the box occupies on the page, it’s not included in the actual size of the box. The total width and height of the box end at the border.
 </Card>
 
 </Section>

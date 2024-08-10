@@ -3,11 +3,12 @@ lessonNumber: 2
 lessonGroup: 4
 title: Designing Texts
 description: Enhancing Text Design
+extendedDesc: In web design, text plays a crucial role in conveying information and shaping the overall user experience. By mastering the art of styling text using CSS, you can transform ordinary content into visually engaging elements that captivate your audience.
 ---
 
 <Section>
 ### Introduction
-In web design, text plays a crucial role in conveying information and shaping the overall user experience. By mastering the art of styling text using CSS, you can transform ordinary content into visually engaging elements that captivate your audience. Let's explore some key aspects of designing texts in CSS:
+In web design, text plays a crucial role in conveying information and shaping the overall user experience. By mastering the art of styling text using CSS, you can transform ordinary content into visually engaging elements that captivate your audience. Let’s explore some key aspects of designing texts in CSS:
 </Section>
 <Section>
 ### Color Property
@@ -28,9 +29,9 @@ The color property defines the **text** color for an HTML element.
 CSS provides various units for specifying measurements, allowing developers to create repsonsive and visually appealing web designs.
 
 - **Pixels (px)**: Pixel is a fixed-size unit commonly used for precise control over element dimensions and spacing. One pixel corresponds to one dot on a screen, making it a reliable choice for achieving consistent visual appearance across devices.
-- **Percentage (%)**: Percentage units are relative to the parent element's font size, width, or height. They allow for flexible and scalable designs by adapting to changes in the parent element's dimensions. For example, setting a font size to 150% increases it to 1.5 times the size of the parent element's font.
-- **Viewport Width (vw) and Viewport Height (vh)**: Viewport units are relative to the dimensions of the browser's viewport. One viewport width (vw) is equal to 1% of the viewport's width, while one viewport height (vh) is equal to 1% of the viewport's height. These units are particularly useful for creating layouts that adapt seamlessly to different screen sizes.
-- **Em (em)**: The em unit is relative to the font size of the element itself. When used for font sizes, one em is equivalent to the current font size of the element. For example, setting a font size to 1.5em increases it to 1.5 times the size of the element's parent font size.
+- **Percentage (%)**: Percentage units are relative to the parent element’s font size, width, or height. They allow for flexible and scalable designs by adapting to changes in the parent element’s dimensions. For example, setting a font size to 150% increases it to 1.5 times the size of the parent element’s font.
+- **Viewport Width (vw) and Viewport Height (vh)**: Viewport units are relative to the dimensions of the browser’s viewport. One viewport width (vw) is equal to 1% of the viewport’s width, while one viewport height (vh) is equal to 1% of the viewport’s height. These units are particularly useful for creating layouts that adapt seamlessly to different screen sizes.
+- **Em (em)**: The em unit is relative to the font size of the element itself. When used for font sizes, one em is equivalent to the current font size of the element. For example, setting a font size to 1.5em increases it to 1.5 times the size of the element’s parent font size.
 - **Root Em (rem)**: Similar to the em unit, the rem unit is relative to the font size of the root element (usually the `<html>` element). This makes rem units ideal for creating scalable designs that maintain consistent proportions across the entire document.
 
 </Section>
@@ -103,7 +104,7 @@ The `font-family` property defines the fonts to be used for an HTML element. The
 
 
 ### Generic Font Family
-When specifying fonts in CSS, it's essential to include a generic font family as a fallback option. This ensures that if a specific font is not available, the browser can use a suitable alternative. Here are some recommended generic font families:
+When specifying fonts in CSS, it’s essential to include a generic font family as a fallback option. This ensures that if a specific font is not available, the browser can use a suitable alternative. Here are some recommended generic font families:
 
 - **sans-serif**: Arial, Verdana, Tahoma, Trebuchet MS
 - **serif**: Times New Roman, Georgia, Garamond
@@ -138,7 +139,7 @@ p {
   font-size: 20px;
 }
 
-  /* relative size */
+/* relative size */
 p {
   font-size: 2em;
 }

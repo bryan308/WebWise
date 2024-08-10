@@ -3,6 +3,7 @@ lessonNumber: 5
 lessonGroup: 3
 title: HTML Images
 description: Incorporating Images
+extendedDesc: Websites would be fairly boring if they could only display text. Luckily HTML provides a wide variety of elements for displaying all sorts of different media. The most widely used of these is the image element.
 ---
 
 <Section>
@@ -11,7 +12,7 @@ Websites would be fairly boring if they could only display text. Luckily HTML pr
 
 The HTML `<img />` tag is a void element used t embed images into web pages. As a void element. it does not require a closing tag and is self-contained within a single tag.
 
-The `<img />` tag is used to insert images into HTML documents. It is a void element, meaning it does not have a closing tag and requires no content. The `<img />` tag typically includes attributes that specify the image sourse(src), alternative text(alt), width, height, and more.
+The `<img />` tag is used to insert images into HTML documents. It is a void element, meaning it does not have a closing tag and requires no content. The `<img />` tag typically includes attributes that specify the image source(src), alternative text(alt), width, height, and more.
 </Section>
 <Section>
 ### Lesson overview
@@ -49,11 +50,11 @@ Common file extensions for images include:
 - **src (required)**: Specifies the URL or file path of the image to be displayed. Without it, there is nothing to render.
 - **alt (required)**: Provides alternative text for the image, which is displayed if the image fils to lead or for users with screen readers.
 - Image size attributes
-  + **width**: Specifies the widht of the image in pixels or as a percentage of the containing element's width.
-  + **height**: Specifies the height of the image in pixels or as a percentage of the contianing element's height.
+  + **width**: Specifies the widht of the image in pixels or as a percentage of the containing element’s width.
+  + **height**: Specifies the height of the image in pixels or as a percentage of the contianing element’s height.
 - **loading**: Indicates how the browser should load the image.
   + **eager**: Loads the image immediately, regardless of whether or not the image is currently within the visible viewport (this is the default value.)
-  + **lazy**: Defers loading the image until it reaches a calculated distance from the viewport, as defined bt the browser. The intent is to avoid the network and storage bandwidth needed to handle the image intil it's reasonably certain that it will be needed. This generally improves the performance of the content in most typical use cases.
+  + **lazy**: Defers loading the image until it reaches a calculated distance from the viewport, as defined bt the browser. The intent is to avoid the network and storage bandwidth needed to handle the image intil it’s reasonably certain that it will be needed. This generally improves the performance of the content in most typical use cases.
 **Combining all the attributes**:
 ```html
 <img src="image.jpg" alt="Description" widht="30" height="50" loading="lazy" />

@@ -47,7 +47,7 @@ function FundamentalsLayout({
 					))}
 				</BreadcrumbList>
 			</Breadcrumb>
-			<div className='mb-4'>
+			<div className='px-4 lg:px-0 mb-4'>
 				<Image
 					className='mx-auto block'
 					src='/images/pngs/book.png'

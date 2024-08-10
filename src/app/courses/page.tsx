@@ -12,11 +12,11 @@ const CourseData: ICourse = {
 		thumbnail: '/images/svgs/fundamentals.svg',
 		link: '/courses/fundamentals/',
 		tags: [
-			{ text: 'Introduction', href: '/pages/courses/c1#c1l1' },
-			{ text: 'Prerequisites', href: '/pages/courses/c1#c1l2' },
-			{ text: 'HTML', href: '/pages/courses/c1#c1l3' },
-			{ text: 'CSS', href: '/pages/courses/c1#c1l4' },
-			{ text: 'JavaScript', href: '/pages/courses/c1#c1l5' },
+			{ text: 'Introduction' },
+			{ text: 'Prerequisites' },
+			{ text: 'HTML' },
+			{ text: 'CSS' },
+			{ text: 'JavaScript' },
 		],
 	},
 	intermidiate: {
@@ -26,10 +26,10 @@ const CourseData: ICourse = {
 		thumbnail: '/images/Intermidiate.jpg',
 		link: '/courses/intermidiate/',
 		tags: [
-			{ text: 'Intermidiate HTML', href: '/pages/courses/c2#c2l1' },
-			{ text: 'Intermidiate CSS', href: '/pages/courses/c2#c2l2' },
-			{ text: 'Forms', href: '/pages/courses/c2#c2l3' },
-			{ text: 'Grid', href: '/pages/courses/c2#c2l4' },
+			{ text: 'Intermidiate HTML' },
+			{ text: 'Intermidiate CSS' },
+			{ text: 'Forms' },
+			{ text: 'Grid' },
 		],
 	},
 };
@@ -60,14 +60,13 @@ function CourseCard({ course }: ICourseParam) {
 						<div className='flex flex-wrap gap-2 p-2'>
 							{course.tags.map((tag, index) => {
 								return (
-									<Link
+									<span
 										key={index}
-										href={tag.href}
 										className='select-none cursor-pointer flex items-center font-normal text-xs text-neutral-700 dark:text-neutral-200 no-underline w-max py-[.15rem] px-[.3rem] border border-violet-600 dark:border-violet-950 rounded-lg transition-all hover:scale-[1.015] hover:bg-[#d4a9ff] dark:hover:bg-[#250c3e] dark:hover:border-violet-700'
 									>
 										<Hash className='size-3' />
 										{tag.text}
-									</Link>
+									</span>
 								);
 							})}
 						</div>
