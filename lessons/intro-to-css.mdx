@@ -18,7 +18,10 @@ Cascading Style Sheets (CSS) is a fundamental technology in web development used
 At the most basic level, CSS is made up of various rules. These rules are made up of a selector (more on this in a bit) and a semicolon-separated list of declarations, with each of those declarations being made up of a property-value pair. Each property-value is separated by **semicolon ( ; )**.
 
 ```css
-selector {property: value;property: value;}
+selector {
+  property: value;
+  property: value;
+}
 ```
 </Section>
 <Section>
@@ -220,7 +223,7 @@ Selectors are patterns used to select the elements you want to style. There are 
   </div>
   ```
   Suppose we want to apply a specific style to elements that have both the `subsection` and `header` classes. We can achieve this by chaining the class selectors together in our CSS:
-  ```html
+  ```css
   .subsection.header {
     color: red;
   }
@@ -262,7 +265,7 @@ Selectors are patterns used to select the elements you want to style. There are 
     </div>
   </div>
 
-  <div> class="contents"><!-- Not selected (D) --></div>
+  <div class="contents"><!-- Not selected (D) --></div>
   ```
   ```css
   .ancestor .contents {
