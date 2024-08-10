@@ -1,5 +1,6 @@
 import { ICourse, ICourseParam } from '@/components/courses/interface/course';
 import PageHeader from '@/components/shared/ui/header';
+import { Hash } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -64,13 +65,7 @@ function CourseCard({ course }: ICourseParam) {
 										href={tag.href}
 										className='select-none cursor-pointer flex items-center font-normal text-xs text-neutral-700 dark:text-neutral-200 no-underline w-max py-[.15rem] px-[.3rem] border border-violet-600 dark:border-violet-950 rounded-lg transition-all hover:scale-[1.015] hover:bg-[#d4a9ff] dark:hover:bg-[#250c3e] dark:hover:border-violet-700'
 									>
-										<Image
-											src='/images/svgs/hash.svg'
-											alt='hashtag icon'
-											width={12}
-											height={12}
-											className='invert dark:invert-0'
-										/>{' '}
+										<Hash className='size-3' />
 										{tag.text}
 									</Link>
 								);

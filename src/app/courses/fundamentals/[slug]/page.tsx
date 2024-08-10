@@ -5,6 +5,7 @@ import { serialize } from 'next-mdx-remote/serialize';
 import FundamentalsLayout from '../fundamentals-layout';
 import LessonContent from '@/components/courses/lesson-content';
 import { lessonGroupTitles } from '@/components/courses/interface/course';
+import { notFound } from 'next/navigation';
 
 interface ListProp {
 	params: { slug: string };
@@ -22,7 +23,7 @@ async function fetchLessonData(slug: string) {
 
 	const lessonIndex = sortedLessons.findIndex((p) => p.frontMatter.slug === slug);
 	if (lessonIndex === -1) {
-		throw new Error('Lesson not found');
+		notFound();
 	}
 
 	const lesson = sortedLessons[lessonIndex];

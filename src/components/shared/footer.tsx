@@ -32,7 +32,7 @@ export default function Footer() {
 								>
 									{f.header}
 								</h2>
-								<ul className='list-none'>
+								<ul className='list-none pl-0'>
 									{f.links.map((l, i) => (
 										<li
 											key={i}
