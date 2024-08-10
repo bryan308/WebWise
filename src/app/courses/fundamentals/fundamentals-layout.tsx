@@ -27,7 +27,7 @@ function FundamentalsLayout({
 	pageHeader = 'Fundamentals',
 }: RootLayoutProps) {
 	return (
-		<main className='mx-auto max-w-[50rem]'>
+		<main className='mx-auto max-w-[50rem] animate-fadeIn [--fadeIn-delay:0ms] opacity-0'>
 			<Breadcrumb className='py-4'>
 				<BreadcrumbList className='justify-center items-center list-none px-0'>
 					<BreadcrumbItem>
@@ -58,7 +58,7 @@ function FundamentalsLayout({
 				/>
 				<PageHeader>{pageHeader}</PageHeader>
 			</div>
-			{children}
+			<div className='px-4 lg:px-0'>{children}</div>
 		</main>
 	);
 }

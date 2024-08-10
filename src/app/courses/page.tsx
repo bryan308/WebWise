@@ -46,6 +46,7 @@ function CourseCard({ course }: ICourseParam) {
 							height={300}
 							loading='eager'
 							className='object-cover w-full h-full'
+							priority
 						/>
 					</div>
 					<div className='p-4 w-full md:w-[65%]'>

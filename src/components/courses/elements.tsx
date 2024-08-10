@@ -78,12 +78,12 @@ const MDXImage = ({ className, source, ...props }: TImageRender) => {
 		<div className={cn(source === '' || source === undefined ? '' : 'mb-4')}>
 			<ImageRender
 				{...props}
-				className={cn(className, 'mx-auto rounded-lg max-w-[50%]')}
+				className={cn(className, 'mx-auto rounded-lg w-full md:max-w-[50%]')}
 			/>
 			{source === '' || source === undefined ? (
 				<></>
 			) : (
-				<p className='max-w-[50%] mx-auto whitespace-nowrap overflow-hidden text-ellipsis text-center'>
+				<p className='text-neutral-200 max-w-[50%] mx-auto truncate text-center'>
 					Source:{' '}
 					<Link
 						href={source}

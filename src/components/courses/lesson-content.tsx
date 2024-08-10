@@ -13,13 +13,13 @@ interface ILessonContentProp {
 
 export default function LessonContent({ mdxContent, next }: ILessonContentProp) {
 	return (
-		<div className='animate-fadeIn [--fadeIn-delay:0ms] opacity-0'>
+		<>
 			<MDXRemote
 				{...mdxContent}
 				components={components}
 			/>
 			<hr className='opacity-25' />
 			<BottomNav next={next} />
-		</div>
+		</>
 	);
 }
